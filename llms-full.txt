@@ -44,6 +44,10 @@ The wrnty blog publishes practical advice on tracking warranties, organising rec
 https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/
 A warranty claim usually requires proof of purchase, but the receipt is only one acceptable form. This post covers what companies will and won't accept — bank statements, order confirmations, account records, gift receipts, and more — plus a practical approach to rebuilding your proof when the original receipt is gone, including the one piece of information that unlocks almost every alternative.
 
+### Repair it or replace it? A simple way to decide (2026-07-30, warranty-tips)
+https://wrnty.12f.dk/blog/repair-it-or-replace-it/
+When something breaks, the repair quote often lands in an awkward middle ground — expensive enough to make you hesitate, cheap enough that replacement feels like waste. This post lays out a practical framework for that decision: how to weigh repair cost against replacement value, when a warranty claim should be your first move, and how to factor in the item's age and your actual likelihood of needing it again.
+
 ### How to make a warranty claim (and what to do when it's refused) (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/how-to-make-a-warranty-claim/
 A warranty only pays out if you know how to use it. This post walks through the complete process: proving purchase, contacting the right department, keeping a paper trail, and what to do when they refuse — including escalation paths, your statutory rights, and when it is cheaper to walk away.
