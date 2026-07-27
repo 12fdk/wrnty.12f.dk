@@ -14,7 +14,7 @@ summary: >
   including the one piece of information that unlocks almost every alternative.
 coverAlt: "A hand holding a phone beside a stack of papers including a receipt and a printed email on a wooden desk"
 hero: true
-related: [how-to-make-a-warranty-claim, how-to-keep-track-of-warranties]
+related: [how-to-make-a-warranty-claim, warranty-gotchas-fine-print]
 faq:
   - question: "What is proof of purchase?"
     answer: "Proof of purchase is any document or record that shows you bought a specific item, when you bought it, from whom, and for how much. The standard form is the itemised receipt, but order confirmation emails, account records, bank statements, and gift receipts can also count — though acceptance varies by company."
@@ -98,7 +98,7 @@ Not every alternative will be accepted. Companies are entitled to set reasonable
 
 The single most effective thing you can do is record the proof at the moment of purchase, before you walk away from the shop. Photograph the receipt. Save the order confirmation. Note the date in a calendar. Put it somewhere you will actually look when the product needs it.
 
-If you follow the system from [our post on keeping track of warranties](/blog/how-to-keep-track-of-warranties/), this is built in: the receipt photo, the purchase date, the serial number, the expiry date — all in one searchable place. When something breaks, you have everything [a warranty claim needs](/blog/how-to-make-a-warranty-claim/) ready to export as a PDF in seconds, instead of searching drawers and inboxes. If you buy extended warranties or protection plans, the same tool holds those documents too — which is what wrnty is built for.
+If you follow the system from [our post on warranty gotchas](/blog/warranty-gotchas-fine-print/), this is built in: the receipt photo, the purchase date, the serial number, the expiry date — all in one searchable place. When something breaks, you have everything [a warranty claim needs](/blog/how-to-make-a-warranty-claim/) ready to export as a PDF in seconds, instead of searching drawers and inboxes. If you buy extended warranties or protection plans, the same tool holds those documents too — which is what wrnty is built for.
 
 For people who do not use an app, the same principle works with any system you actually maintain: a labelled folder in your email, a folder of photos in your cloud, or even a physical envelope you check once a year. The critical detail is that the proof lives somewhere retrievable, not somewhere that fades or gets buried.
 

@@ -14,7 +14,7 @@ summary: >
   to factor in the item's age and your actual likelihood of needing it again.
 coverAlt: "A cracked phone screen on a dark wooden table beside a small bowl of screws and a folded repair guide"
 hero: true
-related: [how-to-make-a-warranty-claim, how-to-keep-track-of-warranties]
+related: [how-to-make-a-warranty-claim, warranty-gotchas-fine-print]
 faq:
   - question: "When is it better to repair than replace?"
     answer: "Usually when the repair costs less than half the price of a comparable replacement and the item still has at least a year or two of useful life. If the item is under warranty, repair or replacement through the manufacturer should be free, which changes the calculation entirely."
@@ -40,7 +40,7 @@ This sounds obvious until you remember that most people cannot name the expiry d
 
 If you are still under the statutory consumer rights window in your country, the rules may be even more in your favour than the manufacturer's own warranty, since statutory protections against faulty goods often go beyond what the brand says. But those rules vary, so check what applies where you are.
 
-If you already read the post on [how to make a warranty claim](/blog/how-to-make-a-warranty-claim/), you know the basic drill: gather your proof of purchase, describe the fault clearly, and keep a record of every interaction. The key insight is this — you need to find that proof of purchase in the first place. Which is exactly why the system in [our post on keeping track of warranties](/blog/how-to-keep-track-of-warranties/) exists in the first place.
+If you already read the post on [how to make a warranty claim](/blog/how-to-make-a-warranty-claim/), you know the basic drill: gather your proof of purchase, describe the fault clearly, and keep a record of every interaction. The key insight is this — you need to find that proof of purchase in the first place. Which is exactly why [our guide on warranty gotchas and fine print](/blog/warranty-gotchas-fine-print/) exists — it covers what to watch for before anything breaks.
 
 ## The simple maths: repair cost vs replacement value
 

@@ -15,7 +15,7 @@ summary: >
   warranty, giving you extra cover in many countries.
 coverAlt: "A kitchen table with a washing machine manual, a phone box, a laptop and a small stack of warranty cards spread out, warm morning light"
 hero: true
-related: [how-to-keep-track-of-warranties, what-counts-as-proof-of-purchase]
+related: [how-to-make-a-warranty-claim, what-counts-as-proof-of-purchase]
 faq:
   - question: "How long is a warranty on a phone?"
     answer: "Most phones carry a one-year manufacturer warranty covering defects in materials and workmanship. That does not cover cracked screens, water damage or battery wear — most of those fall under accidental-damage plans, which are separate. In many countries you also have a statutory right against the seller for faulty goods, independent of any manufacturer warranty."
@@ -94,7 +94,7 @@ These rights apply to consumer purchases from traders, not to private sales. And
 
 Knowing the warranty length is the first step. Knowing when your specific product's warranty expires — and having the proof ready when it matters — is the second. That is exactly what wrnty does: it keeps a record of each product, its purchase date, the warranty length, and the expiry date, then reminds you before anything goes out of cover. It is one tool among many; a spreadsheet or a labelled folder in your email inbox works too, but a dedicated tracker means the reminder comes to you instead of the other way around.
 
-When something breaks, you will need your proof of purchase within minutes, not hours — and if the warranty has already expired, you will want to know whether a statutory right or an accidental-damage plan still applies. Our guide on [what counts as proof of purchase](/blog/what-counts-as-proof-of-purchase/) walks through exactly what the claim desk will accept and what to do when the original receipt is gone. And if you already have a system for tracking your purchases, our guide on [keeping track of warranties](/blog/how-to-keep-track-of-warranties/) shows you how to build a small, repeatable habit that does not need a filing cabinet.
+When something breaks, you will need your proof of purchase within minutes, not hours — and if the warranty has already expired, you will want to know whether a statutory right or an accidental-damage plan still applies. Our guide on [what counts as proof of purchase](/blog/what-counts-as-proof-of-purchase/) walks through exactly what the claim desk will accept and what to do when the original receipt is gone. And if you already have a system for tracking your purchases, our guide on [warranty gotchas and fine print](/blog/warranty-gotchas-fine-print/) covers what to look for before anything breaks.
 
 ## A practical way to use this map
 

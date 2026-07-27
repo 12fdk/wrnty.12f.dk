@@ -13,7 +13,7 @@ summary: >
   rights, and when it is cheaper to walk away.
 coverAlt: "A paper receipt and a warranty card on a wooden table beside a phone showing a warranty claim email"
 hero: true
-related: [how-to-keep-track-of-warranties, is-an-extended-warranty-worth-it]
+related: [what-counts-as-proof-of-purchase, warranty-gotchas-fine-print]
 faq:
   - question: "What do I need to start a warranty claim?"
     answer: "You need proof of purchase (the receipt or order confirmation), the serial number if the product has one, and a clear description of the fault. If you recorded these in wrnty when you bought the item, you can export everything you need in a few taps instead of hunting through drawers."
@@ -45,7 +45,7 @@ Most warranty claims are won or lost in the first five minutes, before any human
 
 If you have the receipt, the serial number, and the model in one place, you are already ahead of most people. If you did not track these at purchase, start by digging — old order emails, bank statements, that faded paper receipt in the desk drawer. A bank statement line showing the merchant and date is often accepted as proof, though no retailer is obliged to honour it. An itemised receipt is the gold standard.
 
-If you followed the system from [our post on keeping track of warranties](/blog/how-to-keep-track-of-warranties/), you probably already have this all in one place, maybe even exported as a PDF ready to attach.
+If you followed the system from [our post on warranty gotchas](/blog/warranty-gotchas-fine-print/), you probably already have this all in one place, maybe even exported as a PDF ready to attach.
 
 ![A laptop showing an email beside a printed document and pen, with a phone and coffee cup on a wooden desk](/images/blog/how-to-make-a-warranty-claim-1.png)
 
@@ -121,6 +121,6 @@ The entire process above takes minutes if you have your evidence ready. It takes
 
 None of this is about being obsessive about paperwork. It is about making one small decision at the point of purchase — keep the receipt, note the date, record the serial number — so that when something actually breaks, you are not starting from zero. That is the same principle from the organizing guide we linked above: capture the proof at the moment of purchase, when the receipt is literally in your hand.
 
-And for the extended warranty buyers out there — the same discipline applies. If you paid for a protection plan, knowing it exists and understanding its terms is half the battle. Our post on [whether extended warranties are worth it](/blog/is-an-extended-warranty-worth-it/) covers how to assess those plans in the first place.
+And for the extended warranty buyers out there — the same discipline applies. If you paid for a protection plan, knowing it exists and understanding its terms is half the battle. Our post on [warranty gotchas](/blog/warranty-gotchas-fine-print/) covers how to spot the clauses that can void your cover.
 
 The bottom line: a warranty is only as good as your ability to use it. The difference between a frustrated dead end and a resolved claim almost always comes down to whether you had your proof ready.

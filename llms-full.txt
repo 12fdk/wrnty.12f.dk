@@ -44,6 +44,10 @@ The wrnty blog publishes practical advice on tracking warranties, organising rec
 https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/
 A warranty claim usually requires proof of purchase, but the receipt is only one acceptable form. This post covers what companies will and won't accept — bank statements, order confirmations, account records, gift receipts, and more — plus a practical approach to rebuilding your proof when the original receipt is gone, including the one piece of information that unlocks almost every alternative.
 
+### Warranty gotchas — the fine print that voids your cover (2026-07-30, warranty-tips)
+https://wrnty.12f.dk/blog/warranty-gotchas-fine-print/
+Many warranties contain clauses that void coverage under common, everyday conditions — improper use, unauthorised repairs, exposure to moisture, or even opening the device yourself. This post walks through the most common warranty gotchas, how to spot them before you buy, and what to do when you suspect your cover has been invalidated.
+
 ### Repair it or replace it? A simple way to decide (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/repair-it-or-replace-it/
 When something breaks, the repair quote often lands in an awkward middle ground — expensive enough to make you hesitate, cheap enough that replacement feels like waste. This post lays out a practical framework for that decision: how to weigh repair cost against replacement value, when a warranty claim should be your first move, and how to factor in the item's age and your actual likelihood of needing it again.
@@ -55,14 +59,6 @@ A warranty only pays out if you know how to use it. This post walks through the 
 ### How long is the warranty on common things — a plain reference (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/how-long-is-the-warranty-on-common-things/
 Most products carry a standard one-year manufacturer warranty, but some categories vary widely — large appliances often two to five years, tyres are covered by tread-wear programs, and mattresses carry anything from two to twenty depending on the brand. This post walks through the most common categories and reminds you that statutory rights against the seller often stack on top of any manufacturer warranty, giving you extra cover in many countries.
-
-### How to keep track of warranties without a drawer full of receipts (2026-07-27, organizing)
-https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/
-Most people lose money on warranties not because products fail, but because the cover lapsed unnoticed or the receipt vanished. This post lays out a simple, repeatable system: gather proof at the moment of purchase, record the four facts that matter (what, when, how long, what it cost), set a reminder before the expiry date, and keep everything in one searchable place. Covers what to photograph, how long common warranties actually last, and why a reminder beats a filing system.
-
-### Is an extended warranty worth it? A simple way to decide (2026-07-26, buying-guides)
-https://wrnty.12f.dk/blog/is-an-extended-warranty-worth-it/
-Extended warranties and protection plans are among the most profitable things a retailer sells, which is a strong hint that most are a poor deal for the buyer. But not all. This post gives a simple decision framework: check the cover you already have (statutory rights, manufacturer warranty, card and home insurance), weigh the plan price against the repair cost and failure odds, read what's actually excluded, and never decide under till pressure. Includes the cases where a plan genuinely makes sense.
 
 ## Links
 
