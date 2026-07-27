@@ -212,7 +212,10 @@ hedged post is always safer than a confidently wrong one.
 
 ## 4. Structure & length
 
-- **1,300–1,900 words.** Complete and skimmable, not padded.
+- **1,300–1,900 words.** Complete and skimmable, not padded. The 1,300 floor is the
+  target even for a reference or list post — the build's 700-word minimum is a hard
+  floor to fail on, not the goal. If a draft lands under 1,300, add genuinely useful
+  detail (an example, an edge case, a "how to use this"), not filler.
 - **No `# ` heading in the body** — the template renders the H1 from `title`.
   Use `## ` for sections, `### ` where useful. Descriptive, not clever-only.
 - Open with the reader's real problem. Get to the first useful thing fast.
@@ -283,8 +286,14 @@ faq:
 
 Rules the build enforces, so get them right the first time:
 - `title` ≤ 70 chars, `description` ≤ 160, `excerpt` ≤ 220. **Count the characters.**
-- `tag` must be exactly one of `warranty-tips`, `organizing`, `buying-guides`. Do
-  not invent a new tag.
+- `tag` must be exactly one of these three — pick by what the post is really about,
+  not by a keyword it happens to contain:
+    - `warranty-tips` — how warranties and consumer rights work: durations, making a
+      claim, proof of purchase, what's covered, statutory rights.
+    - `organizing` — keeping track of what you own: receipts, records, systems, habits.
+    - `buying-guides` — decisions before or at purchase: is a protection plan worth
+      it, which brands last, what to buy.
+  Do not invent a new tag.
 - `related` slugs must exist in `posts/`, and must not include this post.
 - Every internal `/blog/<slug>/` link in the body must exist.
 - The cover image `images/blog/<slug>.png` must exist before the build passes.

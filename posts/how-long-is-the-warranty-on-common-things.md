@@ -3,7 +3,7 @@ title: "How long is the warranty on common things — a plain reference"
 description: "A plain-English guide to the warranty length on phones, laptops, appliances, cars, tyres, mattresses and more — plus what statutory rights add on top."
 lede: "You want to know how long a warranty is on your washing machine, your phone, your laptop. The answer depends on who you ask, but here is a practical map of what most manufacturers actually offer."
 excerpt: "A practical reference for the warranty length on the things you own — phones, laptops, major appliances, tyres, mattresses and more — and the extra statutory rights that stack on top of any manufacturer cover."
-tag: organizing
+tag: warranty-tips
 date: 2026-07-30
 keywords: "how long is the warranty on, warranty length by product, appliance warranty, phone warranty, mattress warranty, how long does a warranty last"
 summary: >
