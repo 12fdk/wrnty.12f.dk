@@ -5,5 +5,8 @@
 __pycache__/
 *.pyc
 
+# Reddit topic-research cache (tools/reddit-topics.py)
+.cache/
+
 # IndexNow snapshot (generated in CI)
 .indexnow/
