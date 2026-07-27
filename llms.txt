@@ -29,6 +29,7 @@ wrnty is an iOS app for iPhone and iPad that keeps your product warranties and r
 
 Practical advice on warranties, receipts and buying smart, published at https://wrnty.12f.dk/blog/ (RSS: https://wrnty.12f.dk/feed.xml).
 
+- [What a warranty actually covers on phones, laptops and gadgets](https://wrnty.12f.dk/blog/what-your-warranty-actually-covers/) — warranty-tips, 2026-07-31. Most people think a warranty covers everything that breaks.
 - [What counts as proof of purchase — and what to do without a receipt](https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/) — warranty-tips, 2026-07-31. A warranty claim usually requires proof of purchase, but the receipt is only one acceptable form.
 - [Warranty gotchas — the fine print that voids your cover](https://wrnty.12f.dk/blog/warranty-gotchas-fine-print/) — warranty-tips, 2026-07-30. Many warranties contain clauses that void coverage under common, everyday conditions — improper use, unauthorised repairs, exposure to moisture, or even opening the device yourself.
 - [Repair it or replace it? A simple way to decide](https://wrnty.12f.dk/blog/repair-it-or-replace-it/) — warranty-tips, 2026-07-30. When something breaks, the repair quote often lands in an awkward middle ground — expensive enough to make you hesitate, cheap enough that replacement feels like waste.
