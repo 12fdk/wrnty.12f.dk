@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 27 Jul 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>How to make a warranty claim (and what to do when it's refused)</title>
+      <link>https://wrnty.12f.dk/blog/how-to-make-a-warranty-claim/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/how-to-make-a-warranty-claim/</guid>
+      <pubDate>Thu, 30 Jul 2026 08:00:00 +0000</pubDate>
+      <category>warranty-tips</category>
+      <description>A practical guide to making a warranty claim — what you need, how to do it, and what to do when the manufacturer says no.</description>
+    </item>
     <item>
       <title>How to keep track of warranties without a drawer full of receipts</title>
       <link>https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/</link>
