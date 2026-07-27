@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wrnty Blog</title>
+    <link>https://wrnty.12f.dk/blog/</link>
+    <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
+    <language>en</language>
+    <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Mon, 27 Jul 2026 08:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>How to keep track of warranties without a drawer full of receipts</title>
+      <link>https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/</guid>
+      <pubDate>Mon, 27 Jul 2026 08:00:00 +0000</pubDate>
+      <category>organizing</category>
+      <description>A simple, repeatable system for tracking product warranties so you never miss a claim — and can find any receipt in seconds.</description>
+    </item>
+    <item>
+      <title>Is an extended warranty worth it? A simple way to decide</title>
+      <link>https://wrnty.12f.dk/blog/is-an-extended-warranty-worth-it/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/is-an-extended-warranty-worth-it/</guid>
+      <pubDate>Sun, 26 Jul 2026 08:00:00 +0000</pubDate>
+      <category>buying-guides</category>
+      <description>Extended warranties are hugely profitable for the seller — but sometimes worth it for you. Here's a clear way to decide at the till.</description>
+    </item>
+
+  </channel>
+</rss>

@@ -25,13 +25,37 @@ App Store: <https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961>
 
 ## Develop
 
-No build tools. Serve locally with:
+No build tools for the static pages. Serve locally with:
 
 ```bash
 python3 -m http.server 8000
 ```
 
 Use absolute paths (`/css/style.css`, `/images/...`) so every page resolves.
+
+## Blog
+
+`posts/<slug>.md` is the **source of truth**; the blog is generated. Write a post
+in Markdown with frontmatter, generate its cover, then run the build — never
+hand-edit `blog/<slug>/index.html`.
+
+```bash
+python3 tools/make-cover.py <slug> "<Title>" <tag>   # 1200x630 branded cover → images/blog/<slug>.png
+python3 tools/build.py --check                        # validate only (schema, links, lengths)
+python3 tools/build.py                                # write everything
+```
+
+`tools/build.py` renders each post page and rewrites every derived file: the blog
+index grid + schema, the homepage teaser, `feed.xml`, the blog URLs in
+`sitemap.xml`, and the `## Blog` sections of `llms.txt` / `llms-full.txt`.
+Generated regions inside hand-written files are fenced with
+`BLOG:*:START` / `BLOG:*:END` markers — leave them in place.
+
+- Tags: `warranty-tips`, `organizing`, `buying-guides` (edit `TAGS` in `build.py`).
+- Each post must be 700+ words, mention wrnty once (twice at most), and link to a
+  sibling post in the body — the build enforces this.
+- Covers are branded gradient title cards (no photo needed); drop a
+  `images/blog/<slug>.webp` photo alongside to override the card image.
 
 ## Deploy
 

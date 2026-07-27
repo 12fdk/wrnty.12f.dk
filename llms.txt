@@ -25,6 +25,13 @@ wrnty is an iOS app for iPhone and iPad that keeps your product warranties and r
 - Organise by category, brand and purchase date; running total of covered value
 - Dark mode, VoiceOver accessibility, and available in 28 languages
 
+## Blog
+
+Practical advice on warranties, receipts and buying smart, published at https://wrnty.12f.dk/blog/ (RSS: https://wrnty.12f.dk/feed.xml).
+
+- [How to keep track of warranties without a drawer full of receipts](https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/) — organizing, 2026-07-27. Most people lose money on warranties not because products fail, but because the cover lapsed unnoticed or the receipt vanished.
+- [Is an extended warranty worth it? A simple way to decide](https://wrnty.12f.dk/blog/is-an-extended-warranty-worth-it/) — buying-guides, 2026-07-26. Extended warranties and protection plans are among the most profitable things a retailer sells, which is a strong hint that most are a poor deal for the buyer.
+
 ## Links
 
 - [Home](https://wrnty.12f.dk/)

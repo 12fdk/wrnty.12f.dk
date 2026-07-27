@@ -1,0 +1,58 @@
+# wrnty — full context
+
+> Track every warranty and receipt, get reminded before they expire, and export a claim-ready PDF — one-time purchase, no subscription.
+
+wrnty is an iOS app for iPhone and iPad that keeps product warranties and receipts organised, reminds you before each warranty expires, and lets you export a PDF pack for insurance and warranty claims. It is built by 12F ApS, a small studio in Denmark, and is designed to be private by default: there is no account, nothing is uploaded to the developer, and your data stays on your device (syncing only through your own iCloud if you enable it).
+
+## Why it exists
+
+Most people lose money not because a product fails, but because it fails just after the warranty lapsed — and they never knew the date, or couldn't find the receipt. wrnty fixes both problems: it remembers the expiry date and reminds you before it passes, and it keeps the receipt, serial number and photos attached to each item so a claim is a two-minute job instead of an archaeology dig through a drawer.
+
+## Key Facts
+
+- Platform: iOS (iPhone and iPad, iOS 17 or later)
+- Pricing model: free to track up to 2 warranties; Premium is a one-time in-app purchase (no subscription) that removes the item limit and adds expiry alerts, iCloud sync and PDF export
+- Privacy: no account required; data stored on-device and in the user's own iCloud; no ads, no tracking, no data selling; optional anonymous analytics that can be turned off; GDPR compliant
+- Languages: available in 28 languages
+- Developer: 12F ApS, Denmark (https://12f.dk/)
+- Website: https://wrnty.12f.dk/
+- App Store: https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961
+
+## Features
+
+- Track warranties with product name, brand, merchant, price, purchase and expiry dates, serial number and notes
+- Attach receipts and documents as photos and PDFs
+- Expiry reminders delivered to the Home and Lock Screen (Premium)
+- Home and Lock Screen widgets showing what's expiring next
+- Export warranties to PDF for insurance and warranty claims (Premium)
+- iCloud sync across iPhone and iPad, plus share & print (Premium)
+- Spotlight search to jump straight to a product from iOS search
+- Organise by category, brand and purchase date; a running total of the value you have under warranty
+- Dark mode and full VoiceOver accessibility
+
+## Who it's for
+
+- People with lots of electronics (phones, laptops, headphones, cameras) whose warranties expire unnoticed
+- Homeowners tracking multi-year guarantees on appliances and furniture
+- Anyone who buys extended warranties or protection plans and wants to actually use them when something breaks
+
+## Blog
+
+The wrnty blog publishes practical advice on tracking warranties, organising receipts and buying smart at https://wrnty.12f.dk/blog/ (RSS feed: https://wrnty.12f.dk/feed.xml). Posts are tagged `warranty-tips`, `organizing` or `buying-guides`.
+
+### How to keep track of warranties without a drawer full of receipts (2026-07-27, organizing)
+https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/
+Most people lose money on warranties not because products fail, but because the cover lapsed unnoticed or the receipt vanished. This post lays out a simple, repeatable system: gather proof at the moment of purchase, record the four facts that matter (what, when, how long, what it cost), set a reminder before the expiry date, and keep everything in one searchable place. Covers what to photograph, how long common warranties actually last, and why a reminder beats a filing system.
+
+### Is an extended warranty worth it? A simple way to decide (2026-07-26, buying-guides)
+https://wrnty.12f.dk/blog/is-an-extended-warranty-worth-it/
+Extended warranties and protection plans are among the most profitable things a retailer sells, which is a strong hint that most are a poor deal for the buyer. But not all. This post gives a simple decision framework: check the cover you already have (statutory rights, manufacturer warranty, card and home insurance), weigh the plan price against the repair cost and failure odds, read what's actually excluded, and never decide under till pressure. Includes the cases where a plan genuinely makes sense.
+
+## Links
+
+- [Home](https://wrnty.12f.dk/)
+- [Blog](https://wrnty.12f.dk/blog/)
+- [RSS feed](https://wrnty.12f.dk/feed.xml)
+- [Privacy Policy](https://wrnty.12f.dk/privacy-policy.html)
+- [App Store](https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961)
+- [Developer — 12F ApS](https://12f.dk/)
