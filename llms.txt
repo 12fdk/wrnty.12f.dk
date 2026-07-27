@@ -1,0 +1,33 @@
+# wrnty
+
+> Track every warranty and receipt, get reminded before they expire, and export a claim-ready PDF — one-time purchase, no subscription.
+
+wrnty is an iOS app for iPhone and iPad that keeps your product warranties and receipts organised, reminds you before each warranty expires, and lets you export a PDF pack for insurance and warranty claims. Your data stays on your device and syncs only through your own iCloud — there is no account and nothing is uploaded to the developer.
+
+## Key Facts
+
+- Platform: iOS (iPhone and iPad, iOS 17+)
+- Pricing: Free to track up to 2 warranties; Premium is a one-time in-app purchase (no subscription) for unlimited items, expiry alerts, iCloud sync and PDF export
+- Privacy: no account required; data stored on-device and in the user's own iCloud; no ads, no tracking, no data selling; optional anonymous analytics that can be turned off; GDPR compliant
+- Developer: 12F ApS, Denmark (https://12f.dk/)
+- Website: https://wrnty.12f.dk/
+- App Store: https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961
+
+## Features
+
+- Track warranties with product name, brand, merchant, price, purchase and expiry dates, serial number and notes
+- Store receipts and documents as photos and PDFs
+- Expiry reminders delivered to the Home and Lock Screen (Premium)
+- Home and Lock Screen widgets showing what's expiring next
+- Export warranties to PDF for insurance and warranty claims (Premium)
+- iCloud sync across iPhone and iPad (Premium)
+- Spotlight search to jump straight to a product from iOS search
+- Organise by category, brand and purchase date; running total of covered value
+- Dark mode, VoiceOver accessibility, and available in 28 languages
+
+## Links
+
+- [Home](https://wrnty.12f.dk/)
+- [Privacy Policy](https://wrnty.12f.dk/privacy-policy.html)
+- [App Store](https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961)
+- [Developer — 12F ApS](https://12f.dk/)

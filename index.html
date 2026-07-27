@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wrnty — Never Lose Money to an Expired Warranty | Warranty & Receipt Tracker for iPhone</title>
+  <meta name="description" content="wrnty keeps every warranty and receipt in one place, reminds you before they expire, and exports a claim-ready PDF. One-time purchase, no subscription. Warranty tracker for iPhone & iPad.">
+  <meta name="keywords" content="warranty tracker, warranty app, receipt organizer, warranty reminder, expiry alert, proof of purchase, appliance warranty, electronics warranty, insurance claim, no subscription">
+  <meta name="author" content="12F ApS">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#12934F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A100D" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="canonical" href="https://wrnty.12f.dk/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="wrnty — Never lose money to an expired warranty.">
+  <meta property="og:description" content="Every warranty and receipt in one place, a reminder before each one expires, and a claim-ready PDF when you need it. One-time purchase, no subscription.">
+  <meta property="og:image" content="https://wrnty.12f.dk/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="wrnty — warranty and receipt tracker for iPhone">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wrnty.12f.dk/">
+  <meta property="og:site_name" content="wrnty">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="wrnty — Never lose money to an expired warranty.">
+  <meta name="twitter:description" content="Track every warranty and receipt, get reminded before they expire, export a claim-ready PDF. One-time purchase, no subscription.">
+  <meta name="twitter:image" content="https://wrnty.12f.dk/images/og-image.png">
+  <meta name="twitter:image:alt" content="wrnty — warranty and receipt tracker for iPhone">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Analytics: drop a privacy-friendly tag here if wanted, e.g.
+       <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="YOUR-ID"></script> -->
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "wrnty: Warranty & Receipts",
+    "operatingSystem": "iOS 17",
+    "applicationCategory": "ProductivityApplication",
+    "description": "Track every warranty and receipt, get reminded before they expire, and export a claim-ready PDF. One-time purchase, no subscription. Your data stays on your device.",
+    "url": "https://wrnty.12f.dk/",
+    "image": "https://wrnty.12f.dk/images/og-image.png",
+    "screenshot": "https://wrnty.12f.dk/images/screenshots/en-US/01-list.webp",
+    "featureList": "Warranty tracking, Receipt & document storage, Expiry reminders, Home & Lock Screen widgets, PDF export for claims, iCloud sync, Spotlight search, Private on-device storage",
+    "softwareRequirements": "iOS 17 or later, iPhone or iPad",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free to track up to 2 warranties. Premium is a one-time purchase for unlimited items, expiry alerts, iCloud sync and PDF export."
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "12F ApS",
+      "url": "https://12f.dk/"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "wrnty",
+    "url": "https://wrnty.12f.dk/"
+  }
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "12F ApS",
+    "url": "https://12f.dk/",
+    "logo": "https://wrnty.12f.dk/images/app-icon.png"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is wrnty free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can track up to two warranties for free, with receipts, product details and organisation included. Premium is a one-time purchase — no subscription — that removes the item limit and adds expiry alerts, iCloud sync and PDF export."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is wrnty really a one-time purchase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You pay once and it is yours. There is no monthly fee, no annual renewal, and no trial that quietly turns into a charge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account to use wrnty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. There is no sign-up and nothing to log into. Your warranties stay on your device and sync only through your own iCloud if you choose to turn it on."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will wrnty remind me before a warranty runs out?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Set the expiry date and wrnty alerts you in good time on your Home and Lock Screen, so you can make a claim while the cover still stands. Expiry alerts are part of Premium."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use wrnty for insurance and warranty claims?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Keep the receipt, serial number and photos on each item, then export a tidy PDF pack when you need to make a claim to a retailer or insurer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which devices does wrnty support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "wrnty runs on iPhone and iPad with iOS 17 or later, and syncs between your devices through iCloud."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to track a warranty with wrnty",
+    "description": "Keep a warranty organised and never miss the expiry, in three steps.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Add it",
+        "text": "Add a product in seconds — a photo of the receipt, the warranty length and the purchase date."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Get reminded",
+        "text": "As the expiry date nears, wrnty sends a reminder to your Home and Lock Screen."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Claim on time",
+        "text": "Open the item for the receipt, serial number and dates, or export a PDF pack for the claim."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="wrap">
+      <a href="/" class="brand">
+        <img src="/images/app-icon.png" alt="" width="34" height="34">
+        wrnty
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li class="nav-cta-mobile">
+            <a class="btn btn--primary btn--sm" href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961">Get the app</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--sm nav-cta" href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961">Get the app</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <h1>Never lose money to an<br><span class="mark">expired warranty.</span></h1>
+          <p class="hero-sub">wrnty keeps every warranty and receipt in one place, reminds you before each one runs out, and hands you a claim-ready PDF the moment something breaks.</p>
+          <div class="cta-row">
+            <a href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961" class="app-badge" aria-label="Download wrnty on the App Store">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="54" width="162">
+            </a>
+            <a href="#how-it-works" class="btn btn--ghost">See how it works ↓</a>
+          </div>
+          <ul class="hero-trust">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              One-time purchase
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              No account needed
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Private by design
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-shots" role="group" aria-label="wrnty screenshots">
+          <div class="phone phone--left">
+            <img src="/images/screenshots/en-US/02-detail.webp" alt="A warranty item detail screen showing an iPhone 15 Pro, its purchase price, dates and time remaining" width="640" height="1391" loading="eager" fetchpriority="high">
+          </div>
+          <div class="phone phone--center">
+            <img src="/images/screenshots/en-US/01-list.webp" alt="wrnty warranty list protecting over eight thousand dollars in warranties, all in good standing" width="640" height="1391" loading="eager" fetchpriority="high">
+          </div>
+          <div class="phone phone--right">
+            <img src="/images/screenshots/en-US/04-reminder.webp" alt="A Lock Screen notification warning that an iPhone 15 Pro warranty expires in two months" width="640" height="1391" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="wrap">
+        <ul>
+          <li><span class="strip-num">One-time</span><span class="strip-label">purchase, no subscription</span></li>
+          <li><span class="strip-num">Seconds</span><span class="strip-label">to log a warranty</span></li>
+          <li><span class="strip-num">Zero</span><span class="strip-label">ads, trackers or data selling</span></li>
+          <li><span class="strip-num">28</span><span class="strip-label">languages</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Features</span>
+          <h2>Everything a warranty needs, <span class="underline-doodle">nothing it doesn't</span></h2>
+          <p class="lede">No spreadsheet, no shoebox of receipts, no calendar reminder you'll snooze into next year.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature fade-in">
+            <div class="feature-icon feature-icon--gold">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <h3>Reminders that reach you</h3>
+            <p>Set the expiry date and wrnty warns you in good time — on your Home and Lock Screen — so you claim while the cover still stands.</p>
+          </article>
+
+          <article class="feature fade-in">
+            <div class="feature-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+            </div>
+            <h3>Receipts, ready when it breaks</h3>
+            <p>Photograph the receipt, the box, the serial plate. When something fails, the proof is one tap away — not in a drawer somewhere.</p>
+          </article>
+
+          <article class="feature fade-in">
+            <div class="feature-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Pay once. That's it.</h3>
+            <p>No monthly fee, no annual renewal, no trial that quietly charges you. Buy wrnty once and it stays yours.</p>
+          </article>
+
+          <article class="feature fade-in">
+            <div class="feature-icon feature-icon--teal">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Your stuff stays yours</h3>
+            <p>No account, no sign-up. Your warranties live on your device and sync only through your own iCloud — nowhere else.</p>
+          </article>
+        </div>
+
+        <ul class="more-features fade-in">
+          <li><span class="emoji" aria-hidden="true">🔔</span><span><strong>Smart expiry alerts</strong> — timed to the warning window you set</span></li>
+          <li><span class="emoji" aria-hidden="true">🧾</span><span><strong>Receipts &amp; documents</strong> — photos and PDFs, as many as an item needs</span></li>
+          <li><span class="emoji" aria-hidden="true">📄</span><span><strong>PDF export</strong> — a tidy claim pack for insurers and retailers</span></li>
+          <li><span class="emoji" aria-hidden="true">☁️</span><span><strong>iCloud sync</strong> — the same list on your iPhone and iPad</span></li>
+          <li><span class="emoji" aria-hidden="true">📲</span><span><strong>Home &amp; Lock Screen widgets</strong> — what's expiring, at a glance</span></li>
+          <li><span class="emoji" aria-hidden="true">🔎</span><span><strong>Spotlight search</strong> — jump to a product straight from iOS search</span></li>
+          <li><span class="emoji" aria-hidden="true">🗂️</span><span><strong>Categories, brands &amp; serials</strong> — organised the way you shop</span></li>
+          <li><span class="emoji" aria-hidden="true">🌙</span><span><strong>Dark mode &amp; VoiceOver</strong> — native iOS, accessible out of the box</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--soft" id="how-it-works">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">How it works</span>
+          <h2>Three steps. Then you can <span class="mark">forget about it</span>.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step fade-in">
+            <div class="phone">
+              <img src="/images/screenshots/en-US/03-add.webp" alt="The Add Warranty Item form with a product photo, name, merchant and warranty length" width="640" height="1391" loading="lazy">
+            </div>
+            <p class="step-badge"><span>1</span> Add it</p>
+            <h3>Snap the receipt, set the date</h3>
+            <p>Add a product in seconds: a photo of the receipt, the warranty length, the purchase date. One-tap presets cover the common durations.</p>
+          </article>
+
+          <article class="step fade-in">
+            <div class="phone">
+              <img src="/images/screenshots/en-US/04-reminder.webp" alt="A Lock Screen notification: warranty expiring soon, your iPhone 15 Pro warranty expires in two months" width="640" height="1391" loading="lazy">
+            </div>
+            <p class="step-badge"><span>2</span> Get reminded</p>
+            <h3>wrnty watches the clock</h3>
+            <p>As the expiry date nears, a reminder lands on your Home and Lock Screen. No more finding out a week too late.</p>
+          </article>
+
+          <article class="step fade-in">
+            <div class="phone">
+              <img src="/images/screenshots/en-US/05-export.webp" alt="The Export to PDF screen listing warranty items ready to export for a claim" width="640" height="1391" loading="lazy">
+            </div>
+            <p class="step-badge"><span>3</span> Claim on time</p>
+            <h3>Everything ready for the claim</h3>
+            <p>Tap an item for its receipt, serial number and dates — or export a PDF pack for the insurer. Cover used, money saved.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split: at a glance -->
+    <section class="section" id="at-a-glance">
+      <div class="wrap">
+        <div class="split">
+          <div class="split-copy fade-in">
+            <span class="eyebrow">At a glance</span>
+            <h2>See what's expiring <span class="underline-doodle">without opening the app</span></h2>
+            <p class="lede">The whole point of wrnty is that you don't have to think about it — until it's worth thinking about.</p>
+            <ul class="split-list">
+              <li>
+                <span class="bullet" aria-hidden="true">📲</span>
+                <span><strong>Home &amp; Lock Screen widgets</strong><span class="txt">Pin what's next and glance at the days left, no tapping in.</span></span>
+              </li>
+              <li>
+                <span class="bullet" aria-hidden="true">💚</span>
+                <span><strong>A running total</strong><span class="txt">See the cover you're carrying — "Protecting $8,642.94 in warranties".</span></span>
+              </li>
+              <li>
+                <span class="bullet" aria-hidden="true">🗂️</span>
+                <span><strong>Sorted your way</strong><span class="txt">By expiry, price, purchase date or name — due-soon items float to the top.</span></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="split-shots fade-in">
+            <div class="phone">
+              <img src="/images/screenshots/en-US/07-widget.webp" alt="A Home Screen widget showing upcoming warranty expiries with days remaining" width="640" height="1391" loading="lazy">
+            </div>
+            <div class="phone">
+              <img src="/images/screenshots/en-US/01-list.webp" alt="The warranty list with a running total of protected value and mastery of each item's status" width="640" height="1391" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split: privacy -->
+    <section class="section section--soft" id="privacy">
+      <div class="wrap">
+        <div class="split">
+          <div class="split-shots split-shots--single fade-in">
+            <div class="phone">
+              <img src="/images/screenshots/en-US/08-privacy.webp" alt="A privacy screen: no account or sign-up, your data stays on your device, private iCloud sync, no ads or tracking" width="640" height="1391" loading="lazy">
+            </div>
+          </div>
+          <div class="split-copy fade-in">
+            <span class="eyebrow">Privacy</span>
+            <h2>Private by design, <span class="underline-doodle">not as a setting</span></h2>
+            <p class="lede">Your receipts are a map of what you own and what it cost. wrnty treats them that way.</p>
+            <ul class="split-list">
+              <li>
+                <span class="bullet" aria-hidden="true">🚫</span>
+                <span><strong>No account, no sign-up</strong><span class="txt">Nothing to create, nothing to forget, nothing to breach.</span></span>
+              </li>
+              <li>
+                <span class="bullet" aria-hidden="true">📱</span>
+                <span><strong>Stays on your device</strong><span class="txt">Stored locally and synced only through your personal, end-to-end encrypted iCloud.</span></span>
+              </li>
+              <li>
+                <span class="bullet" aria-hidden="true">🛡️</span>
+                <span><strong>No ads, no tracking, no selling</strong><span class="txt">Any analytics are anonymous and optional — off with one tap. GDPR compliant, built in Denmark.</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="section" id="compare">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">The difference</span>
+          <h2>A drawer of receipts vs. wrnty</h2>
+          <p class="lede">The receipts you keep only matter if you can find them — and remember the date before it passes.</p>
+        </div>
+
+        <div class="vs-wrap fade-in">
+          <table class="vs">
+            <caption class="visually-hidden">Keeping warranties by hand compared with wrnty</caption>
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">By hand</th>
+                <th scope="col" class="col-us">With wrnty</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Finding a receipt two years later</th>
+                <td data-col="By hand">Dig through a drawer or inbox</td>
+                <td data-col="With wrnty" class="col-us">One tap on the item</td>
+              </tr>
+              <tr>
+                <th scope="row">Remembering an expiry date</th>
+                <td data-col="By hand">You don't — until it's passed</td>
+                <td data-col="With wrnty" class="col-us">A reminder before it lapses</td>
+              </tr>
+              <tr>
+                <th scope="row">Proof for a claim</th>
+                <td data-col="By hand">Hope you kept the box</td>
+                <td data-col="With wrnty" class="col-us">Export a PDF in seconds</td>
+              </tr>
+              <tr>
+                <th scope="row">Across your devices</th>
+                <td data-col="By hand">Whichever drawer it's in</td>
+                <td data-col="With wrnty" class="col-us">Synced through your iCloud</td>
+              </tr>
+              <tr>
+                <th scope="row">Knowing what you're covered for</th>
+                <td data-col="By hand">A rough guess</td>
+                <td data-col="With wrnty" class="col-us">A running total, itemised</td>
+              </tr>
+              <tr>
+                <th scope="row">What it costs you</th>
+                <td data-col="By hand">A missed claim now and then</td>
+                <td data-col="With wrnty" class="col-us">One-time purchase</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personas -->
+    <section class="section section--soft" id="who-its-for">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Who it's for</span>
+          <h2>For everyone who <span class="underline-doodle">buys things that break</span></h2>
+          <p class="lede">Different purchases, same story: the guarantee outlives your memory of it.</p>
+        </div>
+
+        <div class="persona-grid">
+          <article class="persona fade-in">
+            <div class="persona-avatar" aria-hidden="true">🔌</div>
+            <h3>The gadget owner</h3>
+            <p>Phones, laptops, headphones, cameras. The expensive things tend to fail just after the year is up — unless something is quietly counting the days for you.</p>
+            <span class="persona-tag">Electronics</span>
+          </article>
+
+          <article class="persona fade-in">
+            <div class="persona-avatar" aria-hidden="true">🏠</div>
+            <h3>The homeowner</h3>
+            <p>Fridge, washer, dryer, dishwasher, the new sofa. Big-ticket buys with multi-year guarantees you will never remember unaided.</p>
+            <span class="persona-tag">Appliances &amp; home</span>
+          </article>
+
+          <article class="persona fade-in">
+            <div class="persona-avatar" aria-hidden="true">🧰</div>
+            <h3>The one who keeps receipts</h3>
+            <p>Extended plans, business kit, power tools. If you already pay for protection, wrnty makes sure you can actually use it when it counts.</p>
+            <span class="persona-tag">Extended warranties</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Pricing</span>
+          <h2>Free to start. One-time upgrade if you want more.</h2>
+          <p class="lede">No card to start, no countdown. Upgrade only when two items stop being enough.</p>
+        </div>
+
+        <div class="plans fade-in">
+          <article class="plan">
+            <h3 class="plan-name">Free</h3>
+            <p class="plan-price">Free</p>
+            <p class="plan-note">Enough to protect the things that matter most.</p>
+            <ul>
+              <li><span class="tick" aria-hidden="true">✓</span> Track up to 2 warranty items</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Photos of receipts &amp; proof of purchase</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Product details, serial numbers &amp; categories</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Organise by brand, category &amp; date</li>
+            </ul>
+            <a class="btn btn--ghost" href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961">Start free</a>
+          </article>
+
+          <article class="plan plan--premium">
+            <span class="plan-flag">One-time</span>
+            <h3 class="plan-name">Premium</h3>
+            <p class="plan-price">Pay once</p>
+            <p class="plan-note">Buy it once, keep it. No subscription, ever.</p>
+            <ul>
+              <li><span class="tick" aria-hidden="true">✓</span> Unlimited warranty items</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Expiry alerts on Home &amp; Lock Screen</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Export to PDF for claims</li>
+              <li><span class="tick" aria-hidden="true">✓</span> iCloud sync, plus share &amp; print</li>
+            </ul>
+            <a class="btn btn--gold" href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961">Get wrnty</a>
+          </article>
+        </div>
+
+        <p class="plan-footnote fade-in">Premium is a one-time in-app purchase — the current price is shown in the App Store. No subscription, ever.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--soft" id="faq">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">FAQ</span>
+          <h2>Fair questions</h2>
+        </div>
+
+        <div class="faq fade-in">
+          <details class="faq-item">
+            <summary>Is wrnty free?</summary>
+            <div class="faq-answer">Yes — you can track up to two warranties for free, with receipts, product details and organisation all included. Premium is a one-time purchase (no subscription) that removes the item limit and adds expiry alerts, iCloud sync and PDF export.</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is it really a one-time purchase?</summary>
+            <div class="faq-answer">Yes. You pay once and it's yours — no monthly fee, no annual renewal, and no free trial that quietly turns into a charge.</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need an account?</summary>
+            <div class="faq-answer">No. There's no sign-up and nothing to log into. Your warranties stay on your device and sync only through your own iCloud if you choose to turn it on.</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Will it remind me before a warranty runs out?</summary>
+            <div class="faq-answer">That's the whole idea. Set the expiry date and wrnty alerts you in good time, on your Home and Lock Screen, so you can claim while the cover still stands. Expiry alerts are part of Premium.</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I use it for insurance and warranty claims?</summary>
+            <div class="faq-answer">Yes. Keep the receipt, serial number and photos on each item, then export a tidy PDF pack when you need to make a claim to a retailer or insurer.</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Which devices does it need?</summary>
+            <div class="faq-answer">wrnty runs on iPhone and iPad with iOS 17 or later, and syncs between your devices through iCloud. Your data stays private — see the <a href="/privacy-policy.html">privacy policy</a>.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section" id="download">
+      <div class="wrap">
+        <div class="closing-cta fade-in">
+          <h2>The next warranty you forget<br>could be an expensive one.</h2>
+          <p>Download wrnty, add one product, and let it remember the date so you don't have to.</p>
+          <div class="cta-row">
+            <a href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961" class="app-badge" aria-label="Download wrnty on the App Store">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="54" width="162" loading="lazy">
+            </a>
+          </div>
+          <p class="requirement">Requires iOS 17 or later · iPhone and iPad</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-about">
+          <a href="/" class="brand">
+            <img src="/images/app-icon.png" alt="" width="34" height="34">
+            wrnty
+          </a>
+          <p>Every warranty and receipt in one place, with a reminder before each one expires. One-time purchase, private by design. Built by 12F ApS in Denmark.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961">App Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>More</h3>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy policy</a></li>
+            <li><a href="https://12f.dk/">Contact &amp; support</a></li>
+            <li><a href="https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961">Rate on the App Store</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 12F ApS. All rights reserved.</span>
+        <span>Requires iOS 17 or later · iPhone and iPad</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
