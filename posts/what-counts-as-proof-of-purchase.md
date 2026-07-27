@@ -72,7 +72,7 @@ A gift receipt is explicitly designed to serve as proof of purchase for the reci
 
 Not all of these will be accepted by every company, but it is worth trying each one.
 
-![A desk with a printed bank statement, an email on a laptop screen, and a paper receipt, showing the different forms proof of purchase can take](/images/blog/what-counts-as-proof-of-purchase-1.png)
+![A phone and a stack of paper receipts and printouts on a wooden desk](/images/blog/what-counts-as-proof-of-purchase-1.png)
 
 ## What happens when nothing obvious survives
 
@@ -98,11 +98,11 @@ Not every alternative will be accepted. Companies are entitled to set reasonable
 
 The single most effective thing you can do is record the proof at the moment of purchase, before you walk away from the shop. Photograph the receipt. Save the order confirmation. Note the date in a calendar. Put it somewhere you will actually look when the product needs it.
 
-If you follow the system from [our post on keeping track of warranties](/blog/how-to-keep-track-of-warranties/), this is built in: the receipt photo, the purchase date, the serial number, the expiry date — all in one searchable place. When something breaks, you export a claim-ready PDF in seconds instead of searching drawers and inboxes. If you buy extended warranties or protection plans, the same tool holds those documents too, which is [exactly what wrnty](/) is built for.
+If you follow the system from [our post on keeping track of warranties](/blog/how-to-keep-track-of-warranties/), this is built in: the receipt photo, the purchase date, the serial number, the expiry date — all in one searchable place. When something breaks, you have everything [a warranty claim needs](/blog/how-to-make-a-warranty-claim/) ready to export as a PDF in seconds, instead of searching drawers and inboxes. If you buy extended warranties or protection plans, the same tool holds those documents too — which is what wrnty is built for.
 
 For people who do not use an app, the same principle works with any system you actually maintain: a labelled folder in your email, a folder of photos in your cloud, or even a physical envelope you check once a year. The critical detail is that the proof lives somewhere retrievable, not somewhere that fades or gets buried.
 
-![A close-up of a smartphone screen showing a digital receipt with a camera roll of receipt photos, next to a small stack of paper receipts on a desk](/images/blog/what-counts-as-proof-of-purchase-2.png)
+![Paper receipts spread across a wooden desk, with a laptop and a hand out of focus in the warm light behind](/images/blog/what-counts-as-proof-of-purchase-2.png)
 
 ## The bottom line
 

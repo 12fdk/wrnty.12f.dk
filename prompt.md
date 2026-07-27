@@ -224,7 +224,9 @@ hedged post is always safer than a confidently wrong one.
   (the auto "Keep reading" cards do not count). At least one inline sibling link is
   required; two or three is better. **If you refer to another post in prose** ("our
   post on…", "the guide above"), it must be an actual `[text](/blog/<slug>/)` link —
-  a description with no link is a wasted, missed link.
+  a description with no link is a wasted, missed link. A "sibling link" means a
+  `/blog/<slug>/` link to another post — a link to the homepage `/` does NOT count
+  toward the two or three, and the one natural wrnty mention does not need to be a link.
 - **2–3 images** total: the cover (always) plus one or two inline photos at logical
   section breaks (see §6).
 - A `faq:` block of **4–6** questions in the frontmatter. These render as an FAQ
@@ -346,11 +348,16 @@ the wrong syntax), the photo ships orphaned and the post has no inline image at 
 — the build passes without warning you. After building, confirm your `![...]` lines
 survived: `grep -n '!\[' posts/<slug>.md` should show one line per image you made.
 
-Alt text describes the photograph for someone who cannot see it — not the article —
-so make it match what the image actually shows. Do **not** claim a screen shows
-specific readable text: `comfy-gen` renders on-screen text as garbled nonsense, so
-keep any phone or laptop in the scene switched off, angled away, or well out of
-focus, and never describe what is "on the screen".
+Alt text describes the photograph for someone who cannot see it — not the article.
+**`comfy-gen` very often produces a DIFFERENT scene than you asked for** — the wrong
+device (you asked for a laptop, it drew a phone), extra objects, and garbled text on
+any screen or paper. So **write the alt text to match the IMAGE, not your prompt.**
+Ask yourself literally "what is in this photo?" and describe only that, in general
+terms: "paper receipts on a wooden desk", "a phone and some documents on a table".
+Never describe a screen's contents ("showing a digital receipt", "an email on the
+screen") — the text is gibberish and you cannot see it anyway. To reduce the garble,
+write cover/inline prompts that keep any phone or laptop switched off, angled away,
+or well out of focus, and lean on paper, boxes, hands and desks instead of screens.
 
 **If ComfyUI is unavailable:** retry once. If it still fails, generate a branded
 cover card instead so the build passes, and skip the inline images:
