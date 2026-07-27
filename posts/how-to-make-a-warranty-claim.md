@@ -10,8 +10,7 @@ summary: >
   A warranty only pays out if you know how to use it. This post walks through the
   complete process: proving purchase, contacting the right department, keeping a paper
   trail, and what to do when they refuse — including escalation paths, your statutory
-  rights, and when it is cheaper to walk away. Wrnty mentioned once as the tool for
-  keeping proof of purchase handy.
+  rights, and when it is cheaper to walk away.
 coverAlt: "A paper receipt and a warranty card on a wooden table beside a phone showing a warranty claim email"
 hero: true
 related: [how-to-keep-track-of-warranties, is-an-extended-warranty-worth-it]
@@ -27,7 +26,7 @@ faq:
   - question: "How long do I have to make a warranty claim?"
     answer: "Manufacturer warranties have expiry dates, which is why recording the date at purchase matters. But statutory rights often outlast the warranty itself. In the EU, for example, you generally have two years from purchase to challenge a faulty product through the retailer, and in some cases longer. Check the rules where you live."
   - question: "What should I do before calling the company about a claim?"
-    answer: "Gather your proof of purchase, note the serial number, and write down exactly what the fault is and when it started. Having everything documented before you call means you can stick to the facts and won' 't forget to mention the receipt."
+    answer: "Gather your proof of purchase, note the serial number, and write down exactly what the fault is and when it started. Having everything documented before you call means you can stick to the facts and won't forget to mention the receipt."
 ---
 
 Something breaks. The warranty should cover it. Then the call or email gets forwarded to a third-party claims centre, you are asked to upload five documents, and three weeks later the answer comes back: *we have assessed your claim and it falls outside of cover.*
@@ -48,7 +47,7 @@ If you have the receipt, the serial number, and the model in one place, you are 
 
 If you followed the system from [our post on keeping track of warranties](/blog/how-to-keep-track-of-warranties/), you probably already have this all in one place, maybe even exported as a PDF ready to attach.
 
-[/images/blog/how-to-make-a-warranty-claim-1.png]
+![A laptop showing an email beside a printed document and pen, with a phone and coffee cup on a wooden desk](/images/blog/how-to-make-a-warranty-claim-1.png)
 
 ## Contact the right company
 
@@ -70,7 +69,7 @@ Attach the proof: receipt, warranty card, serial number photo. Keep it under 500
 
 From this point on, every communication matters. If they call you, write down the date, time, and what was said. If they email, save everything. If you send documents, keep copies.
 
-This is where the habit of recording purchases pays off. If you have everything documented in a dedicated tracker, you can reply to a claims email within minutes instead of spending half an hour searching through emails and drawer files. Wrnty handles this by keeping each item's receipt, serial number, purchase date and expiry date in one place, plus a PDF export for exactly this kind of situation.
+This is where the habit of recording purchases pays off. If you have everything documented in a dedicated tracker, you can reply to a claims email within minutes instead of spending half an hour searching through emails and drawer files. This is exactly what wrnty does: it keeps each item's receipt, serial number, purchase date and expiry date in one place, with a PDF export for exactly this kind of situation.
 
 ## What to do when they refuse the claim
 
@@ -108,7 +107,7 @@ Some countries have ombudsman schemes or consumer arbitration bodies. In the EU,
 
 This is the nuclear option and the one most people never reach. But for expensive items — phones, laptops, appliances — it is surprisingly straightforward. In many jurisdictions you can file without a lawyer and the burden of proof shifts to the seller after a certain period. The threat of small claims often resolves things faster than the actual filing.
 
-[/images/blog/how-to-make-a-warranty-claim-2.png]
+![A hand holding a phone showing an email, with paperwork and a coffee cup on the desk behind](/images/blog/how-to-make-a-warranty-claim-2.png)
 
 ## When walking away is the right call
 
@@ -122,6 +121,6 @@ The entire process above takes minutes if you have your evidence ready. It takes
 
 None of this is about being obsessive about paperwork. It is about making one small decision at the point of purchase — keep the receipt, note the date, record the serial number — so that when something actually breaks, you are not starting from zero. That is the same principle from the organizing guide we linked above: capture the proof at the moment of purchase, when the receipt is literally in your hand.
 
-And for the extended warranty buyers out there — the same discipline applies. If you paid for a protection plan, knowing it exists and understanding its terms is half the battle. Our post on whether extended warranties are worth it covers how to assess those plans in the first place.
+And for the extended warranty buyers out there — the same discipline applies. If you paid for a protection plan, knowing it exists and understanding its terms is half the battle. Our post on [whether extended warranties are worth it](/blog/is-an-extended-warranty-worth-it/) covers how to assess those plans in the first place.
 
 The bottom line: a warranty is only as good as your ability to use it. The difference between a frustrated dead end and a resolved claim almost always comes down to whether you had your proof ready.

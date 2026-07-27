@@ -149,6 +149,10 @@ bar: a skeptical person on Reddit should upvote it and never feel sold to.
   its tone is exactly right (honest, specific, no pressure). To save context, skim
   only the top: `head -40 posts/how-to-keep-track-of-warranties.md`.
 
+**The brand is always lowercase `wrnty`** — even at the start of a sentence. Never
+write "Wrnty". If a sentence would start with it, reword so it does not (e.g. "This
+is exactly what wrnty does…" rather than "Wrnty does…").
+
 **Style:** concrete over abstract, real examples over platitudes, short paragraphs,
 plain language, occasional dry wit. Second person ("you"). No filler intro — open
 with the reader's actual problem, ideally in the phrasing the Reddit digest gave
@@ -190,6 +194,10 @@ number, so:
   knowledge stated generically (e.g. "phones often carry a one-year manufacturer
   warranty"). Do not quote a named company's exact policy, price or claim process —
   they change and you cannot verify them.
+- **Don't assume a currency or country in examples.** The reader could be anywhere.
+  Avoid `£`/`$`/`€` figures stated as if universal — say "a cheap item" or "an
+  expensive one", or make clear a figure is only illustrative. (This pairs with the
+  consumer-law rule above: the audience is international.)
 - Do not misrepresent what wrnty does (see §0). In particular: expiry **alerts,
   iCloud sync and PDF export are Premium**; the free tier tracks up to two items;
   the app does **not** read or auto-fill a receipt's contents. Write about the
@@ -214,7 +222,9 @@ hedged post is always safer than a confidently wrong one.
   `/blog/<slug>/`. Check each slug exists in `posts/` — the build fails on a bad
   one, **and it also fails if the body has no inline link to another post at all**
   (the auto "Keep reading" cards do not count). At least one inline sibling link is
-  required; two or three is better.
+  required; two or three is better. **If you refer to another post in prose** ("our
+  post on…", "the guide above"), it must be an actual `[text](/blog/<slug>/)` link —
+  a description with no link is a wasted, missed link.
 - **2–3 images** total: the cover (always) plus one or two inline photos at logical
   section breaks (see §6).
 - A `faq:` block of **4–6** questions in the frontmatter. These render as an FAQ
@@ -223,7 +233,9 @@ hedged post is always safer than a confidently wrong one.
   2–4 sentences, self-contained, no sales pitch. **Do not put the `"` character
   inside a question or answer** — the whole value is a double-quoted YAML string,
   and inner double-quotes render with missing spaces. Use single quotes 'like this',
-  or just rephrase. The build rejects a straight `"` in the FAQ.
+  or just rephrase. The build rejects a straight `"` in the FAQ. Ordinary apostrophes
+  in contractions (don't, won't, you're) are completely fine and expected — only the
+  double-quote `"` is banned. Never mangle a contraction (e.g. `won' 't`) to dodge it.
 - End with a short, honest wrap-up. Do not write a call to action — the template
   adds one.
 
@@ -254,6 +266,8 @@ keywords: "a, b, c"     # 4–6 comma-separated terms for the Article schema
 summary: >
   2–3 sentences describing the post for llms.txt and llms-full.txt — what it
   argues and what the reader gets. Written for a machine, not as marketing.
+  Describe the article's CONTENT only — never mention wrnty, the "nudge", the
+  mention count, or anything about the writing process; this text is published verbatim.
 coverAlt: "..."         # describes the cover photograph; required if hero: true
 hero: true              # show the cover at the top of the article. Prefer true
 related: [slug-a, slug-b]   # 2 existing slugs for the "Keep reading" cards
@@ -316,11 +330,27 @@ cp /comfyui/output/wrnty_00002_.png images/blog/<slug>-1.png
 ```
 
 Reference each in the body **on its own line, with the path in parentheses**:
-`![meaningful alt text](/images/blog/<slug>-1.png)`. The `(/images/blog/…)` part is
-required — a bare `![alt]` with no path is a build error. Generate exactly the
-images you reference: one `-N.png` file per reference, and every reference must
-point at a file that exists. Alt text describes the photograph for someone who
-cannot see it — not the article — so make it match what the image actually shows.
+`![meaningful alt text](/images/blog/<slug>-1.png)`.
+
+**The syntax is exact and the build will NOT catch a mistake here** — it silently
+renders as text on the live page. It MUST start with `!`, then `[alt]`, then
+`(/path)`. These are all WRONG and will ship a broken page:
+
+- `[/images/blog/<slug>-1.png]`  ← a bracketed path, no `!`, no alt — renders as literal text
+- `![alt]`                        ← no path (this one the build does reject)
+- `(/images/blog/<slug>-1.png)`   ← no `![alt]`
+
+**Every inline image you generate MUST be referenced this way.** If you run
+`comfy-gen` and produce `<slug>-1.png` but never reference it (or reference it with
+the wrong syntax), the photo ships orphaned and the post has no inline image at all
+— the build passes without warning you. After building, confirm your `![...]` lines
+survived: `grep -n '!\[' posts/<slug>.md` should show one line per image you made.
+
+Alt text describes the photograph for someone who cannot see it — not the article —
+so make it match what the image actually shows. Do **not** claim a screen shows
+specific readable text: `comfy-gen` renders on-screen text as garbled nonsense, so
+keep any phone or laptop in the scene switched off, angled away, or well out of
+focus, and never describe what is "on the screen".
 
 **If ComfyUI is unavailable:** retry once. If it still fails, generate a branded
 cover card instead so the build passes, and skip the inline images:
