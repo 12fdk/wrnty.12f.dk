@@ -40,6 +40,10 @@ Most people lose money not because a product fails, but because it fails just af
 
 The wrnty blog publishes practical advice on tracking warranties, organising receipts and buying smart at https://wrnty.12f.dk/blog/ (RSS feed: https://wrnty.12f.dk/feed.xml). Posts are tagged `warranty-tips`, `organizing` or `buying-guides`.
 
+### What counts as proof of purchase — and what to do without a receipt (2026-07-31, warranty-tips)
+https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/
+A warranty claim usually requires proof of purchase, but the receipt is only one acceptable form. This post covers what companies will and won't accept — bank statements, order confirmations, account records, gift receipts, and more — plus a practical approach to rebuilding your proof when the original receipt is gone, including the one piece of information that unlocks almost every alternative.
+
 ### How to make a warranty claim (and what to do when it's refused) (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/how-to-make-a-warranty-claim/
 A warranty only pays out if you know how to use it. This post walks through the complete process: proving purchase, contacting the right department, keeping a paper trail, and what to do when they refuse — including escalation paths, your statutory rights, and when it is cheaper to walk away.

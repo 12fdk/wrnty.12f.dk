@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 30 Jul 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>What counts as proof of purchase — and what to do without a receipt</title>
+      <link>https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/</guid>
+      <pubDate>Fri, 31 Jul 2026 08:00:00 +0000</pubDate>
+      <category>warranty-tips</category>
+      <description>The receipt is only one form of proof of purchase. Here's what companies accept, what they won't, and how to rebuild your proof when the receipt is gone.</description>
+    </item>
     <item>
       <title>How to make a warranty claim (and what to do when it's refused)</title>
       <link>https://wrnty.12f.dk/blog/how-to-make-a-warranty-claim/</link>
