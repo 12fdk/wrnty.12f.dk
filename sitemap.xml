@@ -26,6 +26,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wrnty.12f.dk/blog/warranty-gotchas-fine-print/</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
@@ -33,6 +39,12 @@
   </url>
   <url>
     <loc>https://wrnty.12f.dk/blog/repair-it-or-replace-it/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wrnty.12f.dk/blog/how-to-organise-receipts/</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>

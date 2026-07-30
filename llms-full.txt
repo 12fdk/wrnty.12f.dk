@@ -48,6 +48,10 @@ Most people think a warranty covers everything that breaks. It does not. A stand
 https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/
 A warranty claim usually requires proof of purchase, but the receipt is only one acceptable form. This post covers what companies will and won't accept — bank statements, order confirmations, account records, gift receipts, and more — plus a practical approach to rebuilding your proof when the original receipt is gone, including the one piece of information that unlocks almost every alternative.
 
+### Consumer rights when something breaks — statutory explained (2026-07-31, warranty-tips)
+https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/
+A manufacturer warranty is one layer of protection, but in many countries you have separate statutory rights against the seller that are not the same thing. This post explains how consumer law and manufacturer warranties differ, when each applies, and how to use both to get a fair outcome when something you bought turns out to be faulty.
+
 ### Warranty gotchas — the fine print that voids your cover (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/warranty-gotchas-fine-print/
 Many warranties contain clauses that void coverage under common, everyday conditions — improper use, unauthorised repairs, exposure to moisture, or even opening the device yourself. This post walks through the most common warranty gotchas, how to spot them before you buy, and what to do when you suspect your cover has been invalidated.
@@ -55,6 +59,10 @@ Many warranties contain clauses that void coverage under common, everyday condit
 ### Repair it or replace it? A simple way to decide (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/repair-it-or-replace-it/
 When something breaks, the repair quote often lands in an awkward middle ground — expensive enough to make you hesitate, cheap enough that replacement feels like waste. This post lays out a practical framework for that decision: how to weigh repair cost against replacement value, when a warranty claim should be your first move, and how to factor in the item's age and your actual likelihood of needing it again.
+
+### How to organise receipts so you can actually find them (2026-07-30, organizing)
+https://wrnty.12f.dk/blog/how-to-organise-receipts/
+Keeping receipts doesn't require a filing system or a weekend project. It requires two minutes a day — one minute when you buy something, one minute when you get home. This post walks through a low-friction system that actually works: capture immediately, sort weekly, and know exactly where to look when something breaks.
 
 ### How to make a warranty claim (and what to do when it's refused) (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/how-to-make-a-warranty-claim/
