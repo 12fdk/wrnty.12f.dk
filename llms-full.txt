@@ -40,6 +40,10 @@ Most people lose money not because a product fails, but because it fails just af
 
 The wrnty blog publishes practical advice on tracking warranties, organising receipts and buying smart at https://wrnty.12f.dk/blog/ (RSS feed: https://wrnty.12f.dk/feed.xml). Posts are tagged `warranty-tips`, `organizing` or `buying-guides`.
 
+### How to build a home inventory (and why your insurer wants one) (2026-08-06, organizing)
+https://wrnty.12f.dk/blog/how-to-build-a-home-inventory/
+A home inventory is a structured record of everything you own in your house — what each item cost, when and where you bought it, and where to find the receipt or serial number. Most people build one only after fire, flood, or theft. This post shows why you should build one now, how to do it in manageable increments, and what details matter when you actually need to file a claim.
+
 ### What a warranty actually covers on phones, laptops and gadgets (2026-07-31, warranty-tips)
 https://wrnty.12f.dk/blog/what-your-warranty-actually-covers/
 Most people think a warranty covers everything that breaks. It does not. A standard manufacturer warranty covers defects in materials and workmanship — the kind of faults that appear without external damage. Cracked screens, water damage, battery wear, and theft are not included. This post walks through what is and is not covered, explains extended and accidental-damage plans, and shows you how to keep track of what protection you actually have.
@@ -47,10 +51,6 @@ Most people think a warranty covers everything that breaks. It does not. A stand
 ### What counts as proof of purchase — and what to do without a receipt (2026-07-31, warranty-tips)
 https://wrnty.12f.dk/blog/what-counts-as-proof-of-purchase/
 A warranty claim usually requires proof of purchase, but the receipt is only one acceptable form. This post covers what companies will and won't accept — bank statements, order confirmations, account records, gift receipts, and more — plus a practical approach to rebuilding your proof when the original receipt is gone, including the one piece of information that unlocks almost every alternative.
-
-### Consumer rights when something breaks — statutory explained (2026-07-31, warranty-tips)
-https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/
-A manufacturer warranty is one layer of protection, but in many countries you have separate statutory rights against the seller that are not the same thing. This post explains how consumer law and manufacturer warranties differ, when each applies, and how to use both to get a fair outcome when something you bought turns out to be faulty.
 
 ### Warranty gotchas — the fine print that voids your cover (2026-07-30, warranty-tips)
 https://wrnty.12f.dk/blog/warranty-gotchas-fine-print/

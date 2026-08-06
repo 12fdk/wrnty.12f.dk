@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 31 Jul 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>How to build a home inventory (and why your insurer wants one)</title>
+      <link>https://wrnty.12f.dk/blog/how-to-build-a-home-inventory/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/how-to-build-a-home-inventory/</guid>
+      <pubDate>Thu, 06 Aug 2026 08:00:00 +0000</pubDate>
+      <category>organizing</category>
+      <description>A home inventory tracks everything you own — cost, date, source, receipt. Here's how to build one without losing a weekend.</description>
+    </item>
     <item>
       <title>What a warranty actually covers on phones, laptops and gadgets</title>
       <link>https://wrnty.12f.dk/blog/what-your-warranty-actually-covers/</link>
@@ -23,14 +31,6 @@
       <pubDate>Fri, 31 Jul 2026 08:00:00 +0000</pubDate>
       <category>warranty-tips</category>
       <description>The receipt is only one form of proof of purchase. Here's what companies accept, what they won't, and how to rebuild your proof when the receipt is gone.</description>
-    </item>
-    <item>
-      <title>Consumer rights when something breaks — statutory explained</title>
-      <link>https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/</link>
-      <guid isPermaLink="true">https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/</guid>
-      <pubDate>Fri, 31 Jul 2026 08:00:00 +0000</pubDate>
-      <category>warranty-tips</category>
-      <description>Statutory consumer rights and manufacturer warranties are two different things. Here is how they differ and what to do when something breaks.</description>
     </item>
     <item>
       <title>Warranty gotchas — the fine print that voids your cover</title>
