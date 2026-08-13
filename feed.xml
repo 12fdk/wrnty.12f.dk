@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 06 Aug 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Do you need to register a product to get the warranty?</title>
+      <link>https://wrnty.12f.dk/blog/do-you-need-to-register-a-product/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/do-you-need-to-register-a-product/</guid>
+      <pubDate>Thu, 13 Aug 2026 08:00:00 +0000</pubDate>
+      <category>warranty-tips</category>
+      <description>Registering a product doesn't give you warranty coverage — it just helps the manufacturer find you when something goes wrong. Here's what matters.</description>
+    </item>
     <item>
       <title>How to build a home inventory (and why your insurer wants one)</title>
       <link>https://wrnty.12f.dk/blog/how-to-build-a-home-inventory/</link>
