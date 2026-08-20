@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 13 Aug 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Consumer rights when something breaks — beyond the warranty</title>
+      <link>https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/</guid>
+      <pubDate>Thu, 20 Aug 2026 08:00:00 +0000</pubDate>
+      <category>warranty-tips</category>
+      <description>A warranty is a contract you agreed to. Consumer rights are separate: what faulty-goods law gives you, how it interacts with warranties, and what to do.</description>
+    </item>
     <item>
       <title>Do you need to register a product to get the warranty?</title>
       <link>https://wrnty.12f.dk/blog/do-you-need-to-register-a-product/</link>
