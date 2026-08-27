@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{META_TITLE}}</title>
   <meta name="description" content="{{DESCRIPTION}}">
-  <meta name="author" content="12F ApS">
+  <meta name="author" content="{{ORG_NAME}}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#12934F" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0A100D" media="(prefers-color-scheme: dark)">
@@ -16,19 +16,22 @@
   <meta property="og:title" content="{{OG_TITLE}}">
   <meta property="og:description" content="{{OG_DESCRIPTION}}">
   <meta property="og:image" content="{{SITE}}{{COVER}}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="{{COVER_WIDTH}}">
+  <meta property="og:image:height" content="{{COVER_HEIGHT}}">
+  <meta property="og:image:alt" content="{{COVER_ALT}}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{URL}}">
   <meta property="og:site_name" content="wrnty">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="{{DATE}}">
+  <meta property="article:modified_time" content="{{DATE_MODIFIED}}">
   <meta property="article:tag" content="{{TAG}}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{OG_TITLE}}">
   <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}">
   <meta name="twitter:image" content="{{SITE}}{{COVER}}">
+  <meta name="twitter:image:alt" content="{{COVER_ALT}}">
 
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -60,21 +63,25 @@
     },
     "author": {
       "@type": "Organization",
-      "name": "12F ApS",
-      "url": "https://12f.dk/"
+      "name": "{{ORG_NAME}}",
+      "url": "{{ORG_URL}}"
     },
+    "editor": {{JSON_EDITOR}},
     "publisher": {
       "@type": "Organization",
-      "name": "12F ApS",
-      "url": "https://12f.dk/",
+      "name": "{{ORG_NAME}}",
+      "url": "{{ORG_URL}}",
+      "email": "{{CONTACT_EMAIL}}",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://wrnty.12f.dk/images/app-icon.png"
-      }
-    }
+        "url": "{{SITE}}/images/app-icon.png"
+      },
+      "sameAs": {{JSON_SAMEAS}}
+    },
+    "citation": {{JSON_CITATIONS}}
   }
   </script>
-{{FAQ_JSONLD}}
+{{FAQ_JSONLD}}{{HOWTO_JSONLD}}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -94,7 +101,7 @@
   <header class="site-header" id="site-header">
     <div class="wrap">
       <a href="/" class="brand">
-        <img src="/images/app-icon.png" alt="" width="34" height="34">
+        <img src="/images/app-icon-small.webp" alt="" width="34" height="34" decoding="async">
         wrnty
       </a>
 
@@ -128,13 +135,14 @@
           <p class="post-meta"><span class="tag">{{TAG}}</span><time datetime="{{DATE}}">{{DATE_LONG}}</time><span class="dot" aria-hidden="true"></span>{{READING_TIME}} min read</p>
           <h1>{{TITLE}}</h1>
           <p class="lede">{{LEDE}}</p>
+          <p class="byline">By <a href="{{ORG_URL}}" rel="publisher">{{ORG_NAME}}</a><span class="dot" aria-hidden="true"></span>Edited by <a href="{{EDITOR_URL}}" rel="author">{{EDITOR_NAME}}</a></p>
         </div>
-
+{{ANSWER}}
 {{HERO}}
         <div class="prose">
 {{BODY}}
         </div>
-{{FAQ_HTML}}
+{{FAQ_HTML}}{{SOURCES_HTML}}
         <div class="article-foot">
           <a href="/blog/">← All posts</a>
           <span class="tag">{{TAG}}</span>
@@ -166,14 +174,14 @@
       <div class="footer-top">
         <div class="footer-about">
           <a href="/" class="brand">
-            <img src="/images/app-icon.png" alt="" width="34" height="34">
+            <img src="/images/app-icon-small.webp" alt="" width="34" height="34" decoding="async">
             wrnty
           </a>
           <p>Every warranty and receipt in one place, with a reminder before each one expires. One-time purchase, private by design. Built by 12F ApS in Denmark.</p>
         </div>
 
         <div class="footer-col">
-          <h3>Product</h3>
+          <p class="footer-col-title">Product</p>
           <ul>
             <li><a href="/#features">Features</a></li>
             <li><a href="/#how-it-works">How it works</a></li>
@@ -184,12 +192,13 @@
         </div>
 
         <div class="footer-col">
-          <h3>More</h3>
+          <p class="footer-col-title">More</p>
           <ul>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/feed.xml">RSS feed</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
             <li><a href="/privacy-policy.html">Privacy policy</a></li>
-            <li><a href="https://12f.dk/">Contact &amp; support</a></li>
           </ul>
         </div>
       </div>

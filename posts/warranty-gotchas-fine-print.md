@@ -1,5 +1,6 @@
 ---
 title: "Warranty gotchas — the fine print that voids your cover"
+metaTitle: "Warranty gotchas: fine print that voids cover | wrnty"
 description: "The common clauses hidden in warranty fine print that can void your warranty without warning. Learn what to look for and how to keep your cover intact."
 lede: "You bought something with a warranty. Six months later it breaks, you file a claim, and they say your cover was void the moment you plugged it into the wrong outlet. Here is how that happens — and how to avoid it."
 excerpt: "Warranties have fine print that can void your cover without warning. Most people don't read it until after something breaks. Here are the most common gotchas and how to protect yourself."
@@ -15,6 +16,21 @@ summary: >
 coverAlt: "An open wooden drawer filled with paper warranty cards, instruction manuals and receipt envelopes"
 hero: true
 related: [how-to-make-a-warranty-claim, what-counts-as-proof-of-purchase]
+answer: >
+  The clauses that most often void cover are unauthorised repair, non-genuine parts,
+  moisture or impact damage, software modification and commercial use. Some are
+  enforceable and some are not — in the US, tie-in clauses requiring branded parts or
+  service are generally illegal. Read the terms before you need them, and record what you
+  did to the product.
+sources:
+  - title: "FTC — Companies' warranty restrictions were illegal (tie-in and 'void if removed' clauses)"
+    url: https://consumer.ftc.gov/consumer-alerts/2022/07/ftc-says-companies-warranty-restrictions-were-illegal
+  - title: "FTC — Businessperson's Guide to Federal Warranty Law (Magnuson-Moss)"
+    url: https://www.ftc.gov/business-guidance/resources/businesspersons-guide-federal-warranty-law
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
 faq:
   - question: "Can a warranty be void just because I opened the device?"
     answer: "In many jurisdictions, no. Consumer protection laws in the EU and elsewhere prevent companies from voiding an entire warranty simply because a user opened the product. They may deny a specific claim if you caused damage during the repair, but they cannot void cover for unrelated faults. Check the consumer protection rules that apply where you live."
@@ -36,7 +52,7 @@ This is one of the most frustrating gaps in consumer experience: you buy somethi
 
 The people writing warranty terms know this. They are not writing for you. They are writing for the claims department, and every clause that gives them an excuse to refuse a claim is a saving. Understanding those clauses before you need them is the difference between a hassle-free warranty and a dead end.
 
-## The most common warranty gotchas
+## What are the most common warranty gotchas?
 
 The fine print is long, but the gotchas fall into a small set of patterns. If you know what to look for, spotting them takes five minutes.
 
@@ -100,7 +116,7 @@ This is one area where the system is straightforward, and where recording your p
 
 Some warranties require you to report a fault within a specific number of days of first noticing it. Others require the product to be returned within a certain period of the claim, or they refuse to accept it. If you wait too long between discovering a problem and acting on it, the company may close the claim because you missed a procedural deadline rather than because the fault itself is ineligible.
 
-## How to protect yourself before something breaks
+## How do you protect yourself before something breaks?
 
 The good news is that most of these gotchas are avoidable with a small amount of preparation. You do not need to be a lawyer or a warranty expert — just systematic.
 
@@ -136,7 +152,7 @@ Warranties are voluntary commitments from manufacturers. Statutory consumer righ
 
 In the EU, for example, consumers generally have a two-year right to a remedy for faulty goods against the seller — regardless of the manufacturer's warranty length or conditions. In other jurisdictions, the protections differ. The key point is that statutory rights and manufacturer warranties are separate, and one does not replace the other.
 
-## What to do if you suspect your warranty is void
+## What if you think your warranty is already void?
 
 You have done the repair, used the third-party part, or modified the software. Now something breaks, and you think the fine print might void your coverage.
 
@@ -160,7 +176,7 @@ You do not need to memorise the terms. You just need to know what questions to a
 
 And yes, writing those details down at the point of purchase and keeping them organised makes the difference between spending ten minutes pulling together a claim and spending ten days digging through old emails and shoeboxes. Whatever system works for you — a dedicated app, a folder, a spreadsheet — the goal is the same: have the information ready when the fault appears.
 
-## Keep reading
+## Related reading
 
 - [How to make a warranty claim](/blog/how-to-make-a-warranty-claim/) — the full step-by-step from first contact to escalation.
 - [What counts as proof of purchase](/blog/what-counts-as-proof-of-purchase/) — receipts, order confirmations, bank statements, and what to do when you have lost the original.

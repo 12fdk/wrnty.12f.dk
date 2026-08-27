@@ -1,6 +1,6 @@
 ---
 title: "Is AppleCare worth it? What phone and laptop warranties actually cover"
-metaTitle: "Is AppleCare worth it? What phone and laptop warranties actually cover | wrnty"
+metaTitle: "Is AppleCare worth it? What warranties cover | wrnty"
 description: "The protection plan at the counter. What the standard phone and laptop warranty covers, what it does not, and whether AppleCare earns its price."
 ogDescription: "The protection plan at the counter. Before you buy it, here is what the standard warranty already covers, what it does not, and a simple way to decide whether the plan is worth the price."
 lede: "You are at the counter with a new phone or laptop, and the protection plan is on the table. Before you say yes, here is what the warranty you already have covers, what it does not, and how to decide whether the plan earns its price."
@@ -19,6 +19,20 @@ summary: >
 coverAlt: "A new phone and its open box on a wooden desk beside a small printed card, soft window light"
 hero: true
 related: [what-your-warranty-actually-covers, how-to-make-a-warranty-claim]
+answer: >
+  The standard warranty covers manufacturing defects, not accidents. AppleCare and plans
+  like it mainly buy you accidental damage cover and a capped repair price. They are worth
+  it when a single screen or water-damage repair would cost more than the plan, and poor
+  value when you rarely damage your devices.
+sources:
+  - title: "Apple — Warranty and legal terms"
+    url: https://www.apple.com/legal/warranty/
+  - title: "Apple — AppleCare+ terms of service"
+    url: https://www.apple.com/legal/sales-support/applecare/applecareplus/
+  - title: "Apple — Product support and coverage plans"
+    url: https://www.apple.com/support/products/
+  - title: "FTC — Extended Warranties and Service Contracts"
+    url: https://consumer.ftc.gov/articles/extended-warranties-and-service-contracts
 faq:
   - question: "Is AppleCare worth it for a new phone?"
     answer: "It depends on your habits and the device's price. AppleCare and similar plans cover cracked screens, drops, water damage and other accidental incidents, on top of the standard warranty's defect cover. If you are careful with your devices, the standard warranty plus a good habit of keeping the receipt and serial number is often enough. If the plan's price is a large share of the device's price and you rarely damage things, the standard warranty may be the better buy. If you have dropped or cracked a device in the past, the plan is likely worth it."
@@ -36,7 +50,7 @@ faq:
 
 You are at the counter with a new phone or laptop, and the protection plan is on the table. Usually a quarter to a third of the price of the device, with a name — AppleCare, or the equivalent from another manufacturer — and a promise: if you drop it, crack it, spill on it, the plan picks up the cost. Before you say yes, here is what the warranty you already have covers, what it does not, and how to decide whether the plan earns its price.
 
-## What the standard warranty already covers
+## What does the standard warranty already cover?
 
 A standard manufacturer warranty on a phone or laptop covers defects in materials and workmanship — things that go wrong through normal, careful use, without external damage. A screen that goes blank for no reason, a keyboard that stops working, a battery that fails under normal use, a laptop that will not power on — these are the kind of faults the warranty exists for.
 
@@ -50,7 +64,7 @@ What it does not cover is the list that the protection plan is selling to you:
 
 If your device fails in one of the first two categories — a screen that goes blank, a keyboard that dies — the warranty is the right path, and it is free. If it fails in one of the second four, the standard warranty will not help, and that is the gap the plan is selling to fill.
 
-## What the plan adds
+## What does AppleCare actually add?
 
 The protection plan is a separate product, priced separately, and its terms vary between providers. But the general shape is the same across brands:
 
@@ -69,7 +83,16 @@ A few terms to look for, because they are where plans differ most:
 - **What the plan does not cover.** The fine print here is where plans diverge the most. Some exclude wear and tear on the casing, some exclude the camera lens, some exclude damage from liquids if the device is not officially rated for it. Read this list before you buy, because it is the list you will wish you had read when the claim is in front of you.
 - **How the claim is processed.** In-person at a store, by post, or by mail-in repair. The process matters if you are the kind of person who wants the device back quickly, and the terms will say how long the repair typically takes.
 
-## How to decide whether the plan is worth the price
+| | Standard warranty | AppleCare-style plan |
+| --- | --- | --- |
+| Manufacturing defects | Covered | Covered |
+| Accidental damage (drops, cracks) | Not covered | Covered, with an excess per incident |
+| Liquid damage | Not covered | Usually covered as accidental damage |
+| Battery below capacity threshold | Covered if defective | Covered more generously |
+| Cover length | Typically 1 year | Typically 2–3 years |
+| Cost | Included in the price | Paid upfront or monthly |
+
+## Is the plan worth the price?
 
 ![Paper receipt and a new laptop with its box on a wooden desk, with a pen and warranty cards](/images/blog/is-applecare-worth-it-1.png)
 
@@ -91,7 +114,7 @@ Now say the same phone, but you have dropped a phone last month and cracked its 
 
 Now say a laptop that costs a few thousand, the plan is a third of the price, and you carry it daily to a job site. The plan is a meaningful sum, but the device is a laptop — a category where a drop is more likely and the repair is more expensive — and the use context is high-risk. The plan is likely worth it, even at a third of the price, because the alternative is a repair that costs more than the plan.
 
-## What to do if you do not buy the plan
+## What if you skip the plan?
 
 If you decide the plan is not for you, the one habit that still matters is keeping the purchase record. You will need the receipt and the serial number if the device develops a defect under the standard warranty, and the purchase date is what the manufacturer checks to confirm the warranty is still active. A photo of the receipt, a note in a notes app, a labelled folder, or a dedicated tracker — any of these will work. wrnty is one such tracker: you record the purchase date, the serial number and a photo of the receipt at the moment you buy the device, and the expiry date and claim-ready details are there five minutes later instead of in a drawer. The key is to do it at purchase, not to wait until the device fails. [Our post on how to organise receipts](/blog/how-to-organise-receipts/) has a simple two-minute system for this, and it is the habit that makes the warranty check in [our post on what a warranty actually covers](/blog/what-your-warranty-actually-covers/) fast when you need it.
 

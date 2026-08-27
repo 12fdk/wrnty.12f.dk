@@ -1,5 +1,6 @@
 ---
 title: "How to make a warranty claim (and what to do when it's refused)"
+metaTitle: "How to make a warranty claim | wrnty"
 description: "A practical guide to making a warranty claim — what you need, how to do it, and what to do when the manufacturer says no."
 lede: "Something breaks. The warranty should cover it. Then the claim gets pushed, delayed, or refused. Here is how to make it stick."
 excerpt: "Something breaks and the warranty should cover it — except the claim gets pushed, delayed, or flatly refused. Here's the step-by-step that turns a dead-end call into a resolution."
@@ -14,6 +15,32 @@ summary: >
 coverAlt: "A paper receipt and a warranty card on a wooden table beside a phone showing a warranty claim email"
 hero: true
 related: [what-counts-as-proof-of-purchase, warranty-gotchas-fine-print]
+answer: >
+  Gather your proof of purchase, the model and serial number, and a factual description of
+  the fault. Contact whoever holds the warranty, state what is wrong and what you want
+  done, and keep every message in writing. If the claim is refused, ask which clause they
+  are relying on, then check your statutory rights against the seller.
+sources:
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+  - title: "FTC — Businessperson's Guide to Federal Warranty Law (Magnuson-Moss)"
+    url: https://www.ftc.gov/business-guidance/resources/businesspersons-guide-federal-warranty-law
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
+  - title: "Consumer Rights Act 2015 (UK legislation)"
+    url: https://www.legislation.gov.uk/ukpga/2015/15/contents
+howtoName: "How to make a warranty claim"
+howto:
+  - name: "Gather your proof before you make contact"
+    text: "Collect the proof of purchase, the model and serial number, and photos or video of the fault. Having these ready is the difference between a ten-minute claim and a ten-day one."
+  - name: "Contact the right company"
+    text: "Work out whether the warranty is held by the manufacturer or the retailer, and approach that one first. Going to the wrong party wastes the opening weeks of a limited claim window."
+  - name: "Write a clear, factual claim"
+    text: "State what the product is, when you bought it, what has gone wrong, and what you want done about it. Describe the fault, not your frustration."
+  - name: "Keep a paper trail"
+    text: "Use email or a written portal wherever possible, and follow up any phone call with a short written summary. A claim you cannot evidence is a claim you can lose."
+  - name: "Escalate if the claim is refused"
+    text: "Ask for the refusal in writing and the specific clause it rests on, check your statutory rights against the seller, then escalate within the company or to a dispute resolution service."
 faq:
   - question: "What do I need to start a warranty claim?"
     answer: "You need proof of purchase (the receipt or order confirmation), the serial number if the product has one, and a clear description of the fault. If you recorded these in wrnty when you bought the item, you can export everything you need in a few taps instead of hunting through drawers."
@@ -71,7 +98,7 @@ From this point on, every communication matters. If they call you, write down th
 
 This is where the habit of recording purchases pays off. If you have everything documented in a dedicated tracker, you can reply to a claims email within minutes instead of spending half an hour searching through emails and drawer files. This is exactly what wrnty does: it keeps each item's receipt, serial number, purchase date and expiry date in one place, with a PDF export for exactly this kind of situation.
 
-## What to do when they refuse the claim
+## What if the company refuses your claim?
 
 They come back with a refusal. Read it carefully. The most common reasons are:
 
@@ -109,13 +136,13 @@ This is the nuclear option and the one most people never reach. But for expensiv
 
 ![A hand holding a phone showing an email, with paperwork and a coffee cup on the desk behind](/images/blog/how-to-make-a-warranty-claim-2.png)
 
-## When walking away is the right call
+## When is walking away the right call?
 
 Not every claim is worth pursuing. If the product cost £30 and the claims process will take you six hours and three angry emails, sometimes the best move is to accept the loss and move on. The cost of pursuing a claim in money and mental energy is a real factor.
 
 But if the item cost hundreds of pounds, is a safety issue, or was clearly defective rather than worn out, it is usually worth the effort. Most refused claims get reversed within two or three escalation emails.
 
-## The thing that changes the game: being prepared
+## What actually makes a claim go smoothly?
 
 The entire process above takes minutes if you have your evidence ready. It takes days if you do not. The people whose claims get refused are not the ones who didn't try — they are the ones who opened the drawer and couldn't find the receipt, or whose thermal-paper proof faded to white, or who didn't know the warranty had expired.
 

@@ -187,9 +187,39 @@ number, so:
   generally work; you cannot tell a reader they are definitely entitled to a
   specific remedy in their specific dispute. Point them to the retailer, the
   manufacturer's terms, or their local consumer body for the specifics.
-- **NEVER write a URL you have not confirmed.** Only link to (a) pages inside this
-  site (`/blog/<slug>/`, confirmed to exist in `posts/`) and (b) the App Store link
-  in §0. Do not invent external links, brand support pages or statutes.
+- **NEVER write a URL you have not confirmed.** In the body, only link to (a) pages
+  inside this site (`/blog/<slug>/`, confirmed to exist in `posts/`) and (b) the App
+  Store link in §0. Do not invent external links, brand support pages or statutes.
+- **The `sources:` block is the one place external URLs belong, and it is required.**
+  Pick from the vetted list below — these have been checked and resolve. Choose the
+  two to four that genuinely underpin the claims the post makes; do not attach all of
+  them to every post, and do not cite a source the post does not actually rely on.
+
+  | Source | URL |
+  | --- | --- |
+  | FTC — Warranties (consumer guidance) | `https://consumer.ftc.gov/articles/warranties` |
+  | FTC — Extended Warranties and Service Contracts | `https://consumer.ftc.gov/articles/extended-warranties-and-service-contracts` |
+  | FTC — Auto Warranties and Auto Service Contracts | `https://consumer.ftc.gov/articles/auto-warranties-and-auto-service-contracts` |
+  | FTC — Warranty restrictions ruled illegal (tie-in, "void if removed") | `https://consumer.ftc.gov/consumer-alerts/2022/07/ftc-says-companies-warranty-restrictions-were-illegal` |
+  | FTC — Businessperson's Guide to Federal Warranty Law (Magnuson–Moss) | `https://www.ftc.gov/business-guidance/resources/businesspersons-guide-federal-warranty-law` |
+  | European Commission — Guarantees and returns (Your Europe) | `https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm` |
+  | Directive (EU) 2019/771 on the sale of goods | `https://eur-lex.europa.eu/eli/dir/2019/771/oj` |
+  | Consumer Rights Act 2015 (UK legislation) | `https://www.legislation.gov.uk/ukpga/2015/15/contents` |
+  | GOV.UK — Accepting returns and giving refunds | `https://www.gov.uk/accepting-returns-and-giving-refunds` |
+  | Apple — Warranty and legal terms | `https://www.apple.com/legal/warranty/` |
+  | Apple — AppleCare+ terms of service | `https://www.apple.com/legal/sales-support/applecare/applecareplus/` |
+  | Apple — Product support and coverage plans | `https://www.apple.com/support/products/` |
+  | Insurance Information Institute — How to create a home inventory | `https://www.iii.org/article/how-to-create-a-home-inventory` |
+  | IRS — What kind of records should I keep | `https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep` |
+
+  To use a source that is **not** on this list, you must first confirm it yourself:
+  ```
+  curl -sIL -o /dev/null -w "%{http_code}\n" -A "Mozilla/5.0" "<url>"
+  ```
+  Only use it if that prints `200` (or `202`). If it does not, pick from the list
+  instead. A citation that 404s damages the credibility it was meant to build.
+  Citing a source does **not** license you to state its jurisdiction's rules as
+  universal — the hedging rule above still applies in full.
 - **Do not name specific brands' warranty terms as fact** unless it is common
   knowledge stated generically (e.g. "phones often carry a one-year manufacturer
   warranty"). Do not quote a named company's exact policy, price or claim process —
@@ -217,7 +247,20 @@ hedged post is always safer than a confidently wrong one.
   floor to fail on, not the goal. If a draft lands under 1,300, add genuinely useful
   detail (an example, an edge case, a "how to use this"), not filler.
 - **No `# ` heading in the body** — the template renders the H1 from `title`.
-  Use `## ` for sections, `### ` where useful. Descriptive, not clever-only.
+  Use `## ` for sections, `### ` where useful.
+- **Phrase section headings as questions wherever it is natural** — "What does a
+  warranty not cover?" rather than "What a warranty does not cover". This is what
+  wins People Also Ask placements and paragraph snippets, and it should echo the
+  wording of the `faq:` questions. Do not force it on headings that are genuinely
+  labels (a category name, a numbered step); roughly half the `##` headings in a
+  typical post should end in a question mark.
+- **Never use `## Keep reading`, `## FAQ` or `## Common questions` as a body
+  heading** — the template already renders sections with those names, and a
+  duplicate leaves two identical H2s on the page. Use `## Related reading` instead.
+- **Reach for a table** whenever the content is genuinely comparative or a
+  reference — durations by category, covered vs not covered, option A vs option B.
+  Search engines lift tables wholesale as table snippets, and a reference post
+  written as prose throws that away. One good table beats three more paragraphs.
 - Open with the reader's real problem. Get to the first useful thing fast.
 - Short lists, the occasional bold lead-in, at least one concrete worked example
   (a scenario, a before/after, a specific way to handle a claim call).
@@ -246,8 +289,21 @@ hedged post is always safer than a confidently wrong one.
 
 **Markdown support is deliberately limited** to: `##`/`###`, paragraphs, `-` and
 `1.` lists, `> ` blockquote, `---`, `**bold**`, `*italic*`, `` `code` ``,
-`[text](url)`, and standalone `![alt](/images/blog/slug-1.png "optional caption")`.
-Tables, raw HTML and footnotes are not supported and will fail the build.
+`[text](url)`, pipe tables, and standalone
+`![alt](/images/blog/slug-1.png "optional caption")`.
+Raw HTML and footnotes are not supported and will fail the build.
+
+**Pipe tables** need a header row and a separator row, and every row must have the
+same number of cells. `:---`, `:---:` and `---:` set column alignment:
+
+```markdown
+| Category | Typical warranty | Worth knowing |
+| --- | --- | --- |
+| Phones | 1 year | Battery treated as a consumable |
+| Laptops | 1–3 years | Business models often get 2–3 |
+```
+
+Wide tables scroll inside their own box, so they never break the page on a phone.
 
 ---
 
@@ -259,23 +315,40 @@ want. Emit YAML frontmatter with these fields:
 ```yaml
 ---
 title: "..."            # H1. ≤ 70 chars, includes the search phrase, sentence case
-metaTitle: "..."        # optional <title>; defaults to "<title> | wrnty"
+metaTitle: "..."        # the <title>; defaults to "<title> | wrnty". MUST be ≤ 62 chars,
+                        # so set it explicitly whenever `title` is longer than ~53
 description: "..."      # meta description. ≤ 160 chars, includes the phrase
 ogDescription: "..."    # optional, for link previews; defaults to description
 lede: "..."             # 1–2 sentences under the H1. Concrete, no fluff
+answer: >               # REQUIRED. 40–70 words, no straight double-quotes.
+  The standalone direct answer to the question in the title, rendered in a box
+  under the H1. It must make sense lifted out of the page entirely, because that
+  is exactly what a featured snippet does with it. Answer the question in the
+  first sentence; do not warm up to it.
 excerpt: "..."          # ≤ 220 chars, the blog-index card text
 teaserExcerpt: "..."    # optional shorter card text for the homepage; defaults to lede
 tag: organizing         # exactly one of: warranty-tips | organizing | buying-guides
 date: 2026-07-30        # today's date, YYYY-MM-DD
+modified: 2026-08-27    # optional; only when materially revising an existing post
 keywords: "a, b, c"     # 4–6 comma-separated terms for the Article schema
 summary: >
   2–3 sentences describing the post for llms.txt and llms-full.txt — what it
   argues and what the reader gets. Written for a machine, not as marketing.
   Describe the article's CONTENT only — never mention wrnty, the "nudge", the
   mention count, or anything about the writing process; this text is published verbatim.
-coverAlt: "..."         # describes the cover photograph; required if hero: true
+coverAlt: "..."         # REQUIRED. Describes the cover photograph. It is also the
+                        # alt text on the blog-index card, so it can never be empty
 hero: true              # show the cover at the top of the article. Prefer true
 related: [slug-a, slug-b]   # 2 existing slugs for the "Keep reading" cards
+sources:                # REQUIRED, at least one. Primary sources only — a regulator,
+  - title: "..."        # a statute, or a manufacturer's own warranty page. Never our
+    url: https://...    # own site. Rendered as "Where this comes from" and emitted
+  - title: "..."        # as schema.org `citation`.
+    url: https://...
+howtoName: "..."        # optional; required if `howto:` is present
+howto:                  # optional. Only for genuinely step-by-step posts — emits
+  - name: "..."         # HowTo schema. Steps must match the article's real structure.
+    text: "..."
 faq:
   - question: "..."
     answer: "..."
@@ -285,7 +358,13 @@ faq:
 ```
 
 Rules the build enforces, so get them right the first time:
-- `title` ≤ 70 chars, `description` ≤ 160, `excerpt` ≤ 220. **Count the characters.**
+- `title` ≤ 70 chars, the rendered `<title>` ≤ 62, `description` ≤ 160, `excerpt` ≤ 220.
+  **Count the characters.** The `<title>` is `metaTitle`, or `"<title> | wrnty"` when
+  `metaTitle` is absent — so a 60-char `title` needs its own shorter `metaTitle`.
+- `answer` must be 40–70 words and contain no straight double-quote characters.
+- `sources` must have at least one entry, each an `https://` URL that is not on our
+  own domain. **Fetch every URL before you commit and confirm it returns 200** — a
+  citation that 404s is worse than no citation.
 - `tag` must be exactly one of these three — pick by what the post is really about,
   not by a keyword it happens to contain:
     - `warranty-tips` — how warranties and consumer rights work: durations, making a
@@ -296,7 +375,11 @@ Rules the build enforces, so get them right the first time:
   Do not invent a new tag.
 - `related` slugs must exist in `posts/`, and must not include this post.
 - Every internal `/blog/<slug>/` link in the body must exist.
-- The cover image `images/blog/<slug>.png` must exist before the build passes.
+- The cover image must exist **as its optimised derivatives** before the build passes:
+  `images/blog/<slug>.webp` (on-page) and `images/blog/<slug>-og.jpg` (og:image).
+  Generate the PNG, then run `python3 tools/optimise-images.py`, which writes both and
+  deletes the PNG. Never ship the PNG: these are photographs, and PNG makes them
+  ~700KB each against ~25KB as WebP, on the image the page marks fetchpriority=high.
 - Minimum 700 words (you are aiming for far more than that).
 - Exactly one wrnty mention in the body (two at most); the build rejects zero or 3+.
 
@@ -385,26 +468,33 @@ Note the fallback in your report. Never block the post on an image.
 The model context is small. Never let long command output stream into the
 conversation; redirect it and read only a short tail, and only on failure.
 
-1. Validate first — this is the equivalent of a compile, and it catches every
+1. Optimise the images first — the build refuses to run on raw PNGs, because a
+   ~700KB PNG cover is the LCP element on the finished page:
+   ```
+   python3 tools/optimise-images.py
+   ```
+   This writes `<slug>.webp` and `<slug>-og.jpg` for the cover, `<slug>-N.webp` for
+   each inline photo, and deletes the source PNGs.
+2. Validate — this is the equivalent of a compile, and it catches every
    schema mistake above:
    ```
    python3 tools/build.py --check
    ```
-2. Fix anything it reports, then build for real:
+3. Fix anything it reports, then build for real:
    ```
    python3 tools/build.py > /tmp/build.log 2>&1 && tail -3 /tmp/build.log || tail -30 /tmp/build.log
    ```
    It must print `BUILD OK`. The build regenerates the post page, the blog index,
    the homepage teaser, `feed.xml`, `sitemap.xml`, `llms.txt` and `llms-full.txt` —
    **never hand-edit those files**, your edits will be overwritten.
-3. Commit only the post, its images and the regenerated files. Run `git status`
+4. Commit only the post, its images and the regenerated files. Run `git status`
    first; delete any scratch files you created. Then stage deliberately:
    ```
    git add posts/ images/blog/ blog/ index.html feed.xml sitemap.xml llms.txt llms-full.txt
    git commit -m "Blog: <title>"
    ```
    (Avoid `git add -A`.)
-4. Push: `git push origin main 2>&1 | tail -5` — GitHub Pages deploys from `main`,
+5. Push: `git push origin main 2>&1 | tail -5` — GitHub Pages deploys from `main`,
    and the IndexNow workflow submits the new URL automatically after the deploy.
 
 Same discipline everywhere: pipe anything potentially verbose through a file or

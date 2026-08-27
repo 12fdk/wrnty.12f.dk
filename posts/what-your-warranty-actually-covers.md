@@ -1,6 +1,6 @@
 ---
 title: "What a warranty actually covers on phones, laptops and gadgets"
-metaTitle: "What your warranty actually covers — phones, laptops and gadgets explained | wrnty"
+metaTitle: "What your warranty actually covers | wrnty"
 description: "Manufacturer warranties on phones and laptops cover some things and not others. Here is exactly what you get, what you do not, and how to tell the difference."
 ogDescription: "Manufacturer warranties on phones and laptops cover some things and not others. Here is exactly what you get, what you do not, and how to tell the difference."
 lede: "Your new phone or laptop came with a warranty. But that warranty does not cover everything — and knowing what it leaves out could save you a lot of money."
@@ -18,6 +18,20 @@ summary: >
 coverAlt: "A laptop and a smartphone on a wooden desk, a user manual open beside them, warm morning light, shallow depth of field"
 hero: true
 related: [how-long-is-the-warranty-on-common-things, how-to-make-a-warranty-claim]
+answer: >
+  A standard manufacturer warranty covers defects in materials and workmanship — things
+  that fail on their own under normal use. It does not cover accidental damage, liquid
+  ingress, cosmetic wear, consumable parts such as batteries, or anything caused by
+  misuse. Accidental damage is what separate paid plans exist to cover.
+sources:
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+  - title: "FTC — Extended Warranties and Service Contracts"
+    url: https://consumer.ftc.gov/articles/extended-warranties-and-service-contracts
+  - title: "Apple — Warranty and legal terms"
+    url: https://www.apple.com/legal/warranty/
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
 faq:
   - question: "What does a standard warranty actually cover?"
     answer: "A standard manufacturer warranty covers defects in materials and workmanship — things that go wrong through normal, careful use without any external damage. If your phone's screen goes blank for no reason, or a laptop's keyboard stops working, that is usually covered. Cracked screens, water damage, dropped devices, battery wear, and theft are almost never included."
@@ -37,7 +51,7 @@ Your phone, laptop, or tablet arrived with a warranty. You probably did not read
 
 But here is the thing: **a warranty does not cover everything that goes wrong with your device.** Most people assume "warranty" means "if it breaks, they fix it." It does not mean that. It means something much narrower, and the distinction matters a lot when something goes wrong.
 
-## What a standard warranty actually covers
+## What does a standard warranty actually cover?
 
 A standard manufacturer warranty — the one that comes free with your phone, laptop, or tablet — covers **defects in materials and workmanship**. That is the legal phrase. In plain English, it means:
 
@@ -54,7 +68,7 @@ The key word is *without external damage*. If the device broke because you dropp
 
 > **Rule of thumb:** a warranty is a promise about the quality of the product when it leaves the factory. It is not an insurance policy for the life of the device.
 
-## What a standard warranty does NOT cover
+## What does a warranty not cover?
 
 This is the part that surprises people. The things almost never covered by a standard warranty include:
 
@@ -71,6 +85,16 @@ This is the part that surprises people. The things almost never covered by a sta
 **Software modifications.** On some devices, jailbreaking, rooting, or flashing custom firmware voids the warranty — at least for any damage that modification could have caused.
 
 And of course, **anything that happens after the warranty expires** is not covered. The standard warranty on phones and laptops is typically one year. On laptops, some business models go up to three years.
+
+| Failure | Standard warranty | Why |
+| --- | --- | --- |
+| Screen fails with no impact | Covered | A defect in materials or workmanship |
+| Cracked screen after a drop | Not covered | Accidental damage, not a defect |
+| Water damage | Not covered | Excluded as misuse or environmental damage |
+| Battery capacity fading with age | Not covered | Treated as a consumable wearing normally |
+| Battery dead in month two | Covered | Premature failure indicates a defect |
+| Scuffs and scratches | Not covered | Cosmetic wear |
+| Fault after a third-party repair | Often disputed | Depends on jurisdiction and whether the repair caused it |
 
 ## Extended warranties and accidental-damage plans
 
@@ -90,7 +114,7 @@ There is no universal answer. It depends on your habits, the device's price, and
 
 ![A desk with a laptop, a smartphone, and a small product box, shallow depth of field, warm lighting](/images/blog/what-your-warranty-actually-covers-1.png "Electronics on a desk beside a product box, warm lighting")
 
-## The fine print you should actually read
+## What fine print should you actually read?
 
 Not the whole thing — but two sections, in order.
 
@@ -127,7 +151,7 @@ Here is what you should walk away with:
 
 When something breaks, you want to know within minutes whether your device is under cover or not. The difference between "oh good, they will fix it" and "that is going to cost me" comes down to two facts — the purchase date and the warranty length. Recording those two things takes thirty seconds, and it is the difference between surprise and certainty.
 
-## FAQ
+## Still not sure what is covered?
 
 This section covers the most common questions people ask about what a warranty covers and how to tell the difference between the standard plan and the add-ons. If you need more detail, the posts linked above walk through specific scenarios.
 

@@ -1,5 +1,6 @@
 ---
 title: "Consumer rights when something breaks — beyond the warranty"
+metaTitle: "Consumer rights when something breaks | wrnty"
 description: "A warranty is a contract you agreed to. Consumer rights are separate: what faulty-goods law gives you, how it interacts with warranties, and what to do."
 lede: "When something breaks, people reach for the warranty first — and stop there. But in many countries you also have a separate statutory right against the seller, and it can outlast the warranty."
 excerpt: "A warranty is a contract; consumer rights are what the law gives you on top of it. How the two work together, who owes you what, and what to do when something breaks."
@@ -16,6 +17,21 @@ summary: >
 coverAlt: "A stack of paper receipts and a card box on a wooden desk beside a closed laptop, in soft morning light"
 hero: true
 related: [how-to-make-a-warranty-claim, what-counts-as-proof-of-purchase]
+answer: >
+  A manufacturer warranty is a voluntary promise from the maker. Consumer rights are
+  separate protections the law gives you against the seller, and in many countries they
+  last longer than the warranty and cannot be signed away. When something breaks you can
+  usually pursue either route, and a refused warranty claim does not end your statutory
+  options.
+sources:
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
+  - title: "Directive (EU) 2019/771 on the sale of goods"
+    url: https://eur-lex.europa.eu/eli/dir/2019/771/oj
+  - title: "Consumer Rights Act 2015 (UK legislation)"
+    url: https://www.legislation.gov.uk/ukpga/2015/15/contents
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
 faq:
   - question: "Do I still have rights if the warranty has expired?"
     answer: "Often, yes. A manufacturer warranty is a voluntary promise with its own expiry date. In many countries the law separately requires the seller to stand behind faulty goods for a period that can be longer than the warranty. The two run independently, so an expired warranty does not automatically end your options."
@@ -37,7 +53,7 @@ There is. In many countries, the law separately requires the **seller** to stand
 
 This post explains how the two work together, who owes you what, and what to actually do when something breaks.
 
-## Two separate things with the same job
+## What is the difference between a warranty and consumer rights?
 
 It is easy to treat "the warranty" as one thing, because in daily life it is. But there are really two:
 
@@ -53,7 +69,7 @@ Where exactly the limits fall, and how remedies are shared if both apply, varies
 
 ![A hand holding a paper receipt over a table with a box and a product manual beside it](/images/blog/consumer-rights-when-something-breaks-1.png)
 
-## A quick example
+## What does that look like in practice?
 
 Say you buy a mid-priced blender. It has a one-year manufacturer warranty. In month two, the drive gives up.
 
@@ -62,7 +78,7 @@ Say you buy a mid-priced blender. It has a one-year manufacturer warranty. In mo
 
 Same product, same fault, two different paths depending only on the date. That is why the purchase date matters more than people think.
 
-## What the warranty does (and does not) affect
+## Does using a warranty affect your statutory rights?
 
 A claim that goes through the manufacturer does not normally burn your statutory rights. The warranty is the maker honouring its own promise; the statutory claim is the seller honouring the law. They are separate tracks.
 
@@ -84,7 +100,7 @@ A simple decision, before you call anyone:
 
 And regardless of path: **get your proof of purchase ready first.** The receipt (or order confirmation) that shows who you bought from, when, and for how much is the document both tracks run on. If you do not have it, that is its own problem — and a fixable one. [Our post on what counts as proof of purchase](/blog/what-counts-as-proof-of-purchase/) covers what actually works when the paper is gone.
 
-## When the answer is no
+## What if both the seller and the maker refuse?
 
 Sometimes the claim is simply refused — or the seller says the fault is normal wear, or age, or your fault. Three moves that matter more than arguing:
 
@@ -94,7 +110,7 @@ Sometimes the claim is simply refused — or the seller says the fault is normal
 
 If you want the full escalation walkthrough — the claim letter, the RMA, the pushback — [our post on making a warranty claim](/blog/how-to-make-a-warranty-claim/) goes through it step by step.
 
-## The part nobody automates for you
+## What do you need to keep on file?
 
 None of this needs the product to be special. It needs three things: the fault described, the purchase recorded, and the date remembered. The fault describes itself. The purchase and the date — that is the part that silently fails, because the moment you bought the thing you stopped thinking about it.
 

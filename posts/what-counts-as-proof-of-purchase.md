@@ -1,5 +1,6 @@
 ---
 title: "What counts as proof of purchase — and what to do without a receipt"
+metaTitle: "What counts as proof of purchase? | wrnty"
 description: "The receipt is only one form of proof of purchase. Here's what companies accept, what they won't, and how to rebuild your proof when the receipt is gone."
 lede: "You need to make a warranty claim. The receipt is gone. Good news: you may still have more proof than you think."
 excerpt: "The receipt is not the only thing that counts as proof of purchase. Here's what companies will accept, what they won't, and how to rebuild your proof when the receipt has vanished."
@@ -15,6 +16,18 @@ summary: >
 coverAlt: "A hand holding a phone beside a stack of papers including a receipt and a printed email on a wooden desk"
 hero: true
 related: [how-to-make-a-warranty-claim, warranty-gotchas-fine-print]
+answer: >
+  A till receipt is only one option. Order confirmation emails, retailer account order
+  history, bank and credit card statements, gift receipts and warranty registration
+  records are all commonly accepted. What matters is evidence of what was bought, from
+  whom, and on what date — so any record carrying those three facts can work.
+sources:
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
+  - title: "GOV.UK — Accepting returns and giving refunds"
+    url: https://www.gov.uk/accepting-returns-and-giving-refunds
 faq:
   - question: "What is proof of purchase?"
     answer: "Proof of purchase is any document or record that shows you bought a specific item, when you bought it, from whom, and for how much. The standard form is the itemised receipt, but order confirmation emails, account records, bank statements, and gift receipts can also count — though acceptance varies by company."
@@ -34,7 +47,7 @@ This is one of the most common reasons people lose money on warranties — not b
 
 Here is the good news: the receipt is not the only thing that counts as proof of purchase, and in most cases you have more options than you think.
 
-## What proof of purchase actually is
+## What counts as proof of purchase?
 
 At its core, proof of purchase is just four pieces of information: **what you bought, when you bought it, where from, and how much you paid.** Any document that reliably shows those four things can, in principle, serve as proof of purchase.
 
@@ -74,7 +87,7 @@ Not all of these will be accepted by every company, but it is worth trying each 
 
 ![A phone and a stack of paper receipts and printouts on a wooden desk](/images/blog/what-counts-as-proof-of-purchase-1.png)
 
-## What happens when nothing obvious survives
+## What if no record survives at all?
 
 Let's say the receipt faded, the email was auto-deleted, and the item was bought in cash from a shop that no longer keeps digital records. You are not necessarily out of options.
 
@@ -94,7 +107,7 @@ Sometimes you can assemble proof from pieces that are individually weak but toge
 
 Not every alternative will be accepted. Companies are entitled to set reasonable standards for what they consider valid proof, and some of those standards are strict. If the company refuses a claim solely because you cannot produce a receipt, and you have exhausted every other option, you may still have rights depending on where you live. In many jurisdictions, consumer protection law gives you a separate right to a remedy for faulty goods that does not depend on the company's internal evidence requirements — though you will need to prove the purchase in some way, and the burden is on you.
 
-## How to make sure this never happens again
+## How do you avoid this next time?
 
 The single most effective thing you can do is record the proof at the moment of purchase, before you walk away from the shop. Photograph the receipt. Save the order confirmation. Note the date in a calendar. Put it somewhere you will actually look when the product needs it.
 
