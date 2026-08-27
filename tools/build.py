@@ -18,6 +18,15 @@ Generated (do not hand-edit):
     feed.xml
 and the regions between BLOG:START / BLOG:END markers in:
     blog/index.html, index.html, sitemap.xml, llms.txt, llms-full.txt
+
+Images are *not* generated here — build.py has no Pillow. It validates that
+tools/optimise-images.py has produced the WebP and og.jpg derivatives, and
+fails the build if it hasn't.
+
+A post whose source markdown is deleted leaves blog/<slug>/ behind. That stale
+directory stays live and indexable while vanishing from the sitemap, feed and
+index — an orphan. main() now deletes those directories, or serves a redirect
+stub if the slug is listed in REDIRECTS.
 """
 
 from __future__ import annotations
@@ -26,6 +35,7 @@ import argparse
 import html
 import json
 import re
+import shutil
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -40,9 +50,34 @@ TAGS = {"warranty-tips", "organizing", "buying-guides"}
 WORDS_PER_MINUTE = 200
 
 MAX_TITLE = 70
+MAX_META_TITLE = 62     # the <title>; Google truncates a SERP title around here
 MAX_DESCRIPTION = 160
 MAX_EXCERPT = 220
 MIN_WORDS = 700
+ANSWER_MIN_WORDS = 40      # the direct-answer block is sized for a paragraph snippet
+ANSWER_MAX_WORDS = 70
+
+# Who the site says it is. Posts are drafted by the weekly job in prompt.md and
+# reviewed before they ship, so the organisation is the author and the human is
+# the editor — Person schema on `editor`, not on `author`.
+ORG = {"name": "12F ApS", "url": "https://12f.dk/"}
+EDITOR = {"name": "Robert Jensen", "url": f"{SITE}/about.html"}
+CONTACT_EMAIL = "wrnty@12f.dk"
+
+# Anchors the brand in the entity graph — without these, an AI engine has no way
+# to connect wrnty the site to wrnty the App Store listing.
+SAMEAS = [
+    "https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961",
+    "https://12f.dk/",
+]
+
+# Slugs whose post was deleted but whose URL may already be indexed or linked.
+# main() writes a noindex meta-refresh stub pointing at the successor instead of
+# leaving an orphan live. Drop an entry once the URL has aged out of the index.
+REDIRECTS = {
+    "how-to-keep-track-of-warranties": "/blog/how-to-organise-receipts/",
+    "is-an-extended-warranty-worth-it": "/blog/is-applecare-worth-it/",
+}
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
@@ -51,6 +86,66 @@ WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 class BuildError(Exception):
     pass
+
+
+# --- image dimensions ------------------------------------------------------
+#
+# The markup used to hardcode height="630" on covers and height="675" on figures
+# while the real files were 624 and 696 — enough of a mismatch to shift the page
+# as each image lands. Read the real numbers out of the file header instead;
+# stdlib only, so no Pillow here.
+
+_IMAGE_SIZES: dict[Path, tuple[int, int]] = {}
+
+
+def _read_size(path: Path) -> tuple[int, int]:
+    data = path.read_bytes()[:64]
+    if data[:8] == b"\x89PNG\r\n\x1a\n":                       # IHDR is always first
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        chunk = data[12:16]
+        if chunk == b"VP8X":
+            return (int.from_bytes(data[24:27], "little") + 1,
+                    int.from_bytes(data[27:30], "little") + 1)
+        if chunk == b"VP8 ":
+            return (int.from_bytes(data[26:28], "little") & 0x3FFF,
+                    int.from_bytes(data[28:30], "little") & 0x3FFF)
+        if chunk == b"VP8L":
+            bits = int.from_bytes(data[21:25], "little")
+            return (bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1
+    if data[:2] == b"\xff\xd8":                                # JPEG: walk to a SOF
+        blob = path.read_bytes()
+        i = 2
+        while i < len(blob) - 9:
+            if blob[i] != 0xFF:
+                i += 1
+                continue
+            marker = blob[i + 1]
+            if marker in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7,
+                          0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                return (int.from_bytes(blob[i + 7:i + 9], "big"),
+                        int.from_bytes(blob[i + 5:i + 7], "big"))
+            i += 2 + int.from_bytes(blob[i + 2:i + 4], "big")
+    raise BuildError(f"{path.relative_to(ROOT)}: cannot read image dimensions")
+
+
+def image_size(src: str) -> tuple[int, int]:
+    """(width, height) for a site-absolute image path such as /images/blog/x.webp."""
+    path = ROOT / src.lstrip("/")
+    if path not in _IMAGE_SIZES:
+        if not path.exists():
+            raise BuildError(f"image {src} does not exist")
+        _IMAGE_SIZES[path] = _read_size(path)
+    return _IMAGE_SIZES[path]
+
+
+def prefer_webp(src: str) -> str:
+    """Swap a .png reference for its .webp derivative when one has been built."""
+    if src.endswith(".png"):
+        webp = src[:-4] + ".webp"
+        if (ROOT / webp.lstrip("/")).exists():
+            return webp
+    return src
 
 
 # --- frontmatter -----------------------------------------------------------
@@ -141,6 +236,8 @@ STRONG = re.compile(r"\*\*(.+?)\*\*")
 EM = re.compile(r"(?<![\w*])\*(?!\s)([^*]+?)(?<!\s)\*(?![\w*])")
 LINK = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
 IMAGE = re.compile(r"^!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"([^\"]*)\")?\)$")
+TABLE_ROW = re.compile(r"^\|.*\|$")
+TABLE_RULE = re.compile(r"^\|(?:\s*:?-{2,}:?\s*\|)+$")
 
 
 def inline(text: str) -> str:
@@ -192,13 +289,20 @@ def markdown_to_html(md: str, where: str) -> tuple[str, list[str]]:
             if not alt.strip():
                 raise BuildError(f"{where}: image {src} has no alt text")
             images.append(src)
+            served = prefer_webp(src)
+            try:
+                w, h = image_size(served)
+            except BuildError as e:
+                raise BuildError(f"{where}: {e}")
             fig = [f'<figure class="post-figure">',
-                   f'  <img src="{src}" alt="{html.escape(alt, quote=True)}" '
-                   f'width="1200" height="675" loading="lazy" decoding="async">']
+                   f'  <img src="{served}" alt="{html.escape(alt, quote=True)}" '
+                   f'width="{w}" height="{h}" loading="lazy" decoding="async">']
             if caption:
                 fig.append(f"  <figcaption>{inline(caption)}</figcaption>")
             fig.append("</figure>")
             parts.append("\n".join(fig))
+        elif TABLE_ROW.match(first) and len(lines) >= 2 and TABLE_RULE.match(lines[1].strip()):
+            parts.append(_table(lines, where))
         elif first.startswith("> "):
             inner = "\n".join(ln.strip()[2:] if ln.strip().startswith("> ")
                               else ln.strip().lstrip(">").strip() for ln in lines)
@@ -226,6 +330,45 @@ def markdown_to_html(md: str, where: str) -> tuple[str, list[str]]:
             parts.append(f"<p>{inline(' '.join(ln.strip() for ln in lines))}</p>")
 
     return "\n\n".join(parts), images
+
+
+def _cells(row: str) -> list[str]:
+    return [c.strip() for c in row.strip().strip("|").split("|")]
+
+
+def _table(lines: list[str], where: str) -> str:
+    """A pipe table. Comparison tables are the format search engines lift wholesale
+    for table snippets, and several of these posts are reference material that
+    reads far better as a grid than as prose."""
+    header = _cells(lines[0])
+    aligns = []
+    for spec in _cells(lines[1]):
+        left, right = spec.startswith(":"), spec.endswith(":")
+        aligns.append("center" if left and right else "right" if right else "left")
+    if len(aligns) != len(header):
+        raise BuildError(f"{where}: table header has {len(header)} column(s) but the "
+                         f"separator row has {len(aligns)}")
+
+    def style(i: int) -> str:
+        return f' style="text-align:{aligns[i]}"' if aligns[i] != "left" else ""
+
+    out = ['<div class="table-wrap">', "<table>", "  <thead>", "    <tr>"]
+    out += [f"      <th{style(i)}>{inline(c)}</th>" for i, c in enumerate(header)]
+    out += ["    </tr>", "  </thead>", "  <tbody>"]
+    for n, row in enumerate(lines[2:], start=3):
+        if not row.strip():
+            continue
+        if not TABLE_ROW.match(row.strip()):
+            raise BuildError(f"{where}: table row {n} is not pipe-delimited: {row.strip()[:60]!r}")
+        cells = _cells(row)
+        if len(cells) != len(header):
+            raise BuildError(f"{where}: table row {n} has {len(cells)} cell(s), "
+                             f"header has {len(header)}")
+        out.append("    <tr>")
+        out += [f"      <td{style(i)}>{inline(c)}</td>" for i, c in enumerate(cells)]
+        out.append("    </tr>")
+    out += ["  </tbody>", "</table>", "</div>"]
+    return "\n".join(out)
 
 
 def _list_items(lines: list[str], marker: str, where: str) -> list[str]:
@@ -276,6 +419,15 @@ class Post:
         self.hero = bool(meta.get("hero", False))
         self.related = [str(s).strip() for s in (meta.get("related") or [])]
         self.faq = [f for f in (meta.get("faq") or []) if isinstance(f, dict)]
+        # The 40–70 word standalone answer that sits directly under the H1. Search
+        # engines lift this verbatim as a paragraph snippet, so it has to resolve
+        # the title's question on its own, without the article around it.
+        self.answer = str(meta.get("answer", "")).strip()
+        # Outbound corroboration. Generative engines weight claims that point at a
+        # primary source, and consumer-law posts without one read as assertion.
+        self.sources = [s for s in (meta.get("sources") or []) if isinstance(s, dict)]
+        self.howto = [s for s in (meta.get("howto") or []) if isinstance(s, dict)]
+        self.howto_name = str(meta.get("howtoName", "")).strip()
 
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", self.slug):
             raise BuildError(f"{where}: filename must be a lowercase-kebab slug")
@@ -296,6 +448,10 @@ class Post:
 
         if len(self.title) > MAX_TITLE:
             raise BuildError(f"{where}: title is {len(self.title)} chars, max {MAX_TITLE}")
+        if len(self.meta_title) > MAX_META_TITLE:
+            raise BuildError(f"{where}: the <title> is {len(self.meta_title)} chars, max "
+                             f"{MAX_META_TITLE} — it will truncate in search results. Add a "
+                             f"shorter `metaTitle:` (the on-page H1 keeps the full `title:`).")
         if len(self.description) > MAX_DESCRIPTION:
             raise BuildError(f"{where}: description is {len(self.description)} chars, "
                              f"max {MAX_DESCRIPTION}")
@@ -311,18 +467,46 @@ class Post:
                         f"use single quotes 'like this' or curly quotes for any quoted "
                         f"phrase, so the rendered FAQ and its schema stay clean")
 
+        if not self.answer:
+            raise BuildError(f"{where}: missing `answer:` — a standalone {ANSWER_MIN_WORDS}–"
+                             f"{ANSWER_MAX_WORDS} word paragraph that answers the title on its "
+                             f"own. It renders under the H1 and is what a featured snippet lifts.")
+        answer_words = len(self.answer.split())
+        if not ANSWER_MIN_WORDS <= answer_words <= ANSWER_MAX_WORDS:
+            raise BuildError(f"{where}: `answer:` is {answer_words} words — it must be "
+                             f"{ANSWER_MIN_WORDS}–{ANSWER_MAX_WORDS}, the length search "
+                             f"engines actually extract as a paragraph snippet")
+        if '"' in self.answer:
+            raise BuildError(f"{where}: `answer:` contains a straight double-quote (\") — "
+                             f"use single or curly quotes so the schema stays clean")
+
+        for s in self.sources:
+            if set(s) != {"title", "url"}:
+                raise BuildError(f"{where}: each sources entry needs exactly `title:` and `url:`")
+            if not str(s["url"]).startswith("https://"):
+                raise BuildError(f"{where}: source url {s['url']!r} must be an https:// URL — "
+                                 f"cite the primary source, not a summary of it")
+        for s in self.howto:
+            if set(s) != {"name", "text"}:
+                raise BuildError(f"{where}: each howto entry needs exactly `name:` and `text:`")
+        if self.howto and not self.howto_name:
+            raise BuildError(f"{where}: `howto:` needs a `howtoName:` — the name of the "
+                             f"procedure, e.g. 'How to make a warranty claim'")
+
         self.body_html, self.images = markdown_to_html(body_md, where)
         self.word_count = len(re.findall(r"\b[\w'’-]+\b", re.sub(r"<[^>]+>", " ", self.body_html)))
         self.reading_time = max(1, round(self.word_count / WORDS_PER_MINUTE))
 
     @property
     def cover(self) -> str:
-        return f"/images/blog/{self.slug}.png"
+        """og:image and schema image. Stays JPEG: WebP support across social and
+        chat scrapers is still patchy, and this one is never render-blocking."""
+        return f"/images/blog/{self.slug}-og.jpg"
 
     @property
     def card_image(self) -> str:
-        webp = ROOT / "images" / "blog" / f"{self.slug}.webp"
-        return f"/images/blog/{self.slug}.webp" if webp.exists() else self.cover
+        """On-page use — hero, index cards, teasers. WebP, ~25KB instead of ~700KB."""
+        return f"/images/blog/{self.slug}.webp"
 
     @property
     def url(self) -> str:
@@ -332,9 +516,11 @@ class Post:
     def date_long(self) -> str:
         return f"{self.date.day} {MONTHS[self.date.month - 1]} {self.date.year}"
 
+    # One date format everywhere. Cards used to read "30 Jul 2026" while the
+    # article above them read "30 July 2026", which looked like two sites.
     @property
     def date_short(self) -> str:
-        return f"{self.date.day} {MONTHS[self.date.month - 1][:3]} {self.date.year}"
+        return self.date_long
 
     @property
     def rfc822(self) -> str:
@@ -365,12 +551,21 @@ def validate_references(posts: list[Post]) -> list[str]:
     problems: list[str] = []
     slugs = {p.slug for p in posts}
     for p in posts:
-        if not (ROOT / p.cover.lstrip("/")).exists():
-            problems.append(f"{p.where}: cover image {p.cover} does not exist — generate it "
-                            f"(tools/make-cover.py) and copy it there")
+        for derived, why in ((p.card_image, "on-page hero and cards"),
+                             (p.cover, "og:image and schema image")):
+            if not (ROOT / derived.lstrip("/")).exists():
+                problems.append(
+                    f"{p.where}: {derived} does not exist ({why}) — generate the cover "
+                    f"(tools/make-cover.py) then run tools/optimise-images.py")
         for src in p.images:
-            if src.startswith("/") and not (ROOT / src.lstrip("/")).exists():
+            if not src.startswith("/"):
+                continue
+            served = prefer_webp(src)
+            if not (ROOT / served.lstrip("/")).exists():
                 problems.append(f"{p.where}: inline image {src} does not exist")
+            elif served.endswith(".png"):
+                problems.append(f"{p.where}: inline image {src} is still a PNG — run "
+                                f"tools/optimise-images.py so it ships as WebP")
         for slug in p.related:
             if slug not in slugs:
                 problems.append(f"{p.where}: related slug {slug!r} is not a published post")
@@ -408,6 +603,24 @@ def validate_references(posts: list[Post]) -> list[str]:
         if p.hero and not p.cover_alt:
             problems.append(f"{p.where}: hero: true needs coverAlt — the image is shown in the "
                             f"article and screen readers read that text aloud")
+        if not p.cover_alt:
+            problems.append(f"{p.where}: missing coverAlt — the cover is also the index card "
+                            f"image, and an empty alt there leaves the whole blog grid unlabelled")
+        # Corroboration. A post asserting what consumer law says, citing nothing,
+        # is exactly what a generative engine declines to quote.
+        if not p.sources:
+            problems.append(f"{p.where}: no `sources:` — cite at least one primary source "
+                            f"(a regulator, a statute, a manufacturer's own warranty page) "
+                            f"for the claims this post makes")
+        seen_urls: set[str] = set()
+        for s in p.sources:
+            url = str(s["url"])
+            if url in seen_urls:
+                problems.append(f"{p.where}: source {url} is listed twice")
+            seen_urls.add(url)
+            if "wrnty.12f.dk" in url or "12f.dk" in url:
+                problems.append(f"{p.where}: source {url} points back at our own site — "
+                                f"sources are for outside corroboration")
     return problems
 
 
@@ -426,10 +639,12 @@ def indent(block: str, spaces: int) -> str:
 def card(p: Post, heading: str, extra_class: str = "", excerpt: str | None = None,
          more: bool = False) -> str:
     cls = f"post-card {extra_class}".strip()
+    w, h = image_size(p.card_image)
     body = [
         f'<article class="{cls}">',
         '  <div class="post-card-media">',
-        f'    <img src="{p.card_image}" alt="" width="1200" height="630" loading="lazy">',
+        f'    <img src="{p.card_image}" alt="{attr(p.cover_alt)}" '
+        f'width="{w}" height="{h}" loading="lazy" decoding="async">',
         '  </div>',
         '  <div class="post-card-body">',
         f'    <p class="post-meta"><span class="tag">{p.tag}</span>'
@@ -479,10 +694,50 @@ def faq_jsonld(p: Post) -> str:
 def hero_html(p: Post) -> str:
     if not p.hero:
         return ""
+    w, h = image_size(p.card_image)
     return ("\n        <figure class=\"article-hero\">\n"
             f'          <img src="{p.card_image}" alt="{attr(p.cover_alt)}" '
-            'width="1200" height="630" fetchpriority="high" decoding="async">\n'
+            f'width="{w}" height="{h}" fetchpriority="high" decoding="async">\n'
             "        </figure>\n")
+
+
+def answer_html(p: Post) -> str:
+    """The direct answer, directly under the H1 — the block a featured snippet lifts."""
+    return ('\n        <div class="post-answer">\n'
+            f'          <p>{inline(p.answer)}</p>\n'
+            "        </div>\n")
+
+
+def sources_html(p: Post) -> str:
+    if not p.sources:
+        return ""
+    rows = ["", '        <section class="post-sources">',
+            "          <h2>Where this comes from</h2>",
+            "          <ul>"]
+    for s in p.sources:
+        rows.append(f'            <li><a href="{attr(str(s["url"]))}" '
+                    f'rel="noopener nofollow" target="_blank">{attr(str(s["title"]))}</a></li>')
+    rows += ["          </ul>", "        </section>"]
+    return "\n".join(rows) + "\n"
+
+
+def howto_jsonld(p: Post) -> str:
+    if not p.howto:
+        return ""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": p.howto_name,
+        "description": p.description,
+        "step": [
+            {"@type": "HowToStep", "position": n, "name": s["name"], "text": s["text"],
+             "url": f"{p.url}#step-{n}"}
+            for n, s in enumerate(p.howto, start=1)
+        ],
+    }
+    body = json.dumps(data, indent=2, ensure_ascii=False)
+    return ('\n  <script type="application/ld+json">\n'
+            + indent(body, 2) + "\n  </script>\n")
 
 
 def render_post(p: Post, posts: list[Post], template: str) -> str:
@@ -491,6 +746,7 @@ def render_post(p: Post, posts: list[Post], template: str) -> str:
         related = [q for q in posts if q.slug != p.slug][:2]
     cards = "\n\n".join(indent(card(q, "h3", excerpt=q.teaser_excerpt), 12)
                         for q in related[:2])
+    cover_w, cover_h = image_size(p.cover)
 
     values = {
         "META_TITLE": attr(p.meta_title),
@@ -514,9 +770,27 @@ def render_post(p: Post, posts: list[Post], template: str) -> str:
         "JSON_KEYWORDS": json.dumps(p.keywords, ensure_ascii=False),
         "BODY": indent(p.body_html, 10),
         "HERO": hero_html(p),
+        "ANSWER": answer_html(p),
+        "SOURCES_HTML": sources_html(p),
         "FAQ_HTML": faq_html(p),
         "FAQ_JSONLD": faq_jsonld(p),
+        "HOWTO_JSONLD": howto_jsonld(p),
         "RELATED": cards,
+        "EDITOR_NAME": attr(EDITOR["name"]),
+        "EDITOR_URL": EDITOR["url"],
+        "ORG_NAME": attr(ORG["name"]),
+        "ORG_URL": ORG["url"],
+        "CONTACT_EMAIL": CONTACT_EMAIL,
+        "COVER_ALT": attr(p.cover_alt),
+        "COVER_WIDTH": str(cover_w),
+        "COVER_HEIGHT": str(cover_h),
+        "JSON_EDITOR": indent(json.dumps(
+            {"@type": "Person", "name": EDITOR["name"], "url": EDITOR["url"]},
+            indent=2, ensure_ascii=False), 6).lstrip(),
+        "JSON_SAMEAS": indent(json.dumps(SAMEAS, indent=2, ensure_ascii=False), 6).lstrip(),
+        "JSON_CITATIONS": indent(json.dumps(
+            [{"@type": "CreativeWork", "name": s["title"], "url": s["url"]}
+             for s in p.sources], indent=2, ensure_ascii=False), 6).lstrip(),
     }
     out = template
     for key, value in values.items():
@@ -640,8 +914,10 @@ def build_blog_schema_region(posts: list[Post]) -> str:
         "headline": {json.dumps(p.title, ensure_ascii=False)},
         "url": "{p.url}",
         "datePublished": "{p.date.isoformat()}",
+        "dateModified": "{p.modified.isoformat()}",
         "image": "{SITE}{p.cover}"
       }}""" for p in posts)
+    sameas = indent(json.dumps(SAMEAS, indent=2, ensure_ascii=False), 6).lstrip()
     return f"""  <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
@@ -651,15 +927,54 @@ def build_blog_schema_region(posts: list[Post]) -> str:
     "url": "{SITE}/blog/",
     "publisher": {{
       "@type": "Organization",
-      "name": "12F ApS",
-      "url": "https://12f.dk/",
-      "logo": "{SITE}/images/app-icon.png"
+      "name": "{ORG['name']}",
+      "url": "{ORG['url']}",
+      "email": "{CONTACT_EMAIL}",
+      "logo": "{SITE}/images/app-icon.png",
+      "sameAs": {sameas}
     }},
     "blogPost": [
 {items}
     ]
   }}
   </script>
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{"@type": "ListItem", "position": 1, "name": "Home", "item": "{SITE}/"}},
+      {{"@type": "ListItem", "position": 2, "name": "Blog", "item": "{SITE}/blog/"}}
+    ]
+  }}
+  </script>
+"""
+
+
+def redirect_stub(slug: str, target: str) -> str:
+    """A retired post URL. GitHub Pages can't issue a 301, so this is the next best
+    thing: noindex so it leaves the index, canonical so any equity consolidates on
+    the successor, meta-refresh plus a real link so a visitor still lands somewhere."""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moved — wrnty</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{SITE}{target}">
+  <meta http-equiv="refresh" content="0; url={target}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="section" style="text-align:center">
+    <h1>This post has moved</h1>
+    <p>It has been replaced by a more complete one.</p>
+    <p><a class="btn btn-primary" href="{target}">Read it here →</a></p>
+    <p><a href="/blog/">← All posts</a></p>
+  </main>
+</body>
+</html>
 """
 
 
@@ -718,10 +1033,32 @@ def main() -> int:
         print(f"ERROR  {e}", file=sys.stderr)
         return 1
 
+    # A directory whose source post is gone is an orphan: still live, still
+    # indexable, but absent from the sitemap, the feed, llms.txt and the index,
+    # and reachable from nothing. Warning about it was not enough — one sat live
+    # for a month carrying the site's only broken internal link. Remove it, or
+    # serve a redirect stub when the URL is worth preserving.
     if BLOG_DIR.is_dir():
-        stale = {d.name for d in BLOG_DIR.iterdir() if d.is_dir()} - {p.slug for p in posts}
-        for slug in sorted(stale):
-            print(f"WARN   blog/{slug}/ has no posts/{slug}.md — delete it or restore the source")
+        live = {p.slug for p in posts}
+        on_disk = {d.name for d in BLOG_DIR.iterdir() if d.is_dir()}
+        for slug in sorted(REDIRECTS):
+            if slug in live:
+                print(f"WARN   blog/{slug}/ is in REDIRECTS but posts/{slug}.md exists — "
+                      f"drop the REDIRECTS entry, the post is live again")
+                continue
+            if REDIRECTS[slug].startswith("/blog/") and \
+                    REDIRECTS[slug].strip("/").split("/")[-1] not in live:
+                print(f"ERROR  REDIRECTS[{slug!r}] points at {REDIRECTS[slug]}, "
+                      f"which is not a published post", file=sys.stderr)
+                return 1
+            write(BLOG_DIR / slug / "index.html", redirect_stub(slug, REDIRECTS[slug]),
+                  args.check, changed)
+        for slug in sorted(on_disk - live - set(REDIRECTS)):
+            changed.append(f"blog/{slug}/ (removed)")
+            if not args.check:
+                shutil.rmtree(BLOG_DIR / slug)
+            print(f"  {'would remove' if args.check else 'removed'}  blog/{slug}/ "
+                  f"— no posts/{slug}.md (add it to REDIRECTS to keep the URL alive)")
 
     verb = "would change" if args.check else "wrote"
     if changed:

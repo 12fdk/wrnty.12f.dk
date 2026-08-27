@@ -10,6 +10,8 @@ wrnty is an iOS app for iPhone and iPad that keeps your product warranties and r
 - Pricing: Free to track up to 2 warranties; Premium is a one-time in-app purchase (no subscription) for unlimited items, expiry alerts, iCloud sync and PDF export
 - Privacy: no account required; data stored on-device and in the user's own iCloud; no ads, no tracking, no data selling; optional anonymous analytics that can be turned off; GDPR compliant
 - Developer: 12F ApS, Denmark (https://12f.dk/)
+- Contact: wrnty@12f.dk
+- Editorial: posts are drafted by an automated process following a public brief and reviewed by Robert Jensen (12F ApS) before publishing; each post cites its primary sources
 - Website: https://wrnty.12f.dk/
 - App Store: https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961
 
@@ -44,6 +46,8 @@ Practical advice on warranties, receipts and buying smart, published at https://
 ## Links
 
 - [Home](https://wrnty.12f.dk/)
+- [About — who builds wrnty and how these posts are written](https://wrnty.12f.dk/about.html)
+- [Contact](https://wrnty.12f.dk/contact.html)
 - [Privacy Policy](https://wrnty.12f.dk/privacy-policy.html)
 - [App Store](https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961)
 - [Developer — 12F ApS](https://12f.dk/)

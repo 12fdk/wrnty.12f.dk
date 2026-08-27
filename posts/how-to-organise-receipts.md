@@ -1,6 +1,6 @@
 ---
 title: "How to organise receipts so you can actually find them"
-metaTitle: "How to organise receipts so you can actually find them | wrnty"
+metaTitle: "How to organise receipts so you find them | wrnty"
 description: "A practical system for keeping receipts and records of what you buy — without the weekend filing project you will never start. Just two minutes a day."
 ogDescription: "A practical system for keeping receipts and records of what you buy — without the weekend filing project you will never start. Just two minutes a day."
 lede: "You know you should keep the receipt. You also know your inbox is already a minefield of confirmation emails, PDFs and forwarding threads. There is a better way than a labelled folder that nobody checks."
@@ -17,6 +17,28 @@ summary: >
 coverAlt: "A wooden desk with a smartphone showing a photo of a receipt, a few paper receipts scattered nearby, a coffee cup, warm daylight"
 hero: true
 related: [how-to-make-a-warranty-claim, what-counts-as-proof-of-purchase]
+answer: >
+  Capture the receipt at the moment of purchase instead of filing it later. Photograph it,
+  record what the item is and when you bought it, and store it somewhere searchable. A
+  system that takes two minutes per purchase survives; the weekend filing project you keep
+  postponing does not.
+sources:
+  - title: "IRS — What kind of records should I keep"
+    url: https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+howtoName: "How to organise your receipts"
+howto:
+  - name: "Capture at the point of purchase"
+    text: "Photograph or forward the receipt before you leave the shop or close the confirmation email. Anything you defer is a receipt you will not file."
+  - name: "Record what it is and when you bought it"
+    text: "A photo of a faded receipt is not enough on its own. Note the item, the date and the price so the record stays searchable when the ink has gone."
+  - name: "Keep everything in one place"
+    text: "One destination, whether that is a folder, an app or a drive. Receipts spread across email, photos and a drawer are receipts you cannot find."
+  - name: "Only keep what is worth keeping"
+    text: "Anything under warranty, anything you might return, anything you would claim on insurance, and anything tax-deductible. Coffee receipts can go."
+  - name: "Check it once a year"
+    text: "A short annual pass to clear expired items keeps the system small enough to stay usable."
 faq:
   - question: "What is the best way to store receipts digitally?"
     answer: "The best way is the one you will actually use. That usually means using your phone: snap a photo of the receipt the moment you get it, or save the email confirmation to a dedicated folder. The key is to do it while the purchase is fresh — not at the end of the week when the receipt has already been buried in your bag or inbox."
@@ -36,7 +58,7 @@ You bought something. You were handed a receipt, or an email arrived, or you scr
 
 This is one of the most universal ownership problems and it is also one of the simplest to fix — if the system is small enough to actually stick.
 
-## The mistake people make
+## Why do most receipt systems fail?
 
 The common approach is to plan for the weekend when everything will be filed. The labelled box will arrive at the shop. The inbox will be sorted. The drawer will be organised.
 
@@ -44,7 +66,7 @@ It never happens. Not because people are bad at organisation, but because the sy
 
 The rule is this: **the time between purchase and capture should be measured in minutes, not days.**
 
-## The system
+## What does a system that actually works look like?
 
 Here is the part that matters:
 
@@ -80,7 +102,7 @@ Here is what a real week looks like:
 
 The entire system cost you roughly two minutes a day on the day you bought the kettle, and ninety seconds on Thursday. No filing weekend. No labelled boxes. No system that collapses the moment life gets busy.
 
-## How to know when something is worth tracking
+## Which receipts are worth keeping?
 
 Not every receipt needs a record. The grocery receipt that proves you bought milk is not going to matter six months from now. The receipt for a forty-dollar kitchen gadget probably won't either. Focus on things where the replacement cost would hurt, or where the warranty period is long enough that you would genuinely forget the purchase date if you do not record it.
 
@@ -98,7 +120,7 @@ The categories that matter most:
 
 For everything else, a single folder for the receipts that matter is enough. You can always add more detail later if something breaks.
 
-## When your system fails (and it will)
+## What happens when your system fails?
 
 Your phone will break. Your cloud account will get locked. Your camera roll will fill up and the old photos will disappear into the scroll. None of this is a failure of your system — it is a failure of backup.
 
@@ -114,7 +136,7 @@ Two minutes a day beats a filing weekend every time.
 
 ![Paper receipts on a wooden desk beside a smartphone and a coffee cup, warm daylight](/images/blog/how-to-organise-receipts-1.png "A typical receipt capture scene — paper on a desk")
 
-## Keep reading
+## Related reading
 
 - [What counts as proof of purchase — and what to do when you have lost the receipt](/blog/what-counts-as-proof-of-purchase/)
 - [How to make a warranty claim (and what to do when it is refused)](/blog/how-to-make-a-warranty-claim/)

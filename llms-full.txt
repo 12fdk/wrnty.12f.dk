@@ -15,6 +15,7 @@ Most people lose money not because a product fails, but because it fails just af
 - Privacy: no account required; data stored on-device and in the user's own iCloud; no ads, no tracking, no data selling; optional anonymous analytics that can be turned off; GDPR compliant
 - Languages: available in 28 languages
 - Developer: 12F ApS, Denmark (https://12f.dk/)
+- Contact: wrnty@12f.dk
 - Website: https://wrnty.12f.dk/
 - App Store: https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961
 
@@ -89,6 +90,8 @@ Most products carry a standard one-year manufacturer warranty, but some categori
 - [Home](https://wrnty.12f.dk/)
 - [Blog](https://wrnty.12f.dk/blog/)
 - [RSS feed](https://wrnty.12f.dk/feed.xml)
+- [About — who builds wrnty and how these posts are written](https://wrnty.12f.dk/about.html)
+- [Contact](https://wrnty.12f.dk/contact.html)
 - [Privacy Policy](https://wrnty.12f.dk/privacy-policy.html)
 - [App Store](https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961)
 - [Developer — 12F ApS](https://12f.dk/)

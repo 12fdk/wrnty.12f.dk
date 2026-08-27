@@ -10,3 +10,6 @@ __pycache__/
 
 # IndexNow snapshot (generated in CI)
 .indexnow/
+
+# Audit reports and their build scripts — local working artefacts, never deployed.
+audit/

@@ -1,5 +1,6 @@
 ---
 title: "How long is the warranty on common things — a plain reference"
+metaTitle: "How long is the warranty on common things? | wrnty"
 description: "A plain-English guide to the warranty length on phones, laptops, appliances, cars, tyres, mattresses and more — plus what statutory rights add on top."
 lede: "You want to know how long a warranty is on your washing machine, your phone, your laptop. The answer depends on who you ask, but here is a practical map of what most manufacturers actually offer."
 excerpt: "A practical reference for the warranty length on the things you own — phones, laptops, major appliances, tyres, mattresses and more — and the extra statutory rights that stack on top of any manufacturer cover."
@@ -16,6 +17,20 @@ summary: >
 coverAlt: "A kitchen table with a washing machine manual, a phone box, a laptop and a small stack of warranty cards spread out, warm morning light"
 hero: true
 related: [how-to-make-a-warranty-claim, what-counts-as-proof-of-purchase]
+answer: >
+  Most consumer products carry a one-year manufacturer warranty. Large appliances often
+  run one to two years on the whole unit with up to ten on key components, cars three to
+  five, and mattresses anything from two to twenty. Statutory rights against the seller
+  may add cover on top and do not expire when the warranty does.
+sources:
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+  - title: "FTC — Auto Warranties and Auto Service Contracts"
+    url: https://consumer.ftc.gov/articles/auto-warranties-and-auto-service-contracts
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
+  - title: "Consumer Rights Act 2015 (UK legislation)"
+    url: https://www.legislation.gov.uk/ukpga/2015/15/contents
 faq:
   - question: "How long is a warranty on a phone?"
     answer: "Most phones carry a one-year manufacturer warranty covering defects in materials and workmanship. That does not cover cracked screens, water damage or battery wear — most of those fall under accidental-damage plans, which are separate. In many countries you also have a statutory right against the seller for faulty goods, independent of any manufacturer warranty."
@@ -76,7 +91,7 @@ Tyres carry a **workmanship warranty** — usually one to five years — coverin
 
 New cars typically carry **three to five years** bumper-to-bumper. Extended warranties sold at the dealership are insurance products, not part of the manufacturer's terms.
 
-## The statutory rights that stack on top
+## What statutory rights stack on top?
 
 Here is the part most people miss: **a manufacturer warranty is not your only cover.**
 
@@ -96,7 +111,7 @@ Knowing the warranty length is the first step. Knowing when your specific produc
 
 When something breaks, you will need your proof of purchase within minutes, not hours — and if the warranty has already expired, you will want to know whether a statutory right or an accidental-damage plan still applies. Our guide on [what counts as proof of purchase](/blog/what-counts-as-proof-of-purchase/) walks through exactly what the claim desk will accept and what to do when the original receipt is gone. And if you already have a system for tracking your purchases, our guide on [warranty gotchas and fine print](/blog/warranty-gotchas-fine-print/) covers what to look for before anything breaks.
 
-## A practical way to use this map
+## How do you actually use this?
 
 Put the product in your hand, open the box, and check three things:
 
@@ -108,19 +123,22 @@ Record those three facts. Set a reminder before expiry. Move on. You do not need
 
 ![A hand placing a warranty card and a receipt next to a product box on a kitchen counter, warm natural light](/images/blog/how-long-is-the-warranty-on-common-things-1.png "A warranty card and receipt beside a product box on a kitchen counter")
 
-## Quick reference
+## How long is the warranty on each category?
 
 Here is a plain summary of the typical manufacturer warranty by category. These are ranges, not promises — always check the specific product's documentation.
 
-- **Phones:** 1 year
-- **Laptops:** 1–3 years
-- **Tablets:** 1 year
-- **Cameras:** 1–2 years
-- **Washing machines / fridges:** 1–2 years on the full unit, up to 10 years on key components (often requires registration)
-- **Small appliances (kettles, toasters, coffee machines):** 1–2 years
-- **Furniture:** 1–10 years (highly variable by brand)
-- **Tyres:** 1–5 years on workmanship only; wear-and-tear is excluded
-- **Cars:** 3–5 years
+| Category | Typical manufacturer warranty | Worth knowing |
+| --- | --- | --- |
+| Phones | 1 year | Battery often treated as a consumable |
+| Laptops | 1–3 years | Business models frequently get 2–3 |
+| Tablets | 1 year | Same accidental-damage exclusions as phones |
+| Cameras | 1–2 years | Often 2 years in Europe, 1 elsewhere |
+| Washing machines, fridges | 1–2 years on the unit | Up to 10 on motor or compressor, usually only if registered |
+| Small appliances | 1–2 years | Cheaper brands stay at 12 months |
+| Furniture | 1–10 years | Varies more by brand than any other category |
+| Mattresses | 2–20 years | Long terms are usually prorated, not full replacement |
+| Tyres | 1–5 years | Workmanship only — tread wear is excluded |
+| Cars | 3–5 years | Powertrain cover often runs longer than bumper-to-bumper |
 
 And remember: these are the manufacturer's terms. Statutory rights against the seller may give you additional cover in many countries, and they do not expire when the manufacturer's warranty does.
 

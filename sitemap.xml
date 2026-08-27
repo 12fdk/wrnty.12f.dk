@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wrnty.12f.dk/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://wrnty.12f.dk/blog/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -80,6 +80,18 @@
     <priority>0.7</priority>
   </url>
   <!-- BLOG:URLS:END -->
+  <url>
+    <loc>https://wrnty.12f.dk/about.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wrnty.12f.dk/contact.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://wrnty.12f.dk/privacy-policy.html</loc>
     <lastmod>2026-07-27</lastmod>

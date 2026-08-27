@@ -7,6 +7,8 @@ App Store: <https://apps.apple.com/us/app/wrnty-warranty-receipts/id6747742961>
 ## Structure
 
 - `index.html` — the landing page
+- `about.html` — who builds wrnty and how the blog is written
+- `contact.html` — contact details
 - `privacy-policy.html` — privacy policy
 - `404.html` — custom not-found page
 - `css/style.css` — the whole design system (CSS custom properties, light + dark)
@@ -40,6 +42,7 @@ in Markdown with frontmatter, generate its cover, then run the build — never
 hand-edit `blog/<slug>/index.html`.
 
 ```bash
+python3 tools/optimise-images.py                     # PNG → WebP + og.jpg (run before every build)
 python3 tools/make-cover.py <slug> "<Title>" <tag>   # 1200x630 branded cover → images/blog/<slug>.png
 python3 tools/build.py --check                        # validate only (schema, links, lengths)
 python3 tools/build.py                                # write everything

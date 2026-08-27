@@ -1,5 +1,6 @@
 ---
 title: "How to build a home inventory (and why your insurer wants one)"
+metaTitle: "How to build a home inventory | wrnty"
 description: "A home inventory tracks everything you own — cost, date, source, receipt. Here's how to build one without losing a weekend."
 lede: "If your home is damaged, a home inventory tells your insurer exactly what they owe you. Building one sounds daunting. It is not, once you know where to start."
 excerpt: "A home inventory is a record of everything you own — what it cost, when you bought it, and where the receipt is. Here's how to build one in a single afternoon, not a weekend."
@@ -15,6 +16,30 @@ summary: >
 coverAlt: "A wooden desk with a notebook open to a list, a pen, and a smartphone beside a small stack of boxes and household items"
 hero: true
 related: [how-to-organise-receipts, how-to-make-a-warranty-claim]
+answer: >
+  A home inventory is a record of what you own, what each item cost, when and where you
+  bought it, and where the receipt or serial number lives. Insurers use it to settle
+  claims faster and for more, because you can prove what was lost. Start with one drawer
+  or your most recent purchases rather than the whole house.
+sources:
+  - title: "Insurance Information Institute — How to create a home inventory"
+    url: https://www.iii.org/article/how-to-create-a-home-inventory
+  - title: "IRS — What kind of records should I keep"
+    url: https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep
+howtoName: "How to build a home inventory"
+howto:
+  - name: "Pick one contained area"
+    text: "Start with a single drawer, shelf or cupboard rather than the whole house. A contained area finishes in ten minutes and gives you a working inventory the same day."
+  - name: "Photograph the item and its label"
+    text: "Take one wide photo showing the item in place and one close photo of the model and serial number. The label matters more than the product shot when you file a claim."
+  - name: "Record cost, date and source"
+    text: "Note what you paid, when you bought it, and which retailer sold it. Those three facts are what an insurer or a manufacturer asks for first."
+  - name: "Attach the proof of purchase"
+    text: "Link the receipt, order confirmation or bank record to the entry while it is still easy to find."
+  - name: "Store a copy off-site"
+    text: "Keep the inventory somewhere that survives the loss it documents — cloud storage, an external drive kept elsewhere, or a relative's house."
+  - name: "Update it as you buy"
+    text: "Add new items at the point of purchase instead of scheduling a review you will never do."
 faq:
   - question: "What exactly goes into a home inventory?"
     answer: "Every item of value in your home — furniture, clothing, electronics, kitchen appliances, jewellery, tools, and decor. For each item, record the name, brand, model, purchase date, purchase price, the store or website where you bought it, and where you keep the receipt or proof of purchase. A photograph of the item is also useful."
@@ -34,7 +59,7 @@ Something happens. A pipe bursts. A neighbour's flat floods upstairs. The house 
 
 This is why people build home inventories. It is not a hobby. It is insurance against your own memory.
 
-## What a home inventory actually is
+## What is a home inventory?
 
 A home inventory is simply a list of everything you own in your house — furniture, electronics, clothing, kitchen appliances, tools, jewellery, books, art, and anything else that would need replacing if your home were damaged. For each item, you record:
 
@@ -47,7 +72,7 @@ A home inventory is simply a list of everything you own in your house — furnit
 
 That is it. You do not need to appraise items. You do not need professional software. You need to know what you had before the disaster so you can tell your insurer exactly what they need to replace.
 
-## Why bother? A home is how most claims happen
+## Why bother with a home inventory?
 
 Fire, flood, theft, burglary — these are the events that make inventories painful to discover you never built one. After such an event, the priority is safety, insurance calls, and figuring out where to stay. Asking someone to remember every television, every piece of furniture, every set of cutlery, every winter coat they own is unrealistic.
 
@@ -55,7 +80,7 @@ People who built an inventory beforehand file claims faster and get more accurat
 
 This is also why some insurers ask for an inventory during renewal or after a claim. They know the people with good records make less fraudulent claims and settle faster. You will not lose anything by having one.
 
-## Where to start (without spending a weekend on it)
+## Where should you start?
 
 The biggest mistake people make is trying to do the whole house in one sitting. It is exhausting, and you will burn out after the living room and abandon the bedroom.
 
@@ -69,7 +94,7 @@ Here is a better approach:
 
 **Keep a running total.** Add up the value of everything in your inventory. Compare it to your insurance coverage. If your contents policy caps at a certain amount and your total is higher, you need to increase your coverage. Many people do not realize their policy limit is too low until they have actually filed a claim.
 
-## What tools work
+## What tools work best?
 
 A spreadsheet is a perfectly good home inventory. It is searchable, shareable, and works on any device. Google Sheets or similar cloud spreadsheets are especially useful because they survive a house-level disaster — your data is not on a local hard drive.
 
@@ -79,7 +104,7 @@ Either approach is better than "I'll figure it out later." If you want a system 
 
 ![A notebook open with handwritten categories beside a smartphone and a few small household items on a wooden table](/images/blog/how-to-build-a-home-inventory-1.png)
 
-## What to photograph
+## What should you photograph?
 
 You do not need professional equipment. Your phone camera is fine. The goal is not beauty — it is proof.
 
@@ -92,7 +117,7 @@ For high-value items, photograph:
 
 For smaller items — clothing, books, kitchenware — a quick phone photograph of the pile or shelf is enough. You do not need an individual photo of every T-shirt in your wardrobe, but you do want to be able to show your insurer the dresser full of clothes, not just the line item "clothes, $800."
 
-## Where to keep the inventory
+## Where should you keep the inventory?
 
 If your home inventory lives in your house — in a drawer with the receipts, on a hard drive next to the valuables — a fire or flood destroys the inventory along with everything else.
 
@@ -109,7 +134,7 @@ Add new items when you buy them. Remove items when you get rid of them. Review t
 
 If you already use a system to track warranties and receipts — whether it is a folder of photos, a spreadsheet, or an app like wrnty — adding a home inventory is simply extending what you already record. You are already noting purchase dates, prices, and merchant details for your warranties. The inventory is just the same process applied to everything else in the house.
 
-## When you actually need it
+## When do you actually need it?
 
 No one likes to think about the moment they need a home inventory. But here is what the moment looks like if you built one ahead of time:
 

@@ -15,6 +15,18 @@ summary: >
 coverAlt: "A product warranty card and registration form on a desk beside a new appliance remote control"
 hero: true
 related: [how-to-make-a-warranty-claim, what-counts-as-proof-of-purchase]
+answer: >
+  No. In most markets the purchase creates the warranty, not the registration. Registering
+  a product mainly helps the manufacturer contact you about recalls and makes a future
+  claim faster because your details are already on file. A few extended or component
+  warranties genuinely do require registration, so it is worth checking the terms.
+sources:
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+  - title: "FTC — Businessperson's Guide to Federal Warranty Law (Magnuson-Moss)"
+    url: https://www.ftc.gov/business-guidance/resources/businesspersons-guide-federal-warranty-law
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
 faq:
   - question: "Does registering a product create a warranty?"
     answer: "No. Registration does not create warranty coverage. Your purchase does. A warranty is established the moment you buy the product from an authorised seller. Registration is a separate step where you tell the manufacturer who you are and how to reach you — so that when a defect appears during the warranty period, they know where to send a replacement or arrange a repair."
@@ -38,7 +50,7 @@ The question many people are asking when they see that prompt is the same one th
 
 The answer is important, and it is not what most marketing departments want you to believe.
 
-## The short answer: no
+## Is registration required for warranty coverage?
 
 Registering a product does not give you a warranty. Purchasing one does.
 
@@ -48,7 +60,7 @@ What registration does is something entirely different. It tells the manufacture
 
 But the two things are not the same. One creates the legal obligation. The other simply records who the obligation is owed to.
 
-## What registration actually does
+## What does product registration actually do?
 
 Think of product registration as the manufacturer's address book. Here is what it achieves:
 
@@ -64,7 +76,7 @@ Think of product registration as the manufacturer's address book. Here is what i
 
 ![paper receipts and a warranty card on a wooden desk](/images/blog/do-you-need-to-register-a-product-1.png)
 
-## What registration does NOT do
+## What does registration not do?
 
 There are some things that no amount of registration will accomplish, and it is worth knowing these upfront:
 
@@ -74,7 +86,7 @@ There are some things that no amount of registration will accomplish, and it is 
 
 **It does not override the terms and conditions.** Registration does not change what is covered, what is excluded, or what voids your warranty. If your warranty excludes water damage, registering the product does not add water damage coverage. If the warranty says unauthorised repairs void the cover, registration does not change that clause.
 
-## When registration matters and when it does not
+## When does registration actually matter?
 
 Not all registrations are created equal. Here is a practical way to think about which ones are worth your time:
 
@@ -99,7 +111,7 @@ Not all registrations are created equal. Here is a practical way to think about 
 
 The rule of thumb is simple: register the things that matter to your wallet, skip the rest.
 
-## What happens if you do not register
+## What happens if you never register?
 
 Nothing legal happens. Your warranty still exists. Your statutory rights are still intact. The manufacturer still has to honour their obligations if you can prove purchase.
 
@@ -107,7 +119,7 @@ Nothing legal happens. Your warranty still exists. Your statutory rights are sti
 
 None of this means the warranty is void. It means the process is less convenient. There is a difference between a warranty that does not exist and a warranty that exists but is harder to access.
 
-## How to keep track of what you have registered
+## How do you keep track of what you have registered?
 
 This is where the habit of recording your purchases matters.
 
@@ -121,7 +133,7 @@ The free tier tracks up to two items. The one-time Premium purchase unlocks unli
 
 But you do not need the app for the core habit. A spreadsheet, a labelled folder in your email inbox, a set of photos in your camera roll — any of these will also work. The dedicated tracker simply saves you the time of hunting each time.
 
-## The registration process in practice
+## What does registering actually involve?
 
 If you decide to register, the process is usually straightforward:
 
@@ -133,7 +145,7 @@ If you decide to register, the process is usually straightforward:
 
 The whole process should take about two minutes. If a manufacturer asks for more than that, they are either collecting excessive information or their process is poorly designed.
 
-## A note on statutory rights and warranties
+## How do statutory rights fit in?
 
 It is worth distinguishing one more time between what registration does and what consumer law provides, because these two concepts are often conflated.
 

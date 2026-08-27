@@ -15,6 +15,16 @@ summary: >
 coverAlt: "A cracked phone screen on a dark wooden table beside a small bowl of screws and a folded repair guide"
 hero: true
 related: [how-to-make-a-warranty-claim, warranty-gotchas-fine-print]
+answer: >
+  Check the warranty first — a covered fault makes the question moot. Otherwise compare
+  the repair quote against what the item is worth now, not what you paid. If the repair
+  costs more than half the replacement value and the product is past half its expected
+  life, replacing is usually the better call.
+sources:
+  - title: "FTC — Warranties (consumer guidance)"
+    url: https://consumer.ftc.gov/articles/warranties
+  - title: "European Commission — Guarantees and returns (Your Europe)"
+    url: https://europa.eu/youreurope/citizens/consumers/shopping/guarantees-returns/index_en.htm
 faq:
   - question: "When is it better to repair than replace?"
     answer: "Usually when the repair costs less than half the price of a comparable replacement and the item still has at least a year or two of useful life. If the item is under warranty, repair or replacement through the manufacturer should be free, which changes the calculation entirely."
@@ -42,7 +52,7 @@ If you are still under the statutory consumer rights window in your country, the
 
 If you already read the post on [how to make a warranty claim](/blog/how-to-make-a-warranty-claim/), you know the basic drill: gather your proof of purchase, describe the fault clearly, and keep a record of every interaction. The key insight is this — you need to find that proof of purchase in the first place. Which is exactly why [our guide on warranty gotchas and fine print](/blog/warranty-gotchas-fine-print/) exists — it covers what to watch for before anything breaks.
 
-## The simple maths: repair cost vs replacement value
+## Repair or replace: what do the numbers say?
 
 Once you know whether a warranty claim is on the table, the core question remains: is the repair cheaper than replacing the item?
 
@@ -56,7 +66,16 @@ Cheap items rarely justify repair. A $30 kitchen gadget with a $25 quote — rep
 
 ![a kitchen counter with a repair estimate sheet and a refrigerator visible in the background](/images/blog/repair-it-or-replace-it-1.png)
 
-## When the repair costs more than half
+| Repair quote vs. replacement cost | Age of the item | Usual call |
+| --- | --- | --- |
+| Under 30% | Any | Repair |
+| 30–50% | Under half its expected life | Repair |
+| 30–50% | Past half its expected life | Judgement call — weigh reliability |
+| Over 50% | Under half its expected life | Repair only if the model is hard to replace |
+| Over 50% | Past half its expected life | Replace |
+| Any amount | Still under warranty | Claim first — the question is moot |
+
+## What if the repair costs more than half?
 
 This is the uncomfortable zone — neither a bargain nor the full price of a new item.
 
@@ -68,7 +87,7 @@ This is the uncomfortable zone — neither a bargain nor the full price of a new
 
 **What about hidden replacement costs?** Sometimes repair is the right call simply because replacement carries costs you have not counted: the hassle of setting up something new, the loss of a good item that is just temporarily broken.
 
-## The warranty angle
+## Does the warranty change the answer?
 
 A warranty claim changes the entire calculation. When something is still covered and the fault is genuine, the manufacturer typically covers the repair or replacement entirely. Your job is just to make the claim.
 
@@ -94,7 +113,7 @@ Here is a way to run through the decision in under two minutes:
 
 That is it. Not a perfect algorithm. Just a way to avoid the most common mistakes: paying for a repair when you could have claimed under warranty, or replacing something that was fixable for far less.
 
-## When replacement is the right call
+## When is replacing the right call?
 
 Sometimes the decision is straightforward.
 
