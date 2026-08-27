@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 20 Aug 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Is AppleCare worth it? What phone and laptop warranties actually cover</title>
+      <link>https://wrnty.12f.dk/blog/is-applecare-worth-it/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/is-applecare-worth-it/</guid>
+      <pubDate>Thu, 27 Aug 2026 08:00:00 +0000</pubDate>
+      <category>buying-guides</category>
+      <description>The protection plan at the counter. What the standard phone and laptop warranty covers, what it does not, and whether AppleCare earns its price.</description>
+    </item>
     <item>
       <title>Consumer rights when something breaks — beyond the warranty</title>
       <link>https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/</link>

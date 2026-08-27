@@ -40,6 +40,10 @@ Most people lose money not because a product fails, but because it fails just af
 
 The wrnty blog publishes practical advice on tracking warranties, organising receipts and buying smart at https://wrnty.12f.dk/blog/ (RSS feed: https://wrnty.12f.dk/feed.xml). Posts are tagged `warranty-tips`, `organizing` or `buying-guides`.
 
+### Is AppleCare worth it? What phone and laptop warranties actually cover (2026-08-27, buying-guides)
+https://wrnty.12f.dk/blog/is-applecare-worth-it/
+The standard phone and laptop warranty covers defects in materials and workmanship — the things that go wrong under normal, careful use. It does not cover cracked screens, water damage, drops, battery wear, or theft. The protection plan offered at the counter — AppleCare or an equivalent — is the product that picks up the gap. This post walks through what each layer covers, what the plan's price is doing, and a simple way to decide whether it is worth it for a given device, before you are at the counter.
+
 ### Consumer rights when something breaks — beyond the warranty (2026-08-20, warranty-tips)
 https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/
 A plain-language explanation of the difference between a manufacturer warranty and the statutory rights a buyer has against the seller for faulty goods. It covers why the two are separate legal mechanisms with different time limits, which party owes you what, what a warranty claim does and does not affect, and a practical decision path for when something breaks — including when to contact the retailer, when to escalate, and when to check the local consumer body.
