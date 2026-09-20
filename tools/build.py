@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import hashlib
 import json
 import re
 import shutil
@@ -48,6 +49,32 @@ TEMPLATE = Path(__file__).resolve().parent / "templates" / "post.html"
 SITE = "https://wrnty.12f.dk"
 TAGS = {"warranty-tips", "organizing", "buying-guides"}
 WORDS_PER_MINUTE = 200
+
+# Cache-busting for the hand-written assets.
+#
+# The pages reference /css/style.css and /js/main.js by bare path, and the CDN
+# in front of Pages caches them for four hours (max-age=14400). A deploy that
+# ships new markup *and* new CSS therefore serves the new HTML against the
+# previous stylesheet for up to four hours: new sections render unstyled, and
+# nothing in the build catches it because the repo is correct. Stamping a hash
+# of the file's own contents into the URL gives each version its own cache key,
+# so a changed asset is fetched immediately and an unchanged one stays cached.
+ASSETS = ("/css/style.css", "/js/main.js")
+
+
+def asset_version(url: str) -> str:
+    path = ROOT / url.lstrip("/")
+    if not path.exists():
+        raise BuildError(f"asset {url} referenced by the pages does not exist")
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:8]
+
+
+def stamp_assets(html: str) -> str:
+    """Rewrite every reference to a hashed asset to carry the current hash."""
+    for url in ASSETS:
+        pattern = re.compile(re.escape(url) + r'(\?v=[0-9a-f]+)?(?=["\'])')
+        html = pattern.sub(f"{url}?v={asset_version(url)}", html)
+    return html
 
 MAX_TITLE = 70
 MAX_META_TITLE = 62     # the <title>; Google truncates a SERP title around here
@@ -829,6 +856,8 @@ def replace_section(path: Path, heading: str, new_body: str) -> str:
 
 def write(path: Path, content: str, check: bool, changed: list[str]) -> None:
     rel = str(path.relative_to(ROOT))
+    if path.suffix == ".html":
+        content = stamp_assets(content)
     old = path.read_text(encoding="utf-8") if path.exists() else None
     if old == content:
         return
@@ -1029,6 +1058,12 @@ def main() -> int:
         write(ROOT / "llms-full.txt",
               replace_section(ROOT / "llms-full.txt", "## Blog", build_llms_full_region(posts)),
               args.check, changed)
+        # The hand-written pages are not generated, but they reference the
+        # same assets and so need the same stamp.
+        for rel in ("about.html", "contact.html", "privacy-policy.html", "404.html"):
+            page = ROOT / rel
+            if page.exists():
+                write(page, page.read_text(encoding="utf-8"), args.check, changed)
     except BuildError as e:
         print(f"ERROR  {e}", file=sys.stderr)
         return 1
@@ -1061,6 +1096,7 @@ def main() -> int:
                   f"— no posts/{slug}.md (add it to REDIRECTS to keep the URL alive)")
 
     verb = "would change" if args.check else "wrote"
+    changed = list(dict.fromkeys(changed))
     if changed:
         for rel in changed:
             print(f"  {verb}  {rel}")
