@@ -419,6 +419,27 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
 .strip .strip-label { font-size: 0.85rem; opacity: 0.82; }
 
 /* ==========================================================================
+   Stakes — the internal problem, told before the solution
+   ========================================================================== */
+.stakes {
+  max-width: var(--wrap-narrow);
+  margin: 0 auto;
+  text-align: center;
+}
+.stakes p {
+  font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+  color: var(--ink-2);
+}
+.stakes p + p { margin-top: 14px; }
+.stakes .stakes-punch {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ==========================================================================
    Features
    ========================================================================== */
 .feature-grid {
@@ -516,6 +537,13 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
 }
 .split-copy h2 { margin-bottom: 16px; }
 .split-copy .lede { margin-bottom: 26px; }
+.split-copy .trust-note {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
+  color: var(--ink-2);
+}
 .split-list { display: grid; gap: 16px; }
 .split-list li { display: flex; align-items: flex-start; gap: 13px; }
 .split-list .bullet {
@@ -1042,6 +1070,12 @@ a.tag:hover { text-decoration: none; filter: brightness(0.97); }
 .post-card-more { margin-top: auto; font-weight: 650; font-size: 0.92rem; color: var(--green-strong); }
 
 .blog-teaser-foot { text-align: center; margin-top: 44px; }
+.blog-teaser-note {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: var(--ink-3);
+}
 
 /* Blog index + article */
 .crumbs { font-size: 0.86rem; color: var(--ink-3); margin-bottom: 22px; }
@@ -1196,3 +1230,16 @@ a.tag:hover { text-decoration: none; filter: brightness(0.97); }
 .info-row dt { color: var(--ink-3); font-size: 0.86rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .info-row dd { color: var(--ink); }
 @media (max-width: 560px) { .info-row { grid-template-columns: 1fr; gap: 4px; } }
+
+/* ==========================================================================
+   One-liner — the single sentence that explains what wrnty does
+   ========================================================================== */
+.one-liner {
+  font-size: clamp(1.1rem, 2.3vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ink);
+  border-left: 4px solid var(--green);
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
