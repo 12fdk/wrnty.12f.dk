@@ -85,32 +85,40 @@ hangs indefinitely — it has a hard time budget and gives up gracefully.
 ### How to choose (do this, in order)
 
 1. `ls posts/` to see what already exists — filenames only, do not read the posts.
-2. Run `python3 tools/reddit-topics.py`. Read the digest.
-3. Pick the **highest-demand theme that is NOT already covered**, and turn it into
-   one specific article. Use the verbatim titles in the digest to phrase it in the
-   reader's own words — that phrasing *is* the search query.
-4. If the tool exits non-zero (Reddit blocking, network down), that is expected and
-   fine: fall back to the **ranked topic bank** below and say so in your report.
+2. Run the tool with its output in a log file, then read the digest with `tail`/`head`:
+   `python3 tools/reddit-topics.py > /tmp/wrnty-topics.log 2>&1; echo "exit $?"`
+3. **The digest is the brief.** Pick the **highest-demand theme that is NOT already
+   covered** (the digest marks covered themes; check them against `ls posts/` too),
+   and turn it into one specific article. Use the verbatim titles in the digest to
+   phrase it in the reader's own words — that phrasing *is* the search query.
+4. Only if the scrape failed — exit code `2` means every feed failed (Reddit
+   blocking, network down) — fall back to the **ranked topic bank** below and say so
+   in your report. That is expected and fine.
+5. **Mark the bank entry you used, in the same commit as the post.** If your topic
+   is (or substantially overlaps) a bank entry — whether you came from the digest
+   or from the fallback — strike it through and add the slug, exactly like the
+   entries already marked: `~~Title~~ *(covered: <slug>)*`. An unmarked entry
+   gets written twice.
 
 ### Ranked topic bank (fallback, and a map of angles that fit the app)
 
 Each entry names a real reader problem that a warranty-and-receipt tracker is a
 natural — not forced — part of the answer to. Pick the highest one not yet covered
-(the first two are already written — skip them):
+(struck through = already written; skip those):
 
-1. ~~How to keep track of warranties without a drawer full of receipts~~ *(covered: organizing)*
-2. ~~Is an extended warranty worth it?~~ *(covered: buying-guides)*
-3. **How to make a warranty claim (and what to do when it's refused)** — the step-by-step, and your options if they say no · *"how to make a warranty claim"*
-4. **What counts as proof of purchase — and what to do when you've lost the receipt** · *"lost receipt warranty claim"*
-5. **How long is the warranty on \[common things]** — a plain reference for phones, laptops, appliances, tyres, mattresses · *"how long is the warranty on"*
-6. **Your consumer rights when something breaks** — statutory rights vs the manufacturer warranty, and why they're not the same · *"consumer rights faulty goods"*
-7. **Repair it or replace it? A simple way to decide** — the maths, and when a warranty changes the answer · *"should I repair or replace"*
-8. **How to organise receipts so you can actually find them** — the two-minute habit that beats a filing weekend · *"how to organize receipts"*
-9. **Do you have to register a product to get the warranty?** — what registration does and doesn't do · *"do I need to register for warranty"*
-10. **AppleCare and phone/laptop warranties — what's actually covered** · *"is AppleCare worth it"*
+1. **How to keep track of warranties without a drawer full of receipts** — one place, one habit, found in seconds when something breaks · *"how to keep track of warranties"*
+2. **Is an extended warranty worth it?** — what you are actually buying, and when it pays · *"is an extended warranty worth it"*
+3. ~~How to make a warranty claim (and what to do when it's refused)~~ *(covered: how-to-make-a-warranty-claim)*
+4. ~~What counts as proof of purchase — and what to do when you've lost the receipt~~ *(covered: what-counts-as-proof-of-purchase)*
+5. ~~How long is the warranty on \[common things]~~ *(covered: how-long-is-the-warranty-on-common-things)*
+6. ~~Your consumer rights when something breaks~~ *(covered: consumer-rights-when-something-breaks)*
+7. ~~Repair it or replace it? A simple way to decide~~ *(covered: repair-it-or-replace-it)*
+8. ~~How to organise receipts so you can actually find them~~ *(covered: how-to-organise-receipts)*
+9. ~~Do you have to register a product to get the warranty?~~ *(covered: do-you-need-to-register-a-product)*
+10. ~~AppleCare and phone/laptop warranties — what's actually covered~~ *(covered: is-applecare-worth-it)*
 11. **Home contents insurance vs an extended warranty** — which covers what, and the overlap you're paying twice for · *"insurance vs extended warranty"*
-12. **How to build a home inventory (and why your insurer wants one)** · *"how to make a home inventory"*
-13. **Warranty gotchas — the fine print that voids your cover** — and how to avoid triggering it · *"what voids a warranty"*
+12. ~~How to build a home inventory (and why your insurer wants one)~~ *(covered: how-to-build-a-home-inventory)*
+13. ~~Warranty gotchas — the fine print that voids your cover~~ *(covered: warranty-gotchas-fine-print)*
 14. **What to do the week an appliance dies** — diagnose, check the cover, decide fast · *"appliance stopped working what to do"*
 15. **Which brands actually last** — how to read warranties as a signal of durability · *"most reliable appliance brands"*
 16. **Keeping warranties and receipts for a small business** — asset records without accounting software · *"track business equipment warranties"*
@@ -145,9 +153,11 @@ bar: a skeptical person on Reddit should upvote it and never feel sold to.
 - **Banned:** hype words ("revolutionary", "game-changer", "must-have", "ultimate",
   "supercharge"), fake urgency, "download now!", exclamation-mark selling, review-
   style praise of the app, or implying the reader is irresponsible without it.
-- The **gold-standard reference** is `posts/how-to-keep-track-of-warranties.md` —
-  its tone is exactly right (honest, specific, no pressure). To save context, skim
-  only the top: `head -40 posts/how-to-keep-track-of-warranties.md`.
+- The **gold-standard reference** is `posts/repair-it-or-replace-it.md` — its tone
+  is exactly right (honest, specific, no pressure, one mention framed as "one way").
+  Copy its tone, not its feature wording: feature claims come only from §0 and §3.
+  To save context, skim only the top:
+  `sed -n '/^---$/,/^---$/!p' posts/repair-it-or-replace-it.md | head -30`.
 
 **The brand is always lowercase `wrnty`** — even at the start of a sentence. Never
 write "Wrnty". If a sentence would start with it, reword so it does not (e.g. "This
@@ -451,6 +461,10 @@ screen") — the text is gibberish and you cannot see it anyway. To reduce the g
 write cover/inline prompts that keep any phone or laptop switched off, angled away,
 or well out of focus, and lean on paper, boxes, hands and desks instead of screens.
 
+**The cover is a ComfyUI photo — `tools/make-cover.py` is ONLY the fallback below.**
+There is no `make-og-image.py` in this repo and no compositing step: never run
+`make-cover.py` on a ComfyUI photo, and never burn the title into the image.
+
 **If ComfyUI is unavailable:** retry once. If it still fails, generate a branded
 cover card instead so the build passes, and skip the inline images:
 
@@ -459,7 +473,8 @@ python3 tools/make-cover.py <slug> "<Title>" <tag>
 ```
 
 That writes `images/blog/<slug>.png` (a green/teal title card — no photo needed).
-Note the fallback in your report. Never block the post on an image.
+Then run `tools/optimise-images.py` as usual (§7). Note the fallback in your report.
+Never block the post on an image.
 
 ---
 
@@ -482,7 +497,7 @@ conversation; redirect it and read only a short tail, and only on failure.
    ```
 3. Fix anything it reports, then build for real:
    ```
-   python3 tools/build.py > /tmp/build.log 2>&1 && tail -3 /tmp/build.log || tail -30 /tmp/build.log
+   python3 tools/build.py > /tmp/wrnty-build.log 2>&1 && tail -3 /tmp/wrnty-build.log || tail -30 /tmp/wrnty-build.log
    ```
    It must print `BUILD OK`. The build regenerates the post page, the blog index,
    the homepage teaser, `feed.xml`, `sitemap.xml`, `llms.txt` and `llms-full.txt` —
@@ -499,6 +514,38 @@ conversation; redirect it and read only a short tail, and only on failure.
 
 Same discipline everywhere: pipe anything potentially verbose through a file or
 `tail`. Read files with `head`/`grep`, never dump a whole large file into context.
+
+---
+
+## Site-specific review checks
+
+Run these in the review pass before `git commit`, on top of the generic checks. Each
+one is a mistake this blog is specially prone to, and the build catches none of them.
+
+1. **Every legal right names its jurisdiction.** Each statutory right, time limit or
+   process (EU two-year remedy, UK Consumer Rights Act, US Magnuson–Moss) says where
+   it applies, and the post tells the reader to check the rules where they live.
+   Check the FAQ answers and `answer` too — they are read without the body.
+2. **Not legal advice.** Nothing tells the reader they are definitely entitled to a
+   remedy in their own dispute; the specifics go to the retailer, the manufacturer's
+   terms or the local consumer body.
+3. **No brand policy as fact.** No named company's exact warranty length, price,
+   claim process or AppleCare terms, unless stated generically ("phones often carry a
+   one-year manufacturer warranty").
+4. **No universal currency figures.** No `£`/`$`/`€` amount that reads as everyone's
+   price; figures are labelled illustrative or written around.
+5. **Premium is labelled, and the app does not read receipts.** Any mention of expiry
+   alerts, iCloud sync or PDF export says they are Premium; the free tier is two
+   items; nothing implies wrnty reads or auto-fills a receipt. Brand is lowercase
+   `wrnty` everywhere, including at the start of a sentence.
+6. **Sources are vetted.** Every `sources:` URL is in the §3 table
+   (`grep -c '<url>' prompt.md` prints at least `1`) or was checked with the `curl`
+   command there and returned `200`/`202`.
+7. **Inline images survived.** `grep -n '!\[' posts/<slug>.md` shows one
+   `![alt](/images/blog/<slug>-N.png)` line per inline photo you generated, with the
+   exact syntax from §6 (the build does not catch a bracketed path). Each alt text
+   describes what is actually in the photo, not the prompt, and never a screen's
+   contents.
 
 ---
 
