@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 27 Aug 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Warranty tracker apps (2026): wrnty, Warranty Keeper, Warranly</title>
+      <link>https://wrnty.12f.dk/blog/best-warranty-tracker-apps/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/best-warranty-tracker-apps/</guid>
+      <pubDate>Fri, 09 Oct 2026 08:00:00 +0000</pubDate>
+      <category>buying-guides</category>
+      <description>Four honest ways to track warranties and receipts, compared. Reminders, sync, privacy and export — and what each option is really built to do.</description>
+    </item>
     <item>
       <title>Is AppleCare worth it? What phone and laptop warranties actually cover</title>
       <link>https://wrnty.12f.dk/blog/is-applecare-worth-it/</link>
