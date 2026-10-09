@@ -31,6 +31,7 @@ wrnty is an iOS app for iPhone and iPad that keeps your product warranties and r
 
 Practical advice on warranties, receipts and buying smart, published at https://wrnty.12f.dk/blog/ (RSS: https://wrnty.12f.dk/feed.xml).
 
+- [Warranty tracker apps (2026): wrnty, Warranty Keeper, Warranly](https://wrnty.12f.dk/blog/best-warranty-tracker-apps/) — buying-guides, 2026-10-09. Compares the ways people actually track product warranties and receipts — wrnty, Warranty Keeper, Warranly and the Apple Notes + iCloud approach — by reminders, sync, privacy and export.
 - [Is AppleCare worth it? What phone and laptop warranties actually cover](https://wrnty.12f.dk/blog/is-applecare-worth-it/) — buying-guides, 2026-08-27. The standard phone and laptop warranty covers defects in materials and workmanship — the things that go wrong under normal, careful use.
 - [Consumer rights when something breaks — beyond the warranty](https://wrnty.12f.dk/blog/consumer-rights-when-something-breaks/) — warranty-tips, 2026-08-20. A plain-language explanation of the difference between a manufacturer warranty and the statutory rights a buyer has against the seller for faulty goods.
 - [Do you need to register a product to get the warranty?](https://wrnty.12f.dk/blog/do-you-need-to-register-a-product/) — warranty-tips, 2026-08-13. Registering a product does not create warranty coverage — the purchase does.
