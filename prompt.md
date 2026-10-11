@@ -584,6 +584,12 @@ Report concisely:
   policies.
 - Anything worth a human glance — e.g. "the topic bank is running low", "Reddit was
   blocked two runs in a row".
+- Traffic check: after the deploy is green, run
+  `python3 /opt/data/profiles/blogger/scripts/umami_post_views.py
+  fbcd006e-5e3c-456b-ad83-5a495a84c308 /blog/<slug>/ 12` and report the number
+  as a **traffic line** (0 in the first hours is normal — real traffic and
+  indexing take time; never fail or retry a publish because of it, the
+  publish proof is the deploy + the HTTP 200).
 
 If — and only if — there is genuinely nothing new worth publishing, reply with
 exactly `[SILENT]`. Otherwise always ship a post.
