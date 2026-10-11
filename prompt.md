@@ -100,6 +100,21 @@ hangs indefinitely — it has a hard time budget and gives up gracefully.
    entries already marked: `~~Title~~ *(covered: <slug>)*`. An unmarked entry
    gets written twice.
 
+### Query targeting (from the site's own Search Console data)
+
+This site's real Search Console data shows the problem with informational
+queries: the "is an extended warranty worth it" page gets impressions but sits at
+position ~34 (page 4), and "what does phone warranty cover" / "which department
+stores offer extended guarantees" type queries rank even deeper. Informational
+"what/why/which" content is crowded by banks, consumer bodies and retailers, so
+it does not rank. The queries this site CAN win are the app/category queries —
+"warranty tracker app", "best warranty app", "warranty and receipt tracker" —
+which is exactly what the comparison shape below targets, and the one query that
+already works (the "wrnty" brand term ranks #5). So when choosing, prefer a
+topic the app genuinely answers in its first feature, and phrase it in the
+reader's search words (category + "app"), not in a generic consumer question.
+The one-in-three comparison cadence is a floor, not a ceiling.
+
 ### Comparison posts (at least one in three)
 
 The posts that earn real search traffic are the comparison posts, the ones
@@ -590,6 +605,11 @@ Report concisely:
   as a **traffic line** (0 in the first hours is normal — real traffic and
   indexing take time; never fail or retry a publish because of it, the
   publish proof is the deploy + the HTTP 200).
+- Search line: `python3 /opt/data/profiles/blogger/scripts/gsc.py page-views
+  https://wrnty.12f.dk/ /blog/<slug>/ 14` and report its output (e.g.
+  `GSC_SEARCH 12 impressions, 2 clicks, position 5.3`). Google indexes new posts
+  over days, so `0 impressions … no position yet` is normal for a fresh post —
+  never fail a publish on it; the publish proof is the deploy + the HTTP 200.
 
 If — and only if — there is genuinely nothing new worth publishing, reply with
 exactly `[SILENT]`. Otherwise always ship a post.
