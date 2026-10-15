@@ -464,6 +464,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | Date | Post | Numbers | Verdict | Change |
 |---|---|---|---|---|
 | 2026-10-15 | CREATED: this file (spark#140) | no baseline: look ledger empty; post history not read | — | Plan week of Oct 19, 2026 – week of Feb 15, 2027 (71 rows, all `queued`); wrnty's own look (§3, §5), text-slide colours from the site's tokens, carousel-led cadence (§4). |
+| 2026-10-15 | BASELINE: look ledger backfilled for wrnty | 12 backfilled posts (2026-08-16 → 2026-08-29): 7 carousel (bar layout), 3 image, incl. "$900 per year", "Black Friday is coming", "Your washing machine just died"; no metrics in the post docs (collect-metrics not run for them) | — | Baseline = backfilled ledger + funnel (0 attributed social visits, 0 store taps, 2 site visits 7d). No posts in the §7 review window (published 7–13d ago). Platform note: wrnty's app record has no Instagram credentials, only Facebook — tonight's post 6ad1072bee79697d3988 was created as Facebook-only (marketing-post dropped instagram); §9's IG/FB account question is confirmed on the IG side. |
 
 ## 9. Open questions & watch items
 
