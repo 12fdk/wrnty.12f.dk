@@ -323,7 +323,7 @@ November).
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|
-| Oct 19 | 1 | Carousel | Still covered? | Expiry dates + statutory rights (EU named, hedged) | "The fridge is 22 months old and the freezer just stopped. Still covered?" | Exhibit: the fridge's paperwork and a folded receipt on pale oak, overhead; Moment: fridge door open in cool overcast kitchen light; white and sage, amber magnet | queued |
+| Oct 19 | 1 | Carousel | Still covered? | Expiry dates + statutory rights (EU named, hedged) | "The fridge is 22 months old and the freezer just stopped. Still covered?" | Exhibit: the fridge's paperwork and a folded receipt on pale oak, overhead; Moment: fridge door open in cool overcast kitchen light; white and sage, amber magnet | built 2026-10-15 6ad1072bee79697d3988 |
 | Oct 19 | 2 | Reel | Three weeks too late | Receipts attached to each item | "The washing machine broke. The receipt turned up three weeks later." | `editorial` · utility room, puddle on grey tiles, flat fluorescent → an open kitchen drawer in cold morning light | queued |
 | Oct 26 | 1 | Carousel | The proof kit | Receipts & proof (photo of receipt, box, serial plate) | "New laptop on the desk. Keep these five things before the box goes out." | Exhibit: closed laptop, coiled charger, empty box, folded receipt on pale concrete, flat top light, bottle-green desk mat | queued |
 | Oct 26 | 2 | Reel | Make it last | Care + the date in one place | "The clocks change this weekend. Give the dryer ten minutes." | `clean` · laundry cupboard at dusk, blue window vs warm bulb, macro of a lint filter, mustard towel | queued |
