@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 09 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Which brands actually last? How to read a warranty as a signal</title>
+      <link>https://wrnty.12f.dk/blog/which-brands-actually-last/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/which-brands-actually-last/</guid>
+      <pubDate>Thu, 15 Oct 2026 08:00:00 +0000</pubDate>
+      <category>buying-guides</category>
+      <description>No honest ranking of the most reliable appliance brands exists. A product's own warranty terms and repair options are evidence you can read yourself.</description>
+    </item>
     <item>
       <title>Warranty tracker apps (2026): wrnty, Warranty Keeper, Warranly</title>
       <link>https://wrnty.12f.dk/blog/best-warranty-tracker-apps/</link>

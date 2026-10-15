@@ -41,6 +41,10 @@ Most people lose money not because a product fails, but because it fails just af
 
 The wrnty blog publishes practical advice on tracking warranties, organising receipts and buying smart at https://wrnty.12f.dk/blog/ (RSS feed: https://wrnty.12f.dk/feed.xml). Posts are tagged `warranty-tips`, `organizing` or `buying-guides`.
 
+### Which brands actually last? How to read a warranty as a signal (2026-10-15, buying-guides)
+https://wrnty.12f.dk/blog/which-brands-actually-last/
+A warranty is a useful but imperfect signal of how long a product will last, and this post explains how to read it honestly. It covers why brand-level reliability rankings mislead, what a long warranty actually says about a maker's confidence and where that signal runs out, the terms that matter more than the headline length, a worked example with two made-up washing machines, what to check beyond the warranty such as spare parts and repairability, and a short checklist to use at the point of purchase.
+
 ### Warranty tracker apps (2026): wrnty, Warranty Keeper, Warranly (2026-10-09, buying-guides)
 https://wrnty.12f.dk/blog/best-warranty-tracker-apps/
 Compares the ways people actually track product warranties and receipts — wrnty, Warranty Keeper, Warranly and the Apple Notes + iCloud approach — by reminders, sync, privacy and export. It is a buyer's guide, not a ranking.

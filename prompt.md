@@ -156,7 +156,7 @@ natural — not forced — part of the answer to. Pick the highest one not yet c
 12. ~~How to build a home inventory (and why your insurer wants one)~~ *(covered: how-to-build-a-home-inventory)*
 13. ~~Warranty gotchas — the fine print that voids your cover~~ *(covered: warranty-gotchas-fine-print)*
 14. **What to do the week an appliance dies** — diagnose, check the cover, decide fast · *"appliance stopped working what to do"*
-15. **Which brands actually last** — how to read warranties as a signal of durability · *"most reliable appliance brands"*
+15. ~~Which brands actually last~~ *(covered: which-brands-actually-last)*
 16. **Keeping warranties and receipts for a small business** — asset records without accounting software · *"track business equipment warranties"*
 
 If everything here is covered, write a sharper, fresher take on the strongest theme
