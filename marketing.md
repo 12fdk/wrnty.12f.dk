@@ -1,6 +1,6 @@
 # wrnty — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-15
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-16
 
 ## 1. What this is & how it's updated
 
@@ -324,7 +324,7 @@ November).
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|
 | Oct 19 | 1 | Carousel | Still covered? | Expiry dates + statutory rights (EU named, hedged) | "The fridge is 22 months old and the freezer just stopped. Still covered?" | Exhibit: the fridge's paperwork and a folded receipt on pale oak, overhead; Moment: fridge door open in cool overcast kitchen light; white and sage, amber magnet | built 2026-10-15 6ad1072bee79697d3988 |
-| Oct 19 | 2 | Reel | Three weeks too late | Receipts attached to each item | "The washing machine broke. The receipt turned up three weeks later." | `editorial` · utility room, puddle on grey tiles, flat fluorescent → an open kitchen drawer in cold morning light | queued |
+| Oct 19 | 2 | Reel | Three weeks too late | Receipts attached to each item | "The washing machine broke. The receipt turned up three weeks later." | `editorial` · utility room, puddle on grey tiles, flat fluorescent → an open kitchen drawer in cold morning light | built 2026-10-16 6ad2638cb35d3fb2ff4f |
 | Oct 26 | 1 | Carousel | The proof kit | Receipts & proof (photo of receipt, box, serial plate) | "New laptop on the desk. Keep these five things before the box goes out." | Exhibit: closed laptop, coiled charger, empty box, folded receipt on pale concrete, flat top light, bottle-green desk mat | queued |
 | Oct 26 | 2 | Reel | Make it last | Care + the date in one place | "The clocks change this weekend. Give the dryer ten minutes." | `clean` · laundry cupboard at dusk, blue window vs warm bulb, macro of a lint filter, mustard towel | queued |
 | Oct 26 | 3 | Carousel | Fine print | Opening the device can void cover (blog: warranty gotchas) | "Opened the console to clean the fan? Read the warranty first." | games corner, console on a low shelf, screen off, cool blue evening + amber desk lamp, top-down on a small screwdriver set | queued |
@@ -465,6 +465,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 |---|---|---|---|---|
 | 2026-10-15 | CREATED: this file (spark#140) | no baseline: look ledger empty; post history not read | — | Plan week of Oct 19, 2026 – week of Feb 15, 2027 (71 rows, all `queued`); wrnty's own look (§3, §5), text-slide colours from the site's tokens, carousel-led cadence (§4). |
 | 2026-10-15 | BASELINE: look ledger backfilled for wrnty | 12 backfilled posts (2026-08-16 → 2026-08-29): 7 carousel (bar layout), 3 image, incl. "$900 per year", "Black Friday is coming", "Your washing machine just died"; no metrics in the post docs (collect-metrics not run for them) | — | Baseline = backfilled ledger + funnel (0 attributed social visits, 0 store taps, 2 site visits 7d). No posts in the §7 review window (published 7–13d ago). Platform note: wrnty's app record has no Instagram credentials, only Facebook — tonight's post 6ad1072bee79697d3988 was created as Facebook-only (marketing-post dropped instagram); §9's IG/FB account question is confirmed on the IG side. |
+| 2026-10-16 | 6ad2638cb35d3fb2ff4f "The washing machine broke. The receipt turned up three weeks later." (reel, Three weeks too late) | created 2026-10-16, scheduled 2026-10-25T16:00Z, Facebook-only (no Instagram credentials on the app record, as expected) | — | Built from the Oct 19 #2 row. Editorial reel 22 s, music variant 5 (c-min, unused in last 6 reels). Fresh shoot (prefix wr-social-20261016): utility-room washer puddle (hook shot is a crop of the generated frame so no control panel or brand is visible), hand on door handle, whiteboard + toolbag, dark drawer with amber highlighter, knolling exhibit; one amber object per frame. Claude design task 20261016-1843; review round 1 FAIL on the not-yet-done create/marketing.md steps and the end-card dash (fixed to ·, re-rendered); round 2 pending. Funnel 7d: 0 social visits / 0 store taps — post keeps the product feature (receipts attached) on screen per the brief. |
 
 ## 9. Open questions & watch items
 
