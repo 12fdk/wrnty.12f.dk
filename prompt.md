@@ -142,7 +142,7 @@ Each entry names a real reader problem that a warranty-and-receipt tracker is a
 natural — not forced — part of the answer to. Pick the highest one not yet covered
 (struck through = already written; skip those):
 
-1. **How to keep track of warranties without a drawer full of receipts** — one place, one habit, found in seconds when something breaks · *"how to keep track of warranties"*
+1. ~~How to keep track of warranties without a drawer full of receipts~~ *(covered: how-to-keep-track-of-warranties)*
 2. **Is an extended warranty worth it?** — what you are actually buying, and when it pays · *"is an extended warranty worth it"*
 3. ~~How to make a warranty claim (and what to do when it's refused)~~ *(covered: how-to-make-a-warranty-claim)*
 4. ~~What counts as proof of purchase — and what to do when you've lost the receipt~~ *(covered: what-counts-as-proof-of-purchase)*

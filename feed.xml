@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 15 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>How to keep track of warranties without a drawer of receipts</title>
+      <link>https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/</guid>
+      <pubDate>Thu, 22 Oct 2026 08:00:00 +0000</pubDate>
+      <category>organizing</category>
+      <description>How to keep track of warranties: what to record for each item, how to backfill what you already own, and when to remind yourself before cover expires.</description>
+    </item>
     <item>
       <title>Which brands actually last? How to read a warranty as a signal</title>
       <link>https://wrnty.12f.dk/blog/which-brands-actually-last/</link>

@@ -102,7 +102,6 @@ SAMEAS = [
 # main() writes a noindex meta-refresh stub pointing at the successor instead of
 # leaving an orphan live. Drop an entry once the URL has aged out of the index.
 REDIRECTS = {
-    "how-to-keep-track-of-warranties": "/blog/how-to-organise-receipts/",
     "is-an-extended-warranty-worth-it": "/blog/is-applecare-worth-it/",
 }
 
