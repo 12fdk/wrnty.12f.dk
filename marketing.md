@@ -1,6 +1,6 @@
 # wrnty — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-23
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-24
 
 ## 1. What this is & how it's updated
 
@@ -467,6 +467,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 
 | 2026-10-22 | NO-OP run: §7 review window (published 7–13d ago, 2026-10-09 → 10-15) empty — the earliest published wrnty post is 6ad2638cb35d3fb2ff4f at 2026-10-19T16:45Z, outside the window | funnel 7d: 0 social visits / 0 store taps; all four October posts verified `published` (6ad2638c 10-19, 6ad64edd 10-19, 6ad7ac4d 10-20, 6ad8f2af 10-21, all force-published; Facebook-only as expected) | — | No due row: the week-of-Oct-26 rows are all published (its last row, Oct 26 #3, was force-published 10-21); the first `queued` row is Nov 2 #1 (reel, Pay once), whose week starts in 11 days — outside the 7-day due window. `plan_prune.py` removed the published Oct 26 #3 row (6ad8f2afb36e547597ef) from §6. Nothing built tonight; the Nov 2 #1 row becomes due on Oct 26. |
 | 2026-10-23 | NO-OP run: §7 review window (published 7–13d ago, 2026-10-10 → 10-16) empty — the earliest published wrnty post is still 6ad2638cb35d3fb2ff4f at 2026-10-19T16:45Z, outside the window | funnel 7d: 0 social visits / 0 store taps (site totals 0 visits, prev 2); fresh Appwrite read (100 newest of 122 wrnty docs) verifies all five October posts `published` (6ad1072b 10-19, 6ad2638c 10-19, 6ad64edd 10-19, 6ad7ac4d 10-20, 6ad8f2af 10-21; Facebook-only as expected) and shows no `failed` post — the single `publishing` doc is the stale April one (69d0d274, inert) | — | No due row: the first `queued` row is Nov 2 #1 (reel, Pay once), whose week starts in 10 days (2026-11-02) — outside the 7-day due window; the Oct 30 clocks-change hook was already spent by the 10-20 post (6ad7ac4d). `plan_prune.py`: nothing to remove. Nothing built tonight; the Nov 2 #1 row becomes due on Oct 26. |
+| 2026-10-24 | NO-OP run: §7 review window (published 7–13d ago, 2026-10-11 → 10-17) empty — fresh Appwrite read today: 0 wrnty posts published in the window (earliest published is still 6ad2638cb35d3fb2ff4f at 2026-10-19T16:45Z, 5 days old) and 0 `failed` posts | funnel 7d (Oct 17 → 24): 0 social visits / 0 store taps (site totals 0 visits, prev 2) | — | No due row: the first `queued` row is Nov 2 #1 (reel, Pay once), whose week starts in 9 days (2026-11-02) — outside the 7-day due window. `plan_prune.py`: nothing to remove. Nothing built tonight; the Nov 2 #1 row becomes due on Oct 26. |
 
 ## 9. Open questions & watch items
 
