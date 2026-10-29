@@ -102,7 +102,6 @@ SAMEAS = [
 # main() writes a noindex meta-refresh stub pointing at the successor instead of
 # leaving an orphan live. Drop an entry once the URL has aged out of the index.
 REDIRECTS = {
-    "is-an-extended-warranty-worth-it": "/blog/is-applecare-worth-it/",
 }
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",

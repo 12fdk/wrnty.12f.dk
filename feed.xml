@@ -6,8 +6,16 @@
     <description>Practical advice on warranties, receipts and buying smart — from the team behind wrnty.</description>
     <language>en</language>
     <atom:link href="https://wrnty.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 22 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Is an extended warranty worth it? Five checks before you pay</title>
+      <link>https://wrnty.12f.dk/blog/is-an-extended-warranty-worth-it/</link>
+      <guid isPermaLink="true">https://wrnty.12f.dk/blog/is-an-extended-warranty-worth-it/</guid>
+      <pubDate>Thu, 29 Oct 2026 08:00:00 +0000</pubDate>
+      <category>buying-guides</category>
+      <description>Is an extended warranty worth it? What you are actually buying, what you already own for free, and five checks to decide before you pay.</description>
+    </item>
     <item>
       <title>How to keep track of warranties without a drawer of receipts</title>
       <link>https://wrnty.12f.dk/blog/how-to-keep-track-of-warranties/</link>
