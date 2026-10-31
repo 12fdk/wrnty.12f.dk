@@ -1,6 +1,6 @@
 # wrnty — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-30
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-10-31
 
 ## 1. What this is & how it's updated
 
@@ -485,6 +485,8 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | 2026-10-29 | 6ae38c9c35bffc973e9b (correction to the 2026-10-29 row above) | created ready for scheduledAt 2026-11-04T16:00Z, but the deployed publish-social force-published it at 2026-10-29T18:15Z (first 15-min cycle once the 20 h gap from the last published post 2026-10-28T18:15Z was met) — Facebook-only, no errorMessage; scheduledAt orders but does not hold (PR #100), same as the 10-26 pay-once reel whose scheduled 11-04 slot force-published 10-26T18:45Z | — | none — noting the actual publish time so the next §7 run reads metrics from 2026-10-29, not 2026-11-04. |
 
 | 2026-10-30 | NO-OP run: §7 review window (published 7–13d ago, 2026-10-17 → 10-23) — all five posts already logged in §8 as NO-DATA (Oct 26/27/28 runs) and their metrics are still null/stale (collect-metrics has not re-run on the Oct 19/21 posts; the Oct 19 reel and Oct 20 reel are >24h stale), so no new §7 rows | funnel 7d (Oct 23 → 30): 0 social visits / 0 store taps (site totals 0 visits); `marketing-post schedule` confirms all five October posts `published` and shows no `failed` post (the single `publishing` doc is the stale 69d0d274, inert) | — | No due row: the first `queued` row is Nov 9 #1 (carousel, Before the counter), whose week starts 2026-11-09 (10 days out) — outside the 7-day due window. `plan_prune.py` removed the Nov 2 #4 row (6ae38c9c35bffc973e9b, force-published 2026-10-29T18:15Z) from §6. Nothing built tonight; the Nov 9 #1 row becomes due on Nov 2. |
+| 2026-10-31 | NO-OP run: §7 review window (published 7–13d ago, 2026-10-18 → 10-24) — the only posts in it (6ad2638c, 6ad1072b, 6ad64edd 10-19; 6ad7ac4d 10-20; 6ad8f2af 10-21) are all already logged in §8 as NO-DATA (Oct 26/27/28 runs) and their metrics are still null/stale (collect-metrics has not re-run), so no new §7 rows | funnel 7d (Oct 24 → 31): 0 social visits / 0 store taps (site totals 0 visits); `marketing-post schedule` shows the Nov 6 carousel (6ae23a9b) and Nov 4 reel (6ae38c9c) `published` (force-published 10-28/10-29 per §8) and no `failed` post (the single `publishing` doc is the stale 69d0d274, inert) | — | No due row: the first `queued` row is Nov 9 #1 (carousel, Before the counter), whose week starts 2026-11-09 (9 days out) — outside the 7-day due window. `plan_prune.py`: nothing to remove. Nothing built tonight; the Nov 9 #1 row becomes due on Nov 2. |
+
 
 ## 9. Open questions & watch items
 
