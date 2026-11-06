@@ -323,7 +323,6 @@ November).
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|
-| Nov 9 | 4 | Reel | Pay once | Private by design ("a map of what you own") | "Your receipts are a map of what you own. Keep that map to yourself." | `editorial` · dim study with deep green walls, a filing box lid closing, single desk lamp | built 2026-11-05 6aecc779ecbee307a826 |
 | Nov 16 | 1 | Carousel | Fine print | Defects vs accidents (blog: what a warranty covers) | "The laptop warranty covers defects. Not the coffee you spill on it." | home office, closed laptop beside a tipped mug, morning side light, sage notebook | queued |
 | Nov 16 | 2 | Reel | Still covered? | Expiry dates + receipts | "The pushchair wheel cracked at month 10. Where's the receipt?" | `clean` · hallway by the front door, folded pushchair, soft pastel daylight, eucalyptus wall | queued |
 | Nov 16 | 3 | Carousel | The proof kit | Black Friday: what to keep from every order | "Black Friday checklist: what to keep from every order." | Exhibit: parcels, scissors, packing slips face-down on white, high-key overhead, one amber tape roll | queued |
