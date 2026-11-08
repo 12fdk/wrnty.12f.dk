@@ -1,6 +1,6 @@
 # wrnty — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-07
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-08
 
 ## 1. What this is & how it's updated
 
@@ -323,7 +323,6 @@ November).
 
 | Week of | # | Format | Series | Feature / message | Hook (first 1–2 s) | Look / scene (start point; must differ from recent looks) | Status |
 |---|---|---|---|---|---|---|---|
-| Nov 16 | 1 | Carousel | Fine print | Defects vs accidents (blog: what a warranty covers) | "The laptop warranty covers defects. Not the coffee you spill on it." | home office, closed laptop beside a tipped mug, morning side light, sage notebook | built 2026-11-07 6aef69f967f67da5d9a4 |
 | Nov 16 | 2 | Reel | Still covered? | Expiry dates + receipts | "The pushchair wheel cracked at month 10. Where's the receipt?" | `clean` · hallway by the front door, folded pushchair, soft pastel daylight, eucalyptus wall | queued |
 | Nov 16 | 3 | Carousel | The proof kit | Black Friday: what to keep from every order | "Black Friday checklist: what to keep from every order." | Exhibit: parcels, scissors, packing slips face-down on white, high-key overhead, one amber tape roll | queued |
 | Nov 16 | 4 | Reel | Three weeks too late | Receipts attached | "The robot vacuum stopped. The order email is somewhere in 4,000 others." | `editorial` · rainy evening, closed laptop, window streaks, teal-grey, vacuum stuck under a sofa | queued |
@@ -502,6 +501,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 | 2026-11-07 | 6aef69f967f67da5d9a4 (correction to the 2026-11-07 row above) | the row said "poster layout" — correct: `marketing-post` create output shows `layout: poster (text slides)`, matching the 10-27/10-28 poster posts | — | none — noting the verified layout so the row is accurate. |
 | 2026-11-07 | 6ae38c9c35bffc973e9b "The headphones died at month 13. The warranty ended at month 12." (reel, Three weeks too late) | IG n/a (Facebook-only post) · FB reach null / reactions 0 / comments 0 / shares 0 (metricsUpdatedAt 2026-10-29T20:00Z — 9 days old, >24h stale, collect-metrics has not re-run since the 10-29 force-publish) · Umami 7d 0 ig / 0 fb referrers, 0 appstore-click | NO-DATA | none — re-check next run; metrics >24h stale; published 2026-10-29T18:15Z (force-published, per its §8 correction row) so it entered the 7–13d review window on 2026-11-05 |
 | the slot sentence mislabeled 6ae0e7a3 (scheduled 2026-11-08T16:00Z) as "the next ready post" and omitted 6ae8d07d (scheduled 2026-11-11T16:00Z) | — | accurate picture: at create time the only `ready` post in `marketing-post schedule` was 6aeb7767 (this one); 6ae0e7a3 (11-08) and 6ae8d07d (11-11) had already force-published (10-27 and 11-02, per their own §8 correction rows), so the 2026-11-15T16:00Z slot was genuinely free; the 4-day gap holds against 6ae8d07d's 11-11 slot. |
+| 2026-11-08 | NO-OP run: §7 review window (published 7–13d ago, 2026-10-26 → 11-01) — the four posts in it (6adf9e1b 10-26, 6ae0e7a3 10-27, 6ae23a9b 10-28, 6ae38c9c 10-29) are all already logged in §8 as NO-DATA and fresh by-id Appwrite reads today confirm their metrics are still null/stale (collect-metrics has not re-run), so no new §7 rows | funnel 7d (Oct 31 → Nov 8): 0 social landings / 0 store taps (site totals 0 pageviews, 0 visitors); `marketing-post schedule` shows no `failed` post (the single `publishing` doc is the stale 69d0d274, inert) | — | No due row: the first `queued` row is Nov 16 #2 (reel, Still covered?), whose week starts 2026-11-16 (8 days out) — outside the 7-day due window; it becomes due on Nov 9. `plan_prune.py` removed the Nov 16 #1 row (6aef69f967f67da5d9a4, published 2026-11-07T18:16Z) from §6. Nothing built tonight; the Nov 16 #2 row becomes due on Nov 9. |
 
 ## 9. Open questions & watch items
 
