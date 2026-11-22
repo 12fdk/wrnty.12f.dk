@@ -1,6 +1,6 @@
 # wrnty — Marketing Plan (living doc)
 
-Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-21
+Owner: Robert · Maintained by: Hermes (social pipeline agent) · Last updated: 2026-11-22
 
 ## 1. What this is & how it's updated
 
@@ -523,6 +523,7 @@ Append-only. Newest at bottom. Never edit or delete rows.
 
 
 | 2026-11-21 | NO-OP run: §7 review window (published 7–13d ago, 2026-11-08 → 11-14) — the three posts in it (6af210f2 11-09, 6af35c5a 11-10, 6af4b35b 11-11) are all already logged in §8 as NO-DATA (Nov 17 run) and fresh by-id Appwrite reads today confirm their metrics are still null / >24h stale (collect-metrics has not re-run), so no new §7 rows | funnel 7d (Nov 14 → 21): 0 social landings / 0 social store taps (site totals 4 pageviews, 3 visitors, 3 visits; top referrer robert-jensen.dk ×2 — not social-attributed); `marketing-post schedule` shows the whole Nov 23 week published (Nov 16 → 20) and no `failed` post (the single `publishing` doc is the stale 69d0d274, inert) | — | No due row: the first `queued` row is Nov 30 #1 (carousel, The proof kit), whose week starts 2026-11-30 (9 days out) — outside the 7-day due window; it becomes due on Nov 23. `plan_prune.py` removed the Nov 23 #5 row (6b0092b3302f20cb3bbf, published 2026-11-20T18:45Z) from §6. Nothing built tonight; the Nov 30 #1 row becomes due on Nov 23. |
+| 2026-11-22 | NO-OP run: §7 review window (published 7–13d ago, 2026-11-09 → 11-15) — the three posts in it (6af210f2 11-09, 6af35c5a 11-10, 6af4b35b 11-11) are all already logged in §8 as NO-DATA (Nov 17/18 runs) and fresh by-id Appwrite reads today confirm their metrics are still null / >24h stale (collect-metrics has not re-run), so no new §7 rows | funnel 7d (Nov 15 → 22): 0 social landings / 0 store taps (site totals 3 pageviews, 2 visitors, 2 visits); `marketing-post schedule` shows the whole Nov 23 week published (Nov 16 → 20) and no `failed` post (the single `publishing` doc is the stale 69d0d274, inert) | — | No due row: the first `queued` row is Nov 30 #1 (carousel, The proof kit), whose week starts 2026-11-30 (8 days out) — outside the 7-day due window; it becomes due on Nov 23. `plan_prune.py`: nothing to remove. Nothing built tonight. |
 
 ## 9. Open questions & watch items
 
